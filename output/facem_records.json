@@ -1,0 +1,14 @@
+[
+  {
+    "_meta": {
+      "source_url": "https://facem.at/bnap-a-11",
+      "scraped_at": "2026-03-20T22:57:19.370942+00:00",
+      "scraper": "facem_pipeline.py v0.2",
+      "tab_count": 0
+    },
+    "object_data": {},
+    "fabric_description": {},
+    "archaeometry": {},
+    "petrography": {}
+  }
+]

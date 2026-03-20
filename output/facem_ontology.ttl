@@ -1,0 +1,244 @@
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix facemv: <http://facem.at/vocab/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+facemv:InclusionsMeasurement a owl:Class ;
+    rdfs:label "Inclusions Percentage Measurement"@en ;
+    rdfs:comment "A measurement of the total volume percentage of inclusions in a ceramic sample body. Subclass of crmsci:S21_Measurement."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf crmsci:S21_Measurement .
+
+facemv:PetrographicAnalysis a owl:Class ;
+    rdfs:label "Petrographic Analysis"@en ;
+    rdfs:comment "A petrographic and mineralogical examination of a ceramic sample, typically involving thin sections and heavy mineral analysis. Subclass of crmsci:S4_Observation and prov:Activity."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf crmsci:S4_Observation,
+        prov:Activity .
+
+facemv:PetrographicType a owl:Class ;
+    rdfs:label "Petrographic-Mineralogical Type"@en ;
+    rdfs:comment "A classification code assigned to a fabric type on the basis of petrographic-mineralogical analysis (e.g. PG-C4, RPG 03). Subclass of crm:E55_Type."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf crm:E55_Type .
+
+facemv:PorosityMeasurement a owl:Class ;
+    rdfs:label "Porosity Measurement"@en ;
+    rdfs:comment "A measurement of the porosity of a ceramic sample body, expressed as a percentage with optional void-form and void-length description. Subclass of crmsci:S21_Measurement."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf crmsci:S21_Measurement .
+
+facemv:SamplingEvent a owl:Class ;
+    rdfs:label "Sampling Event"@en ;
+    rdfs:comment "The activity of taking a physical sample from a ceramic object. Subclass of crm:E7_Activity and prov:Activity."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf crm:E7_Activity,
+        prov:Activity .
+
+facemv:analysisMethod a owl:DatatypeProperty ;
+    rdfs:label "analysis method"@en ;
+    rdfs:comment "The analytical method applied in an archaeometric analysis (e.g. thin section and heavy mineral analysis)."@en ;
+    rdfs:domain facemv:ArchaeometricAnalysis ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:contextRegistrationCode a owl:DatatypeProperty ;
+    rdfs:label "context registration code"@en ;
+    rdfs:comment "The excavation or context registration code for the find context."@en ;
+    rdfs:domain facemv:CeramicObject ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:decoration a owl:DatatypeProperty ;
+    rdfs:label "decoration"@en ;
+    rdfs:comment "Description of the decorative features of the ceramic object."@en ;
+    rdfs:domain facemv:CeramicObject ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:fabricTypeCode a owl:DatatypeProperty ;
+    rdfs:label "fabric type code"@en ;
+    rdfs:comment "The FACEM identifier code for a fabric type (e.g. BNAP-A-11)."@en ;
+    rdfs:domain facemv:FabricType ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf skos:notation .
+
+facemv:fragmentation a owl:DatatypeProperty ;
+    rdfs:label "fragmentation"@en ;
+    rdfs:comment "Fragmentation state of the ceramic object (e.g. rim, base, fragmentation not specified)."@en ;
+    rdfs:domain facemv:CeramicObject ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:hardness a owl:DatatypeProperty ;
+    rdfs:label "hardness"@en ;
+    rdfs:comment "Hardness of the ceramic body as assessed macroscopically."@en ;
+    rdfs:domain facemv:VisualExamination ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:hasFabricType a owl:ObjectProperty ;
+    rdfs:label "has fabric type"@en ;
+    rdfs:comment "Associates a ceramic object with its assigned FACEM fabric type."@en ;
+    rdfs:domain facemv:CeramicObject ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range facemv:FabricType ;
+    rdfs:subPropertyOf crm:P45_consists_of .
+
+facemv:hasInclusion a owl:ObjectProperty ;
+    rdfs:label "has inclusion"@en ;
+    rdfs:comment "Associates a binocular observation with an identified inclusion."@en ;
+    rdfs:domain facemv:BinocularObservation ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range facemv:Inclusion .
+
+facemv:hasSample a owl:ObjectProperty ;
+    rdfs:label "has sample"@en ;
+    rdfs:comment "Associates a ceramic object with a physical sample taken from it."@en ;
+    rdfs:domain facemv:CeramicObject ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range facemv:CeramicSample ;
+    rdfs:subPropertyOf crm:P46_is_composed_of .
+
+facemv:inclusionType a owl:DatatypeProperty ;
+    rdfs:label "inclusion type"@en ;
+    rdfs:comment "The mineralogical or descriptive type of an inclusion (e.g. quartz, black inclusions, foraminifera)."@en ;
+    rdfs:domain facemv:Inclusion ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:inclusionValue a owl:DatatypeProperty ;
+    rdfs:label "inclusion value (raw)"@en ;
+    rdfs:comment "The raw string value from FACEM describing an inclusion (frequency, shape, colour, size range)."@en ;
+    rdfs:domain facemv:Inclusion ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:inclusionsPercent a rdf:Property,
+        owl:NamedIndividual ;
+    rdfs:label "inclusions percentage"@en ;
+    rdfs:comment "Total volume percentage of non-plastic inclusions in the ceramic body."@en .
+
+facemv:measuredProperty a owl:ObjectProperty ;
+    rdfs:label "measured property"@en ;
+    rdfs:comment "Points to the property being measured (e.g. facemv:porosity)."@en ;
+    rdfs:domain crmsci:S21_Measurement ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range rdf:Property .
+
+facemv:munsellColour a owl:DatatypeProperty ;
+    rdfs:label "Munsell colour"@en ;
+    rdfs:comment "Munsell colour notation of the ceramic fresh break (e.g. 2.5YR 5/6)."@en ;
+    rdfs:domain facemv:VisualExamination ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:objectForm a owl:DatatypeProperty ;
+    rdfs:label "object form"@en ;
+    rdfs:comment "The morphological form of the ceramic object (e.g. Amphora, Cup, Bowl)."@en ;
+    rdfs:domain facemv:CeramicObject ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:objectType a owl:DatatypeProperty ;
+    rdfs:label "object type"@en ;
+    rdfs:comment "The typological classification of the ceramic object (e.g. Dressel 2-4, Conspectus B 4.14)."@en ;
+    rdfs:domain facemv:CeramicObject ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:porosity a rdf:Property,
+        owl:NamedIndividual ;
+    rdfs:label "porosity"@en ;
+    rdfs:comment "Porosity of the ceramic body, expressed as a percentage."@en .
+
+facemv:sorting a owl:DatatypeProperty ;
+    rdfs:label "sorting"@en ;
+    rdfs:comment "Sorting of inclusions in the ceramic matrix as observed under the binocular stereoscope."@en ;
+    rdfs:domain facemv:BinocularObservation ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:surfaceDescription a owl:DatatypeProperty ;
+    rdfs:label "surface description"@en ;
+    rdfs:comment "Description of the surface treatment or slip of the ceramic object."@en ;
+    rdfs:domain facemv:CeramicObject ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:texture a owl:DatatypeProperty ;
+    rdfs:label "texture"@en ;
+    rdfs:comment "Texture of the ceramic fresh break (e.g. granular, fine)."@en ;
+    rdfs:domain facemv:VisualExamination ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:ware a owl:DatatypeProperty ;
+    rdfs:label "ware"@en ;
+    rdfs:comment "The ware category of the ceramic object (e.g. Transport Amphorae, Terra Sigillata, Coarse Wares)."@en ;
+    rdfs:domain facemv:CeramicObject ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:range xsd:string .
+
+facemv:ArchaeometricAnalysis a owl:Class ;
+    rdfs:label "Archaeometric Analysis"@en ;
+    rdfs:comment "An analytical activity (e.g. thin section, heavy mineral analysis) carried out on a ceramic sample to determine its material composition and provenance. Subclass of crm:E13_Attribute_Assignment and prov:Activity."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf crm:E13_Attribute_Assignment,
+        prov:Activity .
+
+facemv:CeramicSample a owl:Class ;
+    rdfs:label "Ceramic Sample"@en ;
+    rdfs:comment "A physical sample taken from a ceramic object for archaeometric or petrographic analysis. Subclass of crmsci:S10_Material_Substantial and bfo:BFO_0000040."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf bfo:BFO_0000040,
+        crmsci:S10_Material_Substantial .
+
+facemv:BinocularObservation a owl:Class ;
+    rdfs:label "Binocular Stereoscope Observation"@en ;
+    rdfs:comment "An observation of a ceramic sample carried out under a binocular stereoscope, recording porosity, inclusion percentage, sorting and individual inclusion types. Subclass of crmsci:S4_Observation."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf crmsci:S4_Observation .
+
+facemv:FabricType a owl:Class ;
+    rdfs:label "Fabric Type"@en ;
+    rdfs:comment "A fabric type as defined in the FACEM classification system, representing the characteristic clay body composition of pottery produced at a specific site. Subclass of crm:E57_Material and bfo:BFO_0000040 (Material Entity)."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf bfo:BFO_0000040,
+        crm:E57_Material .
+
+facemv:Inclusion a owl:Class ;
+    rdfs:label "Inclusion"@en ;
+    rdfs:comment "A non-plastic inclusion identified in the ceramic body during binocular stereoscope observation, described by type, frequency, shape, colour, and size range."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> .
+
+facemv:VisualExamination a owl:Class ;
+    rdfs:label "Visual Examination"@en ;
+    rdfs:comment "A macroscopic examination of the fresh break of a ceramic sample carried out with the naked eye. Subclass of crmsci:S4_Observation."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf crmsci:S4_Observation .
+
+facemv:CeramicObject a owl:Class ;
+    rdfs:label "Ceramic Object"@en ;
+    rdfs:comment "A human-made ceramic vessel or fragment studied in FACEM. Subclass of crm:E22_Human_Made_Object."@en ;
+    rdfs:isDefinedBy <http://facem.at/ontology/> ;
+    rdfs:subClassOf crm:E22_Human_Made_Object .
+
+<http://facem.at/ontology/> a owl:Ontology ;
+    rdfs:label "FACEM Ontology"@en ;
+    dcterms:creator "FACEM RDF Pipeline" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Ontology for the FACEM (Provenance Studies on Ancient Pottery in the Mediterranean) database. Maps fabric-type descriptions, archaeometric analyses, and petrographic observations to CIDOC-CRM, CRMsci, PROV-O and BFO."@en ;
+    rdfs:seeAlso crm:,
+        crmsci:,
+        <http://www.w3.org/ns/prov-o#> ;
+    owl:versionInfo "0.2" .
+
