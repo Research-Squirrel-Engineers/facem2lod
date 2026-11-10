@@ -5,3 +5,7 @@ beautifulsoup4>=4.12
 # legacy prototype (facem_pipeline.py, facem_ontology.py); also the RDF step later
 rdflib>=7.0
 lxml>=5.0
+
+# figures (visuals/)
+resvg-py>=0.1
+pillow>=10.0

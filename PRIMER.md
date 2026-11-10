@@ -260,75 +260,9 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 
 **Modellentwurf (2026-11-10, zur Abnahme; nach deinem Okay wird gebaut).** Namespace der Klassen `http://w3id.org/facem/ontology/` (Präfix `facem:`), Instanzen unter `http://w3id.org/facem/entity/<typ>_<id>` (Vorschlag), Vokabulare aus S5. Farben nach deinem Schema: Klasse orange, Objekt der Wirklichkeit grün, Vokabularterm lila, Fremdnamensraum weiß.
 
-```mermaid
-flowchart LR
-  classDef cls fill:#9a3412,stroke:#000000,color:#ffffff
-  classDef real fill:#166534,stroke:#000000,color:#ffffff
-  classDef term fill:#4c1d95,stroke:#000000,color:#ffffff
-  classDef owl fill:#ffffff,stroke:#000000,color:#000000
-  classDef inst fill:#e2e8f0,stroke:#000000,color:#000000
+![Modellentwurf S6: Klassen, Anker und Vokabulare](docs/visuals/img/s6-model-draft.png)
 
-  Sherd(["facem:Sherd"]):::real
-  Sample(["facem:Sample"]):::real
-  Place(["facem:Place"]):::real
-  Taking["facem:SampleTaking"]:::cls
-  Prod["facem:Production"]:::cls
-  Survey["facem:Survey"]:::cls
-  TypeA["facem:TypeAssignment"]:::cls
-  DateA["facem:DatingAssignment"]:::cls
-  Obs["facem:Observation"]:::cls
-  Dim["facem:Dimension"]:::cls
-  Img["facem:Image"]:::cls
-  Doc["facem:Publication"]:::cls
-  Person["facem:Person"]:::cls
-  Src["facem:SourceRecord"]:::cls
-
-  Fabric(["vocab: fabric"]):::term
-  TypeC(["vocab: hayes, atlante, el-mahrine, fulford, pm"]):::term
-  Period(["vocab: period"]):::term
-  Prop(["vocab: observable properties and descriptors"]):::term
-  Method(["vocab: method"]):::term
-
-  Geom["geo:Geometry (WKT point)"]:::owl
-  Unit["qudt:Unit (mm, cm, %)"]:::owl
-
-  Sherd -- "P45 consists of" --> Fabric
-  Sample -- "taken from" --> Sherd
-  Taking -- "O5 removed" --> Sample
-  Taking -- "P14 carried out by" --> Person
-  Prod -- "P108 has produced" --> Sherd
-  Prod -- "P7 took place at (supposed)" --> Place
-  Survey -- "P7 took place at" --> Place
-  Survey -- "P12 occurred in the presence of" --> Sherd
-  TypeA -- "P140 assigned attribute to" --> Sherd
-  TypeA -- "P141 assigned" --> TypeC
-  DateA -- "P140 assigned attribute to" --> Sherd
-  DateA -- "P141 assigned" --> Period
-  Obs -- "sosa:hasFeatureOfInterest" --> Sample
-  Obs -- "sosa:observedProperty" --> Prop
-  Obs -- "sosa:usedProcedure" --> Method
-  Obs -- "P14 carried out by" --> Person
-  Obs -- "qudt:unit" --> Unit
-  Sherd -- "P43 has dimension" --> Dim
-  Dim -- "P91 has unit" --> Unit
-  Img -- "P138 represents" --> Sample
-  Doc -- "P70 documents" --> Sherd
-  Place -- "P168 is defined by" --> Geom
-  Src -- "prov:hadPrimarySource" --> Sherd
-
-  subgraph DCAT["DCAT 3 / DCAT-AP"]
-    Cat["dcat:Catalog"]:::owl
-    Ser["dcat:DatasetSeries"]:::owl
-    Ds["dcat:Dataset (one per fabric)"]:::owl
-    Dist["dcat:Distribution"]:::owl
-    Cat -- "dcat:dataset" --> Ds
-    Cat -- "dcat:seriesMember" --> Ser
-    Ds -- "dcat:inSeries" --> Ser
-    Ds -- "dcat:distribution" --> Dist
-  end
-  Ds -- "dcterms:spatial" --> Place
-  Ds -- "dct:hasPart" --> Sample
-```
+*Abbildung: `python visuals/model_draft.py` zeichnet sie neu (SVG und PNG, Stil wie `visuals/` in geo-lod).*
 
 | Klasse | Anker (CRM und Erweiterungen) | Quelle in den JSONs | Bezug zu geo-lod |
 |---|---|---|---|
