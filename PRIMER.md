@@ -33,6 +33,9 @@ Arbeitsplan für facem2lod: die FACEM-Datenbank (facem.at, Keramik-Fabrics) als 
 - 2026-11-10: Jede Fabric-Seite zeigt nur die repräsentative Probe und listet vier weitere Proben mit eigener Seite (z. B. `m-201-2` bis `m-201-5`). Die Probenseiten sind noch nicht geholt; ob sie das gleiche Markup haben, ist offen.
 - 2026-11-10: Werte sind sehr einheitlich. Alle 84 Einschlussangaben (12 × 7 Typen) haben genau fünf kommagetrennte Teile: Häufigkeit, Rundung, Form, Farbe (mit `;` für mehrere), Größenbereich in mm. Chronologie hat die Form „Periode + Text“ (z. B. „Roman-Late Antiquity c. 530–580 CE“, „… second half of 5th century CE“); Objekttyp „Hayes <Nr> ( <Literatur> )“.
 - 2026-11-10: Auffällige Werte, die vermutlich Eingabefehler sind (nicht korrigiert, nur festgehalten): `hb-ars-3` Chronologie „Roman-Early Imperial second half of 5th century CE“ (Periode und Datierung passen nicht zusammen); `bd-ars-3` Porosität „40%“ (alle anderen 2,5–15 %); `bd-ars-1` Magerung „20–25% %“; `hb-ars-3` Munsell „5 YR 6/6“ mit Leerzeichen, Katalognummer „Hb.0011“ (sonst dreistellig), `hb-ars-2` Publikation „, ,cat.“.
+- 2026-11-10 (Lauf Probenseiten, lokal): 48 Probenseiten geholt, 0 Fehler. Sie haben dasselbe Markup wie die Fabric-Seiten, aber nur drei Tabs (kein Petrographie-Tab). Jede Probe hat eigene Objektdaten (Form, Typ, Datierung, Maße), denselben Fundort wie die Fabric, Interpretation durchgehend „production“, zwei Kartenpunkte und drei weitere Proben. Analyseautor, Methode und Publikation sind nur bei 1 von 48 Probenseiten gefüllt. Die repräsentativen Proben der Fabric-Seiten (`M 199/1`, `/6`, `/11` usw.) sind keine eigenen Seiten; die vier anderen je Fabric sind die Probenseiten.
+- 2026-11-10: Typangaben sind nicht nur Hayes: `El Mahrine 19 (Mackensen 1993)`, `Atlante X, D2`, `sim. Fulford 27`, `sim. PM 61 (Ben Moussa 2007)`; Unsicherheit als `possibly Hayes 67`, `Hayes 67?`, `sim.`; Varianten wie `Hayes 61A/B4`. Formfeld auch `Lamp` und `unidentified`.
+- 2026-11-10: Datierungen der Proben in vielen Formen: `c. 530–580 CE`, `4th/5th century CE`, `first third 5th century CE`, `320–mid-5th century CE`, `end of 4th–first half of 5th century CE`.
 - 2026-11-10: Der Parser läuft nun gegen echtes Markup; 12 Tests, davon 5 gegen `data/raw/html/ou-ars-1.html`.
 
 ### A2 Zielbild
@@ -89,6 +92,10 @@ Eigenschaften, die das Ergebnis haben muss:
 | Legacy-Skripte | `facem_*.py` und `output/` bleiben bis S6 unverändert | Vorschlag 2026-11-10 |
 | Brücke zu geo-lod | Core-Vokabular per IRI importieren; Messungen nach SOSA/QUDT; Produktionsorte als GeoSPARQL-FeatureCollection | Vorschlag 2026-11-10 |
 | Abrufdatum | kein Datum im Manifest (wäre eine Uhr); der Abruf ist über den Commit datiert | Vorschlag 2026-11-10 |
+| Probe und Objekt | getrennt: Scherbe als E22 Human-Made Object, Probe als eigene Instanz (CRMsci S13 Sample) mit Beziehung zur Scherbe, auch wenn die Seite beides gleichsetzt; Fabric als Konzept (Materialart), dem die Probe zugeordnet wird | 2026-11-10 |
+| Typologien | ein SKOS-Schema je Typologie (Hayes, El Mahrine, Atlante, Fulford, PM u. a.); Unsicherheit (`possibly`, `sim.`, `?`) als eigene Eigenschaft am Typ-Bezug, in Anschluss an die Unsicherheits-Arbeit aus TRAIL 2.5/2.8; Literaturangabe separat als Dokument | 2026-11-10 |
+| Chronologie | Originaltext bleibt unverändert am Objekt; daraus ein abgeleitetes Jahresintervall (von/bis) mit dokumentierten Regeln (z. B. „second half of 5th“ = 450–500), als abgeleitet gekennzeichnet; Periode als SKOS-Konzept | 2026-11-10 |
+| DCAT | alles zusätzlich als DCAT 3.0 / DCAT-AP modelliert: `dcat:Catalog` (FACEM), `dcat:Dataset` je Fabric, `dcat:Distribution` je Datei und Format; Details siehe D7 | 2026-11-10 |
 | Lizenz der Quelle | ungeklärt, die Seiten nennen keine; vor Veröffentlichung der Daten bei den Herausgebenden nachfragen | offen |
 
 ### A5 Was in welchem Chat hochgeladen wird
@@ -121,7 +128,7 @@ Offen: w3id-Registrierung (Pull Request auf `perma-id/w3id.org`), Content Negoti
 | S0 | Festlegungen: Umfang, Rohdaten, Namespace, Wikidata | facem2lod | – | erledigt 2026-11-10 |
 | S1 | Skeleton: `main.py`, `facem_utils.py`, Requirements, README, Citation | facem2lod | S0 | erledigt 2026-11-10 |
 | S2 | Scraper: `harvest` und `parse` für die 12 ARS-Fabrics | facem2lod | S1 | erledigt 2026-11-10 |
-| S3 | JSONs lokal ansehen, Modellierungsliste mit Feldkatalog (Entwurf liegt vor) | facem2lod | S2 | offen |
+| S3 | JSONs lokal ansehen, Modellierungsliste mit Feldkatalog (Entwurf liegt vor, Grundsatzbeschlüsse in A4, Zeilenbeschlüsse offen) | facem2lod | S2 | in Arbeit |
 | S4 | Wikidata-Kandidaten für Orte und Perioden (CSV) | facem2lod | S3 | offen |
 | S5 | SKOS-Vokabulare: Hayes-Typen, Perioden, Einschlüsse | facem2lod | S3, S4 | offen |
 | S6 | Ontologie und RDF-Builder neu (offline aus JSON), SHACL | facem2lod | S5 | offen |
@@ -203,6 +210,17 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 | außerhalb der Tabellen: `other_samples` | `m-201-2` bis `m-201-5` | weitere Proben der Fabric (Seiten werden mit `FOLLOW_SAMPLE_PAGES` geholt) |
 | außerhalb der Tabellen: `images` | Rollen `thin_section`, `macro`, `drawing`, `photo`; Bildunterschrift „OU-ARS-1, M 201/1, 40x“ | Bilder als E36 Visual Item mit Vergrößerung und Maßstab aus der Unterschrift; Oberflächenbilder (`interface`) verwerfen |
 
+**Ergänzungen aus den Probenseiten und Beschlüssen (2026-11-10):**
+
+| Thema | Vorschlag |
+|---|---|
+| Probe, Scherbe, Fabric | Drei Ebenen: Fabric (Konzept) ← Probe (S13) → Scherbe (E22). Die Zeile `sample no` erzeugt die Probe, die Objektdaten (Form, Typ, Datierung, Maße) hängen an der Scherbe. Repräsentative Probe der Fabric = Markierung an einer der Proben, keine eigene Entität |
+| `object type` (Typologien) | Regex zerlegt in Typologie, Typ, Variante, Unsicherheit, Literatur: Präfix `possibly`/`sim.` und Suffix `?` → Eigenschaft „Sicherheit“ (sicher, ähnlich, möglich, fraglich); Typologie-Erkennung über Präfix (`Hayes`, `El Mahrine`, `Atlante`, `Fulford`, `PM`); Unerkanntes bleibt Freitext und wird im Feldkatalog-Bericht gelistet |
+| `chronology of object` | Regelwerk als Tabelle im Code, in einer YAML-Datei dokumentiert: Jahrhundert plus „first/second half/third“, „early/mid/late“, „end of“, Bindestrich-Spannen, `(+)`. Ergebnis `von/bis`; Ableitungsregel als Kennung am Intervall, damit sichtbar bleibt, was abgeleitet ist |
+| Probenseiten ohne Petrographie | fehlende Felder bleiben fehlend (kein leerer Knoten); SHACL kennt für Proben keine Pflicht auf Analysedaten |
+| Datenfehler | Werte aus D5 werden unverändert übernommen und in einem Bericht `dist/` markiert, nicht still korrigiert |
+| DCAT 3.0 / DCAT-AP | `dcat:Catalog` (FACEM, `dcterms:publisher` die Herausgebenden), `dcat:DatasetSeries` für Release 10 (ARS), `dcat:Dataset` je Fabric (mit `dcat:inSeries`, Zeit- und Raumabdeckung aus Chronologie und Kartenpunkt, `dcterms:isPartOf`-Beziehung zu den Proben), `dcat:Distribution` je Quellseite (HTML, `dcat:landingPage`) und je erzeugter Datei (JSON, Turtle) mit `dcat:mediaType`, `dcat:byteSize`, Prüfsumme (`spdx:checksum`); Lizenz offen (D1). Muster wie in der `wdt-metadata`-Schicht (DCAT/PROV, SHACL-Gate) |
+
 **Abnahme:** Jedes Feld des Katalogs ist in der Tabelle (die sieben Einschlusstypen als eine Gruppe); die Probenseiten sind geholt und das Markup ist mit den Fabric-Seiten verglichen; offene Fragen zu einzelnen Zeilen sind beantwortet und die Beschlüsse stehen in A4.
 
 ## S4 – Wikidata-Kandidaten
@@ -221,7 +239,9 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 
 **Ziel:** Ontologie und Instanzgraph werden offline aus den JSONs gebaut, mit SHACL-Gate und byte-stabiler Ausgabe; die Legacy-Skripte werden dabei abgelöst.
 
-**Abnahme:** Zweimal bauen, `git status` sauber; SHACL ohne Verstöße; jede Klasse hat einen CRM-Anker.
+**DCAT:** Der Builder schreibt neben dem Instanzgraphen einen DCAT-Graphen (Catalog, DatasetSeries, Dataset, Distribution nach DCAT 3.0 mit den Pflichtfeldern von DCAT-AP) und ein SHACL-Profil dafür; vor dem Bau wird die aktuelle DCAT-AP-Fassung und ihre Shapes geprüft.
+
+**Abnahme:** Zweimal bauen, `git status` sauber; SHACL ohne Verstöße (Instanz- und DCAT-Graph); jede Klasse hat einen CRM-Anker.
 
 ## S7 – Brücke zu geo-lod
 
@@ -248,4 +268,5 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 - **D1** Lizenz und Nachnutzungsbedingungen der FACEM-Daten bei den Herausgebenden erfragen (Babette Bechtold, Barbara Borgers, Verena Gassner, Carina Hasenzagl), bevor RDF veröffentlicht wird. Ein Export oder eine API wäre bequemer als Scraping, und eine Rückfrage kostet wenig.
 - **D4** Ob `facem2lod` ein eigenständiger Producer bleibt oder in die geo-lod-Familie zieht (Decision Log von geo-lod: dort ist geo-lod alleiniger Producer seiner Artefakte).
 - **D5** Die auffälligen Werte aus den Befunden (u. a. `hb-ars-3` Periode und Datierung, `bd-ars-3` Porosität 40 %) den Herausgebenden melden, bevor wir sie bereinigen oder so übernehmen.
-- **D6** Ob die Probenseiten (`m-201-2` usw.) dasselbe Markup haben, zeigt erst der Harvest.
+- **D6** erledigt 2026-11-10: Probenseiten haben dasselbe Markup, aber drei Tabs (siehe Befunde).
+- **D7** DCAT: Ob ein Dataset je Fabric oder je Probe der richtige Schnitt ist (Vorschlag: je Fabric, Proben als Teile), welche DCAT-AP-Fassung (3.0) Zielprofil ist und ob die Zeit-/Raumabdeckung als `dcterms:temporal`/`dcterms:spatial` am Dataset zusätzlich zur Modellierung am Objekt geführt wird. Die Fassung von DCAT-AP und die Pflichtfelder vor S6 prüfen.
