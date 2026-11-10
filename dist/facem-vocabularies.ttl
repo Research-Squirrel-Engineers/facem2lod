@@ -50,6 +50,81 @@
     skos:notation "XLIX, 10" ;
     skos:broader <http://w3id.org/facem/vocab/atlante/xlix> .
 
+<http://w3id.org/facem/vocab/certainty> a skos:ConceptScheme ;
+    dct:title "Certainty of a type assignment"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/certainty/certain> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/certainty/possible> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/certainty/similar> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/certainty/uncertain> .
+
+<http://w3id.org/facem/vocab/certainty/certain> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/certainty> ;
+    skos:prefLabel "certain"@en ;
+    skos:notation "certain" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/certainty> .
+
+<http://w3id.org/facem/vocab/certainty/possible> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/certainty> ;
+    skos:prefLabel "possible"@en ;
+    skos:notation "possible" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/certainty> .
+
+<http://w3id.org/facem/vocab/certainty/similar> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/certainty> ;
+    skos:prefLabel "similar"@en ;
+    skos:notation "similar" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/certainty> .
+
+<http://w3id.org/facem/vocab/certainty/uncertain> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/certainty> ;
+    skos:prefLabel "uncertain"@en ;
+    skos:notation "uncertain" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/certainty> .
+
+<http://w3id.org/facem/vocab/context-interpretation> a skos:ConceptScheme ;
+    dct:title "Interpretation of context"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/context-interpretation/production> .
+
+<http://w3id.org/facem/vocab/context-interpretation/production> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/context-interpretation> ;
+    skos:prefLabel "production"@en ;
+    skos:notation "production" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/context-interpretation> .
+
+<http://w3id.org/facem/vocab/dimension> a skos:ConceptScheme ;
+    dct:title "Kind of dimension"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/dimension/diameter> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/dimension/height> .
+
+<http://w3id.org/facem/vocab/dimension/diameter> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/dimension> ;
+    skos:prefLabel "diameter"@en ;
+    skos:notation "diameter" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/dimension> .
+
+<http://w3id.org/facem/vocab/dimension/height> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/dimension> ;
+    skos:prefLabel "height"@en ;
+    skos:notation "height" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/dimension> .
+
+<http://w3id.org/facem/vocab/dimension-part> a skos:ConceptScheme ;
+    dct:title "Part of the sherd a dimension refers to"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/dimension-part/base> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/dimension-part/rim> .
+
+<http://w3id.org/facem/vocab/dimension-part/base> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/dimension-part> ;
+    skos:prefLabel "base"@en ;
+    skos:notation "base" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/dimension-part> .
+
+<http://w3id.org/facem/vocab/dimension-part/rim> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/dimension-part> ;
+    skos:prefLabel "rim"@en ;
+    skos:notation "rim" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/dimension-part> .
+
 <http://w3id.org/facem/vocab/el-mahrine> a skos:ConceptScheme ;
     dct:title "El Mahrine typology"@en ;
     dct:source "Mackensen 1993" ;
@@ -676,43 +751,43 @@
     skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-kind/quartz> ;
     skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-kind/reddish-inclusions> .
 
-<http://w3id.org/facem/vocab/inclusion-kind/black-inclusions> a skos:Concept ;
+<http://w3id.org/facem/vocab/inclusion-kind/black-inclusions> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
     skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
     skos:prefLabel "black inclusions"@en ;
     skos:notation "black inclusions" ;
     skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
 
-<http://w3id.org/facem/vocab/inclusion-kind/calciumcarbonate> a skos:Concept ;
+<http://w3id.org/facem/vocab/inclusion-kind/calciumcarbonate> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
     skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
     skos:prefLabel "calciumcarbonate"@en ;
     skos:notation "calciumcarbonate" ;
     skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
 
-<http://w3id.org/facem/vocab/inclusion-kind/carbonate-pseudomorphoses> a skos:Concept ;
+<http://w3id.org/facem/vocab/inclusion-kind/carbonate-pseudomorphoses> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
     skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
     skos:prefLabel "carbonate pseudomorphoses"@en ;
     skos:notation "carbonate pseudomorphoses" ;
     skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
 
-<http://w3id.org/facem/vocab/inclusion-kind/mica> a skos:Concept ;
+<http://w3id.org/facem/vocab/inclusion-kind/mica> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
     skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
     skos:prefLabel "mica"@en ;
     skos:notation "mica" ;
     skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
 
-<http://w3id.org/facem/vocab/inclusion-kind/more-inclusions> a skos:Concept ;
+<http://w3id.org/facem/vocab/inclusion-kind/more-inclusions> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
     skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
     skos:prefLabel "more inclusions"@en ;
     skos:notation "more inclusions" ;
     skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
 
-<http://w3id.org/facem/vocab/inclusion-kind/quartz> a skos:Concept ;
+<http://w3id.org/facem/vocab/inclusion-kind/quartz> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
     skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
     skos:prefLabel "quartz"@en ;
     skos:notation "quartz" ;
     skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
 
-<http://w3id.org/facem/vocab/inclusion-kind/reddish-inclusions> a skos:Concept ;
+<http://w3id.org/facem/vocab/inclusion-kind/reddish-inclusions> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
     skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
     skos:prefLabel "reddish inclusions"@en ;
     skos:notation "reddish inclusions" ;
@@ -782,9 +857,23 @@
 
 <http://w3id.org/facem/vocab/method> a skos:ConceptScheme ;
     dct:title "Method of sample analysis"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/method/observation-under-the-binocular-stereoscope> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/method/visual-examination-of-fresh-break> ;
     skos:hasTopConcept <http://w3id.org/facem/vocab/method/thin-section> .
 
-<http://w3id.org/facem/vocab/method/thin-section> a skos:Concept ;
+<http://w3id.org/facem/vocab/method/observation-under-the-binocular-stereoscope> a skos:Concept , <http://www.w3.org/ns/sosa/Procedure> ;
+    skos:inScheme <http://w3id.org/facem/vocab/method> ;
+    skos:prefLabel "Observation Under the Binocular Stereoscope"@en ;
+    skos:notation "Observation Under the Binocular Stereoscope" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/method> .
+
+<http://w3id.org/facem/vocab/method/visual-examination-of-fresh-break> a skos:Concept , <http://www.w3.org/ns/sosa/Procedure> ;
+    skos:inScheme <http://w3id.org/facem/vocab/method> ;
+    skos:prefLabel "Visual Examination of Fresh Break"@en ;
+    skos:notation "Visual Examination of Fresh Break" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/method> .
+
+<http://w3id.org/facem/vocab/method/thin-section> a skos:Concept , <http://www.w3.org/ns/sosa/Procedure> ;
     skos:inScheme <http://w3id.org/facem/vocab/method> ;
     skos:prefLabel "thin section"@en ;
     skos:notation "thin section" ;
@@ -876,6 +965,82 @@
     skos:prefLabel "PM 61"@en ;
     skos:notation "61" ;
     skos:topConceptOf <http://w3id.org/facem/vocab/pm> .
+
+<http://w3id.org/facem/vocab/property> a skos:ConceptScheme ;
+    dct:title "Observable property of a fabric"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/property/colour-of-fresh-break> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/property/hardness> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/property/inclusions> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/property/porosity> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/property/sorting> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/property/texture-of-fresh-break> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/property/visual-examination-of-fresh-break> .
+
+<http://w3id.org/facem/vocab/property/colour-of-fresh-break> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
+    skos:inScheme <http://w3id.org/facem/vocab/property> ;
+    skos:prefLabel "colour of fresh break"@en ;
+    skos:notation "colour of fresh break" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/property> .
+
+<http://w3id.org/facem/vocab/property/hardness> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
+    skos:inScheme <http://w3id.org/facem/vocab/property> ;
+    skos:prefLabel "hardness"@en ;
+    skos:notation "hardness" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/property> .
+
+<http://w3id.org/facem/vocab/property/inclusions> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
+    skos:inScheme <http://w3id.org/facem/vocab/property> ;
+    skos:prefLabel "inclusions"@en ;
+    skos:notation "inclusions" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/property> .
+
+<http://w3id.org/facem/vocab/property/porosity> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
+    skos:inScheme <http://w3id.org/facem/vocab/property> ;
+    skos:prefLabel "porosity"@en ;
+    skos:notation "porosity" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/property> .
+
+<http://w3id.org/facem/vocab/property/sorting> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
+    skos:inScheme <http://w3id.org/facem/vocab/property> ;
+    skos:prefLabel "sorting"@en ;
+    skos:notation "sorting" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/property> .
+
+<http://w3id.org/facem/vocab/property/texture-of-fresh-break> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
+    skos:inScheme <http://w3id.org/facem/vocab/property> ;
+    skos:prefLabel "texture of fresh break"@en ;
+    skos:notation "texture of fresh break" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/property> .
+
+<http://w3id.org/facem/vocab/property/visual-examination-of-fresh-break> a skos:Concept , <http://w3id.org/facem/ontology/ObservableProperty> ;
+    skos:inScheme <http://w3id.org/facem/vocab/property> ;
+    skos:prefLabel "visual examination of fresh break"@en ;
+    skos:notation "visual examination of fresh break" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/property> .
+
+<http://w3id.org/facem/vocab/qualifier> a skos:ConceptScheme ;
+    dct:title "Qualifier of a type assignment"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/qualifier/late> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/qualifier/no.-1> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/qualifier/var.> .
+
+<http://w3id.org/facem/vocab/qualifier/late> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/qualifier> ;
+    skos:prefLabel "late"@en ;
+    skos:notation "late" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/qualifier> .
+
+<http://w3id.org/facem/vocab/qualifier/no.-1> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/qualifier> ;
+    skos:prefLabel "no. 1"@en ;
+    skos:notation "no. 1" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/qualifier> .
+
+<http://w3id.org/facem/vocab/qualifier/var.> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/qualifier> ;
+    skos:prefLabel "var."@en ;
+    skos:notation "var." ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/qualifier> .
 
 <http://w3id.org/facem/vocab/sorting> a skos:ConceptScheme ;
     dct:title "Sorting"@en ;

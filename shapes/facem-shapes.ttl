@@ -1,0 +1,93 @@
+# SHACL shapes for dist/facem.ttl (written by hand, read by py/step_rdf.py).
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crmsci: <http://www.ics.forth.gr/isl/CRMsci/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix facem: <http://w3id.org/facem/ontology/> .
+@prefix fs: <http://w3id.org/facem/shapes/> .
+
+fs:Labelled a sh:NodeShape ;
+    sh:targetClass facem:Sherd, facem:Sample, facem:SampleTaking, facem:Production, facem:Survey, facem:Place,
+        facem:TypeAssignment, facem:DatingAssignment, facem:Observation, facem:Dimension, facem:Image,
+        facem:Publication, facem:Person, facem:SourceRecord ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "every entity needs a label" ] .
+
+fs:Sherd a sh:NodeShape ; sh:targetClass facem:Sherd ;
+    sh:property [ sh:path facem:primarySource ; sh:minCount 1 ; sh:maxCount 1 ; sh:class facem:SourceRecord ] ,
+        [ sh:path crm:P45_consists_of ; sh:minCount 1 ; sh:class skos:Concept ; sh:message "a sherd needs its fabric" ] ,
+        [ sh:path facem:ware ; sh:minCount 1 ; sh:maxCount 1 ; sh:class skos:Concept ] ,
+        [ sh:path facem:objectForm ; sh:minCount 1 ; sh:class skos:Concept ] ,
+        [ sh:path [ sh:inversePath sosa:isSampleOf ] ; sh:minCount 1 ; sh:message "a sherd needs its sample" ] ,
+        [ sh:path [ sh:inversePath crm:P108_has_produced ] ; sh:minCount 1 ; sh:message "a sherd needs a production" ] ,
+        [ sh:path [ sh:inversePath crm:P140_assigned_attribute_to ] ; sh:minCount 1 ; sh:message "a sherd needs a type assignment and a dating" ] .
+
+fs:Sample a sh:NodeShape ; sh:targetClass facem:Sample ;
+    sh:property [ sh:path sosa:isSampleOf ; sh:minCount 1 ; sh:maxCount 1 ; sh:class facem:Sherd ] ,
+        [ sh:path [ sh:inversePath crmsci:O5_removed ] ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "a sample is removed by exactly one sample taking" ] .
+
+fs:SampleTaking a sh:NodeShape ; sh:targetClass facem:SampleTaking ;
+    sh:property [ sh:path crmsci:O5_removed ; sh:minCount 1 ; sh:maxCount 1 ; sh:class facem:Sample ] ,
+        [ sh:path crm:P14_carried_out_by ; sh:minCount 1 ; sh:class facem:Person ] .
+
+fs:Production a sh:NodeShape ; sh:targetClass facem:Production ;
+    sh:property [ sh:path crm:P108_has_produced ; sh:minCount 1 ; sh:class facem:Sherd ] ,
+        [ sh:path facem:supposedPlace ; sh:minCount 1 ; sh:maxCount 1 ; sh:class facem:Place ] .
+
+fs:Survey a sh:NodeShape ; sh:targetClass facem:Survey ;
+    sh:property [ sh:path crm:P7_took_place_at ; sh:minCount 1 ; sh:maxCount 1 ; sh:class facem:Place ] ,
+        [ sh:path crm:P12_occurred_in_the_presence_of ; sh:minCount 1 ; sh:class facem:Sherd ] .
+
+fs:Place a sh:NodeShape ; sh:targetClass facem:Place ;
+    sh:property [ sh:path geo:hasGeometry ; sh:minCount 1 ; sh:maxCount 1 ; sh:class geo:Geometry ] .
+
+fs:Geometry a sh:NodeShape ; sh:targetClass geo:Geometry ;
+    sh:property [ sh:path geo:asWKT ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype geo:wktLiteral ;
+                  sh:pattern "^POINT\\(-?[0-9.]+ -?[0-9.]+\\)$" ] .
+
+fs:TypeAssignment a sh:NodeShape ; sh:targetClass facem:TypeAssignment ;
+    sh:property [ sh:path crm:P140_assigned_attribute_to ; sh:minCount 1 ; sh:maxCount 1 ; sh:class facem:Sherd ] ,
+        [ sh:path crm:P141_assigned ; sh:minCount 1 ; sh:maxCount 1 ; sh:class skos:Concept ] ,
+        [ sh:path facem:typeCertainty ; sh:minCount 1 ; sh:maxCount 1 ; sh:class skos:Concept ] ,
+        [ sh:path facem:alternativeTo ; sh:maxCount 1 ; sh:class facem:TypeAssignment ] ,
+        [ sh:path facem:concordantWith ; sh:maxCount 1 ; sh:class facem:TypeAssignment ] .
+
+fs:DatingAssignment a sh:NodeShape ; sh:targetClass facem:DatingAssignment ;
+    sh:property [ sh:path crm:P140_assigned_attribute_to ; sh:minCount 1 ; sh:maxCount 1 ; sh:class facem:Sherd ] ,
+        [ sh:path facem:chronologyText ; sh:minCount 1 ; sh:maxCount 1 ] ,
+        [ sh:path facem:periodConcept ; sh:maxCount 1 ; sh:class skos:Concept ] ,
+        [ sh:path crm:P141_assigned ; sh:maxCount 1 ; sh:class crm:E52_Time-Span ] .
+
+fs:TimeSpan a sh:NodeShape ; sh:targetClass crm:E52_Time-Span ;
+    sh:property [ sh:path crm:P82a_begin_of_the_begin ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:gYear ] ,
+        [ sh:path crm:P82b_end_of_the_end ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:gYear ] .
+
+fs:Observation a sh:NodeShape ; sh:targetClass facem:Observation ;
+    sh:property [ sh:path sosa:hasFeatureOfInterest ; sh:minCount 1 ; sh:maxCount 1 ; sh:class facem:Sample ] ,
+        [ sh:path sosa:usedProcedure ; sh:minCount 1 ; sh:maxCount 1 ; sh:class skos:Concept ] ,
+        [ sh:path sosa:observedProperty ; sh:maxCount 1 ; sh:class facem:ObservableProperty ] ,
+        [ sh:path facem:valueMin ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:lessThanOrEquals facem:valueMax ] ,
+        [ sh:path facem:valueMax ; sh:maxCount 1 ; sh:datatype xsd:decimal ] ,
+        [ sh:path facem:sizeMin ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:lessThanOrEquals facem:sizeMax ] ,
+        [ sh:path facem:sizeMax ; sh:maxCount 1 ; sh:datatype xsd:decimal ] .
+
+fs:Dimension a sh:NodeShape ; sh:targetClass facem:Dimension ;
+    sh:property [ sh:path crm:P90_has_value ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:decimal ] ,
+        [ sh:path crm:P91_has_unit ; sh:minCount 1 ; sh:maxCount 1 ] ,
+        [ sh:path facem:dimensionKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:class skos:Concept ] ,
+        [ sh:path [ sh:inversePath crm:P43_has_dimension ] ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+fs:Image a sh:NodeShape ; sh:targetClass facem:Image ;
+    sh:property [ sh:path facem:imageUrl ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:anyURI ] ,
+        [ sh:path facem:imageRole ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( "macro" "thin_section" "drawing" ) ] ,
+        [ sh:path crm:P138_represents ; sh:minCount 1 ] .
+
+fs:Publication a sh:NodeShape ; sh:targetClass facem:Publication ;
+    sh:property [ sh:path crm:P70_documents ; sh:minCount 1 ] .
+
+fs:SourceRecord a sh:NodeShape ; sh:targetClass facem:SourceRecord ;
+    sh:property [ sh:path facem:sourcePage ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:anyURI ] ,
+        [ sh:path facem:sha256 ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[0-9a-f]{64}$" ] .

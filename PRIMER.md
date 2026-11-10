@@ -11,7 +11,7 @@ Arbeitsplan für facem2lod: die FACEM-Datenbank (facem.at, Keramik-Fabrics) als 
 | Was | Wo | Rolle |
 |---|---|---|
 | Quelle | `https://facem.at` | Keramik-Fabrics, Release 10 (November 2026): African Red Slip Ware aus Tunesien |
-| Erster Versuch | `facem_run.py`, `facem_ontology.py`, `facem_pipeline.py`, `output/` | Legacy, bleibt unverändert bis S6 |
+| Erster Versuch | `facem_run.py`, `facem_ontology.py`, `facem_pipeline.py`, `output/` | entfernt in S6 (2026-11-10), steht in der Git-Historie (Commit 6f04b3e) |
 | Skeleton | `main.py`, `py/facem_utils.py` | Orchestrator, Konstanten, kanonische Writer |
 | Harvest | `py/step_harvest.py` | einziger Schritt mit Netzwerk; legt Fabric- und Probenseiten unverändert in `data/raw/html/` ab |
 | Parser | `py/step_parse.py` | HTML → JSON in `data/derived/json/` (Tabs, Sektionen, Kartenpunkte, weitere Proben), Feldkatalog in `data/derived/field_catalogue.json` |
@@ -89,7 +89,7 @@ Eigenschaften, die das Ergebnis haben muss:
 | GeoNames und OSM | nicht direkt gesucht, sondern über Wikidata-Properties (GeoNames-ID P1566, OSM-Relation P402), wo vorhanden | Vorschlag 2026-11-10 |
 | Hayes-Typen | als SKOS-Konzeptschema statt Freitext | 2026-11-10 |
 | Zeitperioden | als eigene SKOS-Konzepte (Zeitspannen) mit Wikidata-Link, wo möglich | 2026-11-10 |
-| Legacy-Skripte | `facem_*.py` und `output/` bleiben bis S6 unverändert | Vorschlag 2026-11-10 |
+| Legacy-Skripte | `facem_*.py` und `output/` sind mit S6 entfernt; die Historie behält sie | 2026-11-10 |
 | Brücke zu geo-lod | Core-Vokabular per IRI importieren; Messungen nach SOSA/QUDT; Produktionsorte als GeoSPARQL-FeatureCollection | Vorschlag 2026-11-10 |
 | Abrufdatum | kein Datum im Manifest (wäre eine Uhr); der Abruf ist über den Commit datiert | Vorschlag 2026-11-10 |
 | Probe und Objekt | getrennt: Scherbe als E22 Human-Made Object, Probe als eigene Instanz (CRMsci S13 Sample) mit Beziehung zur Scherbe, auch wenn die Seite beides gleichsetzt; Fabric als Konzept (Materialart), dem die Probe zugeordnet wird | 2026-11-10 |
@@ -105,6 +105,12 @@ Eigenschaften, die das Ergebnis haben muss:
 | Kontrollierte Werte | alle als SKOS-Schema: Fabric, Ware, Objektform, Fragmentierung, Oberfläche, Bruchstruktur, Härte, Sortierung, Methode, Einschlussart, Häufigkeit, Rundung, Form und Farbe der Einschlüsse, Porenform, Periode; Labels genau wie bei FACEM, nichts wird korrigiert; externe Links (AAT, Wikidata) werden danach wie in S4 vorgeschlagen und von dir bestätigt | 2026-11-10 |
 | Beobachtungen | Kombination: `facem:Observation` ist zugleich `crmsci:S4_Observation` und `sosa:Observation` (Werte mit QUDT-Einheit); Maße als `crm:E54_Dimension`; wo FACEM Labordaten belegt (Dünnschliff, Petrographie), zusätzlich CRMhs (`HS3_Analysis`, `HS9_Study_Object_Sample`) als weitere Oberklasse; nur per IRI, keine Kopie der CC-BY-NC-SA-Ontologie. Dasselbe Muster soll danach in geo-lod nachgezogen werden (D10) | 2026-11-10 |
 | Brücke zu geo-lod | Wiederverwendung per IRI, kein `owl:imports`: `facem:`-Klassen haben dieselben CRM-Anker wie in geo-lod; gemeinsame Teile (`geolod:DataSource`, ObservableProperty, Einheiten) werden über `http://w3id.org/geo-lod/` genutzt; ein Mapping-Block dokumentiert die Gleichungen | 2026-11-10 |
+| Produktion und Fundereignis | als Ereignisse: `facem:Production` (E12, je Fabric, `facem:supposedPlace ⊑ crm:P7`) und `facem:Survey` (E7, je Ort und Jahr, `P7`, `P12`, Zeitspanne); keine einfache Relation | 2026-11-10 |
+| Beobachtungen im Bau | eine `facem:Observation` je beobachteter Eigenschaft und Probe (SOSA: `hasFeatureOfInterest`, `observedProperty`, `usedProcedure`); Ergebnis als Begriff (`facem:resultConcept`), Text (`sosa:hasSimpleResult`) oder Bereich (`valueMin`, `valueMax`, Einheit QUDT, `sizeMin`, `sizeMax` in mm); Dünnschliff als Beobachtung ohne Eigenschaft, nur mit Methode, Autor und Veröffentlichung; CRMhs im Bau nicht verwendet (D10d) | 2026-11-10 |
+| Veröffentlichungen | `facem:Publication` je Werk (`Hasenzagl 2019`), `crm:P70_documents` auf Scherbe, Typ-Zuordnung oder Analyse; die Stelle (`cat. Bd.040, pl. 3`) steht als `facem:catalogueReference` an der Scherbe | 2026-11-10 |
+| Zeitspannen | `crm:E52_Time-Span` mit `P82a`/`P82b` als `xsd:gYear`, Regel `facem-chron-1` (Jahrhundert N = (N−1)·100 bis N·100; Hälfte, Drittel, Viertel, `end`/`late`, `beginning`/`early`, `mid`), Originaltext bleibt an der Datierung; ein Fragezeichen oder `(+)` setzt `facem:intervalUncertain` | 2026-11-10 |
+| Rückwärts laufende Bereiche | steht in FACEM der Endwert unter dem Anfangswert (`0.025-0.0125`), wird keine Zahl erfunden: der Bereich bleibt weg, der Wortlaut steht als `rdfs:comment`, der Lauf meldet `NOTE` (D5b) | 2026-11-10 |
+| DCAT geprüft | der DCAT-Graph erfüllt die offiziellen Shapes von DCAT-AP 3.0.1 (einmalig im Sandkasten gegen `SEMICeu/DCAT-AP` geprüft, nicht im Repo, wegen der Lizenz); im Repo steht ein eigenes Profil `shapes/dcat-shapes.ttl` mit den Pflichtfeldern | 2026-11-10 |
 | Lizenz der Quelle | ungeklärt, die Seiten nennen keine; vor Veröffentlichung der Daten bei den Herausgebenden nachfragen | offen |
 
 ### A5 Was in welchem Chat hochgeladen wird
@@ -112,7 +118,7 @@ Eigenschaften, die das Ergebnis haben muss:
 `PRIMER.md` plus ein Bundle der Quellen. Die HTML-Snapshots gehören dazu, weil sich Parser-Probleme nur an echtem Markup zeigen:
 
 ```cmd
-powershell -NoProfile -Command "Compress-Archive -Path py,tests,data,main.py,PRIMER.md,requirements.txt,facem_run.py,facem_ontology.py,facem_pipeline.py -DestinationPath bundle.zip -Force"
+powershell -NoProfile -Command "Compress-Archive -Path py,tests,data,shapes,visuals,main.py,PRIMER.md,requirements.txt -DestinationPath bundle.zip -Force"
 ```
 
 Nicht hochladen: `.venv/`, `.git/`, `bundle.zip`.
@@ -123,7 +129,7 @@ Nicht hochladen: `.venv/`, `.git/`, `bundle.zip`.
 |---|---|---|---|
 | `http://w3id.org/facem/ontology/` | Ontologie | GitHub Pages dieses Repos | beschlossen (nicht registriert) |
 | `http://w3id.org/facem/entity/` | Instanzen (Fabric, Probe, Objekt, Ort, Analyse) | GitHub Pages | geplant |
-| `http://w3id.org/facem/vocab/<schema>/` | 21 SKOS-Schemata (`hayes`, `atlante`, `el-mahrine`, `fulford`, `pm`, `fabric`, `period`, `object-form`, `fragmentation`, `surface`, `fracture-texture`, `hardness`, `sorting`, `method`, `ware`, `inclusion-kind`, `inclusion-frequency`, `inclusion-roundness`, `inclusion-shape`, `inclusion-colour`, `void-form`); Konzept-IRI `<schema>/<slug der notation>` | GitHub Pages | Schema gebaut, nicht registriert |
+| `http://w3id.org/facem/vocab/<schema>/` | 27 SKOS-Schemata (`hayes`, `atlante`, `el-mahrine`, `fulford`, `pm`, `fabric`, `period`, `object-form`, `fragmentation`, `surface`, `fracture-texture`, `hardness`, `sorting`, `method`, `ware`, `inclusion-kind`, `inclusion-frequency`, `inclusion-roundness`, `inclusion-shape`, `inclusion-colour`, `void-form`, `property`, `dimension`, `dimension-part`, `certainty`, `qualifier`, `context-interpretation`); Konzept-IRI `<schema>/<slug der notation>` | GitHub Pages | Schema gebaut, nicht registriert |
 
 Offen: w3id-Registrierung (Pull Request auf `perma-id/w3id.org`), Content Negotiation für Turtle und HTML, Verhältnis zu `geo-lod` (selbst noch nicht registriert).
 
@@ -139,7 +145,7 @@ Offen: w3id-Registrierung (Pull Request auf `perma-id/w3id.org`), Content Negoti
 | S3 | JSONs lokal ansehen, Modellierungsliste mit Feldkatalog (Entwurf liegt vor, Grundsatzbeschlüsse in A4, Zeilenbeschlüsse offen) | facem2lod | S2 | in Arbeit |
 | S4 | Wikidata-Kandidaten für Orte und Perioden (CSV) | facem2lod | S3 | erledigt 2026-11-10 |
 | S5 | SKOS-Vokabulare: Typologien, Perioden, Einschlüsse | facem2lod | S3, S4 | Vokabulare gebaut, externe Links (AAT, Wikidata) offen |
-| S6 | Ontologie und RDF-Builder neu (offline aus JSON), SHACL | facem2lod | S5 | Modellentwurf zur Abnahme, Aufbau offen |
+| S6 | Ontologie und RDF-Builder neu (offline aus JSON), SHACL | facem2lod | S5 | gebaut 2026-11-10, Abnahme offen (D10a, D10d) |
 | S7 | Brücke zu geo-lod: Core-Import, Messmuster, Orte als FeatureCollection | facem2lod, geo-lod | S6 | offen |
 | S8 | Doku- und Figure-Seiten (Skill `figure-pages-site`) | facem2lod | S6 | offen |
 | S9 | w3id-Registrierung und Redirects | facem2lod | S6 | offen |
@@ -258,6 +264,8 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 
 **Ziel:** Ontologie und Instanzgraph werden offline aus den JSONs gebaut, mit SHACL-Gate und byte-stabiler Ausgabe; die Legacy-Skripte werden dabei abgelöst.
 
+**Gebaut (2026-11-10):** `python main.py` schreibt nach `vocab` den Schritt `rdf` (`py/step_rdf.py`): `dist/facem-ontology.ttl` (aus der Tabelle `py/facem_model.py`), `dist/facem.ttl` (Instanzgraph, rund 13 400 Tripel: 60 Scherben mit Probe, Probenentnahme, Typ- und Datierungszuweisung, Maßen, Beobachtungen, Bildern, Veröffentlichungen, 4 Orte), `dist/facem-dcat.ttl` (Catalog, DatasetSeries, 12 Datasets, Distributions). Danach prüft pyshacl mit `shapes/facem-shapes.ttl` und `shapes/dcat-shapes.ttl`; ein Verstoß ist ein Fehler. Hilfsmodule: `py/ttl.py` (Turtle-Schreiber mit fester Reihenfolge), `py/values.py` (Parser für Maße, Porosität, Einschlüsse, Chronologie). Tests: `tests/test_values.py`, `tests/test_rdf.py`.
+
 **Modellentwurf (2026-11-10, zur Abnahme; nach deinem Okay wird gebaut).** Namespace der Klassen `http://w3id.org/facem/ontology/` (Präfix `facem:`), Instanzen unter `http://w3id.org/facem/entity/<typ>_<id>` (Vorschlag), Vokabulare aus S5. Farben nach deinem Schema: Klasse orange, Objekt der Wirklichkeit grün, Vokabularterm lila, Fremdnamensraum weiß.
 
 ![Modellentwurf S6: Klassen, Anker und Vokabulare](docs/visuals/img/s6-model-draft.png)
@@ -269,7 +277,7 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 | `facem:Sherd` | `crm:E22_Human-Made_Object` | Tab „object data": Form, Typ, Fragmentierung, Oberfläche, Dekor, Maße, Chronologie | geo-lod hat kein Gegenstück; `geolod:PalaeoclimateSample ⊑ E18` ist das Analogon für Proben |
 | `facem:Sample` | `crmsci:S13_Sample`, `sosa:Sample`, (`crmhs:HS9_Study_Object_Sample`) | `sample no` (`M 201/1`), Probenseiten `m-201-2` usw.; die repräsentative Probe der Fabric trägt die Markierung `facem:representativeSampleOf` | wie `geolod:PalaeoclimateSample` |
 | `facem:SampleTaking` | `crmsci:S2_Sample_Taking` | `sample taken: by Carina Hasenzagl` | – |
-| `facem:Production` | `crm:E12_Production` | `supposed site of production` (Ort, Rolle „vermutet" über `crm:P2_has_type`) | – |
+| `facem:Production` | `crm:E12_Production` | `supposed site of production` (Ort über `facem:supposedPlace ⊑ crm:P7`) | – |
 | `facem:Survey` | `crm:E7_Activity` mit Typ „Survey" | `registration code of context: surveyed in 1968` (Jahr als `crm:E52_Time-Span`), `site of discovery` | – |
 | `facem:Place` | `crm:E53_Place`, `geo:Feature` | `map_points` (Koordinate), Beschluss „ein Ort je Name"; Wikidata/GeoNames aus S4 (`exactMatch`, `within`) | `geolod:SamplingLocation ⊑ geo:Feature` |
 | `facem:TypeAssignment` | `crm:E13_Attribute_Assignment` | `object type` aus `object_types.json`: Typologie, Code, Beziehung (`alternative`/`concordance`), Sicherheit, Merkmale, Literatur, Hinweis | Muster von `geolod:MISAttributeAssignment` |
@@ -324,9 +332,10 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 - **D1** Lizenz und Nachnutzungsbedingungen der FACEM-Daten bei den Herausgebenden erfragen (Babette Bechtold, Barbara Borgers, Verena Gassner, Carina Hasenzagl), bevor RDF veröffentlicht wird. Ein Export oder eine API wäre bequemer als Scraping, und eine Rückfrage kostet wenig.
 - **D4** Ob `facem2lod` ein eigenständiger Producer bleibt oder in die geo-lod-Familie zieht (Decision Log von geo-lod: dort ist geo-lod alleiniger Producer seiner Artefakte).
 - **D5a** (Ergänzung 2026-11-10) Literaturangaben der Typen mit abweichender Jahreszahl: `Hayes 61A (Hayes 1997; Bonifay 2004 )` und `Hayes 91/El Mahrine 54.1 (Hayes 1993; Mackensen 1993 )`, sonst überall `Hayes 1972`; `registration code of context` einmal `surveyes in 1968` statt `surveyed`; die Einschlussfarben `clayey` (60 Mal, bei `more inclusions`) und `dark` (einmal) sind keine Farben im engeren Sinn; der Objekttyp `Atlante X, D2 … rim motifs after …` steht einmal mit und einmal ohne Klammer.
+- **D5b** (Ergänzung 2026-11-10) fünf Einschlussgrößen laufen rückwärts oder haben einen Tippfehler: `m-199-14` und `m-199-15` Glimmer `0.025-0.0125`, `m-199-6` Glimmer `0.025-0.0125`, `m-202-6` Glimmer `0.25-0.0125`, `m-202-15` Kalzit `0.25-0.125`; wahrscheinlich `0.125`. Der Builder lässt die Zahlen weg (A4, „Rückwärts laufende Bereiche") und meldet `NOTE`; bei den Herausgebenden melden.
 - **D5** Die auffälligen Werte aus den Befunden (u. a. `hb-ars-3` Periode und Datierung, `bd-ars-3` Porosität 40 %) den Herausgebenden melden, bevor wir sie bereinigen oder so übernehmen.
 - **D6** erledigt 2026-11-10: Probenseiten haben dasselbe Markup, aber drei Tabs (siehe Befunde).
 - **D9** Wikidata-Objekte für Bordj el Djerbi und Henchir el Biar anlegen (optional, nach Rückfrage bei den Herausgebenden; QuickStatements wären der Weg). Aufgefallen: Typologie „El Mahrine“ (Mackensen 1993) kommt in den Proben vor und liegt namentlich nahe bei Henchir el Biar und Bordj el Djerbi (Kirche El Mehrine `Q53645997`, 1,8 bis 2,8 km); ob ein Zusammenhang besteht, wäre bei S5 zu prüfen.
-- **D10** Modellentwurf S6: (a) die Eigenschaftsnamen von CRMsci (`O5 removed`, `O8`, `O24` usw.) und von CRMhs (`HS3`, `HS9`, `HSP…`) sind aus dem Gedächtnis gesetzt und vor dem Bau gegen die Spezifikationen zu prüfen; (b) Produktion und Fundereignis (`E12`, `E7`) sind schwerer als eine direkte Eigenschaft: ob wir sie so detailliert führen oder eine einfache Beziehung `facem:supposedProductionPlace` genügt; (c) das Muster S4 + SOSA + QUDT + CRMhs soll in geo-lod nachgezogen werden (`geolod:PalaeoclimateObservation`, `an:Analysis`), eigener Schritt dort; (d) CRMhs ist CC BY-NC-SA 4.0 und in geo-lod noch Kandidat (Eintrag 2026-11-03): nur IRI-Verwendung, keine Kopie.
+- **D10** Modellentwurf S6 (b) erledigt 2026-11-10: Ereignisse E12/E7 (A4). Offen: (a) die Eigenschaftsnamen von CRMsci (`O5 removed`, `O8`, `O24` usw.) und von CRMhs (`HS3`, `HS9`, `HSP…`) sind aus dem Gedächtnis gesetzt und vor dem Bau gegen die Spezifikationen zu prüfen; (c) das Muster S4 + SOSA + QUDT + CRMhs soll in geo-lod nachgezogen werden (`geolod:PalaeoclimateObservation`, `an:Analysis`), eigener Schritt dort; (d) CRMhs ist CC BY-NC-SA 4.0 und in geo-lod noch Kandidat (Eintrag 2026-11-03): nur IRI-Verwendung, keine Kopie.
 - **D8** Satellit (S10): Export in `facem2lod` oder Importer im Paket `wikibase-static`; Namen `facem-static`; wie die Klassen von `facem2lod` und das CRM-Overlay des Pakets zusammenpassen. Vor S6 klären, damit der Ontologie-Entwurf nichts baut, was der Satellit nicht abbilden kann.
 - **D7** DCAT: Ob ein Dataset je Fabric oder je Probe der richtige Schnitt ist (Vorschlag: je Fabric, Proben als Teile), welche DCAT-AP-Fassung (3.0) Zielprofil ist und ob die Zeit-/Raumabdeckung als `dcterms:temporal`/`dcterms:spatial` am Dataset zusätzlich zur Modellierung am Objekt geführt wird. Die Fassung von DCAT-AP und die Pflichtfelder vor S6 prüfen.

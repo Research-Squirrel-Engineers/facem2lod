@@ -1,6 +1,10 @@
 [parse] parse: 12 fabric pages, 48 sample pages, 39 distinct section/key pairs, 0 without sections, 0 differing from the manifest
-[vocab] vocab: 21 schemes, 129 concepts, 60 object types parsed
+[vocab] vocab: 27 schemes, 150 concepts, 60 object types parsed
 [vocab]   atlante                  7 concepts
+[vocab]   certainty                4 concepts
+[vocab]   context-interpretation   1 concepts
+[vocab]   dimension                2 concepts
+[vocab]   dimension-part           2 concepts
 [vocab]   el-mahrine               9 concepts
 [vocab]   fabric                  12 concepts
 [vocab]   fracture-texture         4 concepts
@@ -13,11 +17,20 @@
 [vocab]   inclusion-kind           7 concepts
 [vocab]   inclusion-roundness      4 concepts
 [vocab]   inclusion-shape          4 concepts
-[vocab]   method                   1 concepts
+[vocab]   method                   3 concepts
 [vocab]   object-form              5 concepts
 [vocab]   period                   2 concepts
 [vocab]   pm                       4 concepts
+[vocab]   property                 7 concepts
+[vocab]   qualifier                3 concepts
 [vocab]   sorting                  3 concepts
 [vocab]   surface                  2 concepts
 [vocab]   void-form                2 concepts
 [vocab]   ware                     1 concepts
+[rdf] NOTE obs_m-199-6-observation-under-the-binocular-stereoscope-mica: size range 0.025-0.0125 runs backwards in FACEM, left out
+[rdf] NOTE obs_m-199-14-observation-under-the-binocular-stereoscope-mica: size range 0.025-0.0125 runs backwards in FACEM, left out
+[rdf] NOTE obs_m-199-15-observation-under-the-binocular-stereoscope-mica: size range 0.025-0.0125 runs backwards in FACEM, left out
+[rdf] NOTE obs_m-202-15-observation-under-the-binocular-stereoscope-calciumcarbonate: size range 0.25-0.125 runs backwards in FACEM, left out
+[rdf] NOTE obs_m-202-6-observation-under-the-binocular-stereoscope-mica: size range 0.25-0.0125 runs backwards in FACEM, left out
+[rdf] rdf: 13423 triples in facem.ttl, 336 in the ontology, 557 in the DCAT graph; 12 fabrics, 60 sherds, 4 places
+[rdf] rdf: SHACL conforms (instance graph, DCAT graph)

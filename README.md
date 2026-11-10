@@ -7,9 +7,9 @@ The plan, the decisions taken so far and the step overview are in `PRIMER.md` (G
 
 ## Status
 
-Work in progress. The harvest and parse steps exist; the RDF model is being rebuilt from their output.
-The scripts `facem_run.py`, `facem_ontology.py` and `facem_pipeline.py` are the first prototype and stay
-unchanged until the rebuild replaces them.
+Work in progress. Harvest, parse, vocabularies and the RDF build exist; the Wikidata links, the bridge to
+geo-lod and the published IRIs are still to do. The first prototype (`facem_*.py`, `output/`) was removed
+when the rebuild replaced it; it stays in the Git history.
 
 ## Run
 
@@ -26,6 +26,7 @@ Everything is driven by one command. Offline steps are the default; fetching fro
 | `harvest` | fetches the fabric pages configured in `py/step_harvest.py` and the sample pages they list (network) | `data/raw/html/`, `data/raw/harvest_manifest.json` |
 | `parse` | turns each page into JSON (tabs and sections, map points, further samples, images) and builds a catalogue of all fields seen | `data/derived/json/`, `data/derived/field_catalogue.json`, `dist/pipeline_report.txt` |
 | `vocab` | builds SKOS vocabularies (typologies, fabrics, periods, descriptors) and splits each object type into structured assignments | `data/derived/vocab/`, `dist/facem-vocabularies.ttl` |
+| `rdf` | builds the ontology, the instance graph and the DCAT graph from the JSON and the vocabularies, then checks them with SHACL (needs `pyshacl`) | `dist/facem-ontology.ttl`, `dist/facem.ttl`, `dist/facem-dcat.ttl` |
 | `wikidata` | proposes Wikidata items for the places and periods found in the data, with GeoNames and OSM IDs where Wikidata has them; you confirm the rows by hand (network) | `data/curated/wikidata_candidates.csv` |
 
 Raw pages are stored exactly as the server sent them, so the parser can be improved without crawling again.

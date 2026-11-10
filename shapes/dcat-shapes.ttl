@@ -1,0 +1,26 @@
+# SHACL profile for dist/facem-dcat.ttl: the mandatory fields of DCAT-AP 3 for the classes used here
+# (Catalogue, Dataset, Dataset Series, Distribution, Agent). The shapes of the EU (SEMICeu/DCAT-AP) are bigger; the PRIMER
+# records that this subset was compared with them.
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix fs: <http://w3id.org/facem/shapes/> .
+
+fs:Catalog a sh:NodeShape ; sh:targetClass dcat:Catalog ;
+    sh:property [ sh:path dct:title ; sh:minCount 1 ] , [ sh:path dct:description ; sh:minCount 1 ] ,
+        [ sh:path dct:publisher ; sh:minCount 1 ; sh:class foaf:Agent ] , [ sh:path dcat:dataset ; sh:minCount 1 ; sh:or ( [ sh:class dcat:Dataset ] [ sh:class dcat:DatasetSeries ] ) ] .
+
+fs:Dataset a sh:NodeShape ; sh:targetClass dcat:Dataset ;
+    sh:property [ sh:path dct:title ; sh:minCount 1 ] , [ sh:path dct:description ; sh:minCount 1 ] ,
+        [ sh:path dcat:distribution ; sh:class dcat:Distribution ] , [ sh:path dct:publisher ; sh:class foaf:Agent ] .
+
+fs:DatasetSeries a sh:NodeShape ; sh:targetClass dcat:DatasetSeries ;
+    sh:property [ sh:path dct:title ; sh:minCount 1 ] , [ sh:path dct:description ; sh:minCount 1 ] ,
+        [ sh:path [ sh:inversePath dcat:inSeries ] ; sh:minCount 1 ; sh:message "a series needs members" ] .
+
+fs:Distribution a sh:NodeShape ; sh:targetClass dcat:Distribution ;
+    sh:property [ sh:path dcat:accessURL ; sh:minCount 1 ] , [ sh:path [ sh:inversePath dcat:distribution ] ; sh:minCount 1 ] .
+
+fs:Agent a sh:NodeShape ; sh:targetClass foaf:Agent ;
+    sh:property [ sh:path foaf:name ; sh:minCount 1 ] .

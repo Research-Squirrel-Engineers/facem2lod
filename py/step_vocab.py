@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from facem_utils import (DATA_DERIVED, DERIVED_JSON, DIST, NS_BASE, ROOT, read_json,
                          write_json)
+from values import parse_dimensions
 
 VOCAB_DIR = DATA_DERIVED / "vocab"
 VOCAB_JSON = VOCAB_DIR / "vocabularies.json"
@@ -56,7 +57,13 @@ SIMPLE = OrderedDict([
     ("hardness", ("Hardness", "fabric description > Visual Examination of Fresh Break", "hardness")),
     ("sorting", ("Sorting", "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)", "sorting")),
     ("method", ("Method of sample analysis", "archaeometry", "applied method for sample analysis")),
+    ("context-interpretation", ("Interpretation of context", "object data > Context Data", "interpretation of context")),
 ])
+ONT = NS_BASE + "ontology/"
+SOSA = "http://www.w3.org/ns/sosa/"
+# every concept of these schemes is also an instance of the given classes
+EXTRA_TYPES = {"property": [ONT + "ObservableProperty"], "inclusion-kind": [ONT + "ObservableProperty"],
+               "method": [SOSA + "Procedure"]}
 INCLUSION_PARTS = ["frequency", "roundness", "shape", "colour"]     # then the size range
 INCLUSION_SCHEMES = {
     "inclusion-frequency": "Frequency of inclusions",
@@ -275,6 +282,37 @@ def build(pages: list) -> tuple:
                 for term in ([t.strip() for t in re.split(r"\s+and\s+", v)] if sid == "fragmentation" else [v]):
                     if term:
                         sch.add(term, count=1, origin=page["id"])
+    # observable properties and the two macroscopic methods, from the fabric description
+    props = Scheme("property", "Observable property of a fabric")
+    schemes["property"] = props
+    meth = schemes["method"]
+    for page in pages:
+        for s in page["sections"]:
+            if s.get("tab") != "fabric description" or s["name"] == INCLUSION_SECTION.split(" > ")[1]:
+                continue
+            m = re.sub(r"\s*\(all lengths in mm\)", "", s["name"]).strip()
+            meth.add(m, count=1, origin=page["id"])
+            for f in s["fields"]:
+                props.add(f["key"], count=1, origin=page["id"])
+    # dimensions: what was measured and where on the sherd
+    dims = Scheme("dimension", "Kind of dimension")
+    parts = Scheme("dimension-part", "Part of the sherd a dimension refers to")
+    schemes["dimension"], schemes["dimension-part"] = dims, parts
+    for page in pages:
+        for v in field_values(page, "object data > Object", "dimensions"):
+            for d in parse_dimensions(v):
+                dims.add(d["kind"], count=1, origin=page["id"])
+                if d["part"]:
+                    parts.add(d["part"], count=1, origin=page["id"])
+    # certainty and qualifiers of the type assignments
+    cert = Scheme("certainty", "Certainty of a type assignment")
+    qual = Scheme("qualifier", "Qualifier of a type assignment")
+    schemes["certainty"], schemes["qualifier"] = cert, qual
+    for pid, t in types.items():
+        for a in t["assignments"]:
+            cert.add(a["certainty"], count=1, origin=pid)
+            for q in a["qualifiers"]:
+                qual.add(q, count=1, origin=pid)
     # inclusions
     kinds = Scheme("inclusion-kind", "Kind of inclusion")
     schemes["inclusion-kind"] = kinds
@@ -340,7 +378,8 @@ def to_turtle(schemes: dict) -> str:
             out.append(f"    skos:hasTopConcept <{c['iri']}>" + (" ;" if i < len(tops) - 1 else " ."))
         out.append("")
         for c in sj["concepts"]:
-            lines = [f"<{c['iri']}> a skos:Concept",
+            extra = "".join(f" , <{t}>" for t in EXTRA_TYPES.get(sid, []))
+            lines = [f"<{c['iri']}> a skos:Concept{extra}",
                      f"skos:inScheme <{sj['iri']}>",
                      f"skos:prefLabel {lit(c['label'])}@en",
                      f"skos:notation {lit(c['notation'])}"]

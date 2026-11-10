@@ -1,10 +1,11 @@
 # harvest and parse
 requests>=2.31
 beautifulsoup4>=4.12
-
-# legacy prototype (facem_pipeline.py, facem_ontology.py); also the RDF step later
-rdflib>=7.0
 lxml>=5.0
+
+# vocab and rdf (Turtle is written by py/ttl.py; rdflib and pyshacl read it back and check it)
+rdflib>=7.0
+pyshacl>=0.26
 
 # figures (visuals/)
 resvg-py>=0.1
