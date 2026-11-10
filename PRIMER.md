@@ -96,6 +96,10 @@ Eigenschaften, die das Ergebnis haben muss:
 | Typologien | ein SKOS-Schema je Typologie (Hayes, El Mahrine, Atlante, Fulford, PM u. a.); Unsicherheit (`possibly`, `sim.`, `?`) als eigene Eigenschaft am Typ-Bezug, in Anschluss an die Unsicherheits-Arbeit aus TRAIL 2.5/2.8; Literaturangabe separat als Dokument | 2026-11-10 |
 | Chronologie | Originaltext bleibt unverändert am Objekt; daraus ein abgeleitetes Jahresintervall (von/bis) mit dokumentierten Regeln (z. B. „second half of 5th“ = 450–500), als abgeleitet gekennzeichnet; Periode als SKOS-Konzept | 2026-11-10 |
 | DCAT | alles zusätzlich als DCAT 3.0 / DCAT-AP modelliert: `dcat:Catalog` (FACEM), `dcat:Dataset` je Fabric, `dcat:Distribution` je Datei und Format; Details siehe D7 | 2026-11-10 |
+| Orte mit Wikidata-Treffer | Uthina `Q269424` (Oudna / Uthina) und Pheradi Majius `Q3378708` (Sidi Khalifa / Pheradi Maius) als `exactMatch`; die modernen Verwaltungseinheiten Oudna `Q131365529` (GeoNames 11903943) und Sidi Khalifa `Q131365730` (GeoNames 11904250) als Kontext „liegt in“ (`within`), damit GeoNames erreichbar bleibt; die antiken Stätten selbst haben in Wikidata weder GeoNames noch OSM | 2026-11-10 |
+| Orte ohne Wikidata-Treffer | Bordj el Djerbi und Henchir el Biar: nur FACEM-Ort mit Koordinate (GeoSPARQL-Punkt), keine Verknüpfung; Wikidata-Objekte anzulegen ist optional (D9) | 2026-11-10 |
+| Periode `Roman-Late Antiquity` | eigenes SKOS-Konzept (so in 59 Seiten geschrieben) mit `skos:closeMatch` auf Late antiquity `Q217050` und `skos:broadMatch` auf Roman Empire `Q2277` | 2026-11-10 |
+| Periode `Roman-Early Imperial` | nur `hb-ars-3`, vermutlich Eingabefehler: Wert unverändert übernommen, keine Wikidata-Verknüpfung, bis die Herausgebenden antworten (D5) | 2026-11-10 |
 | Lizenz der Quelle | ungeklärt, die Seiten nennen keine; vor Veröffentlichung der Daten bei den Herausgebenden nachfragen | offen |
 
 ### A5 Was in welchem Chat hochgeladen wird
@@ -129,7 +133,7 @@ Offen: w3id-Registrierung (Pull Request auf `perma-id/w3id.org`), Content Negoti
 | S1 | Skeleton: `main.py`, `facem_utils.py`, Requirements, README, Citation | facem2lod | S0 | erledigt 2026-11-10 |
 | S2 | Scraper: `harvest` und `parse` für die 12 ARS-Fabrics | facem2lod | S1 | erledigt 2026-11-10 |
 | S3 | JSONs lokal ansehen, Modellierungsliste mit Feldkatalog (Entwurf liegt vor, Grundsatzbeschlüsse in A4, Zeilenbeschlüsse offen) | facem2lod | S2 | in Arbeit |
-| S4 | Wikidata-Kandidaten für Orte und Perioden (CSV) | facem2lod | S3 | Skript fertig, Lauf und Bestätigung offen |
+| S4 | Wikidata-Kandidaten für Orte und Perioden (CSV) | facem2lod | S3 | erledigt 2026-11-10 |
 | S5 | SKOS-Vokabulare: Hayes-Typen, Perioden, Einschlüsse | facem2lod | S3, S4 | offen |
 | S6 | Ontologie und RDF-Builder neu (offline aus JSON), SHACL | facem2lod | S5 | offen |
 | S7 | Brücke zu geo-lod: Core-Import, Messmuster, Orte als FeatureCollection | facem2lod, geo-lod | S6 | offen |
@@ -232,6 +236,8 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 
 **Erster Lauf (2026-11-10, lokal) und Nachbesserung:** 18 Suchen, 80 Zeilen. Befunde: Uthina `Q269424` (archäologische Stätte, 0,12 km von der FACEM-Koordinate) ist ein klarer Treffer, hat aber weder GeoNames noch OSM. Für `Pheradi Maius` fand der Lauf nur das Amphitheater `Q29002299` (Denkmal, 0,12 km), für `Bordj el Djerbi` und `Henchir el Biar` keinen Treffer. Zwei „imada of Tunisia“ ohne englisches Label tragen GeoNames-IDs (`Q131365529` Oudna, GeoNames 11903943; `Q131365730` Sidi Khalifa, GeoNames 11904250); das sind die modernen Verwaltungseinheiten, nicht die antiken Stätten. Die Periodensuche lieferte viel Rauschen (`Roman` allein: Gemeinde, Familienname, Sprache), und die brauchbaren Kandidaten `Q217050` (Late antiquity), `Q2277` (Roman Empire), `Q206414` (Principate) standen weit hinten. Nachbesserung in `step_wikidata.py`: Positionssuche über den Wikidata Query Service (Objekte im Umkreis von 3 km), weitere Schreibweisen je Ort (`PLACE_EXTRA_QUERIES`, u. a. `Pheradi Majus`), `Roman` allein wird nicht gesucht, Rauschklassen (Taxon, Familienname, Gemälde, Begriffsklärung, Artikel …) fallen weg, Perioden-Klassen (historische Periode, Reich) stehen vorn, Label-Fallback auf fr, de, ar, la, it.
 
+**Zweiter Lauf und Beschlüsse (2026-11-10):** 24 Suchen, 83 Zeilen. Pheradi Majius (`Q3378708`) und Uthina (`Q269424`) sind gefunden; für Bordj el Djerbi und Henchir el Biar gibt es auch in 3 km keine Stätte (nur Wadi, Berge, Dorf El Battan `Q3049744`, Kirche El Mehrine `Q53645997`). Die Spalte `match` (exactMatch, closeMatch, broadMatch, within) hält fest, wie der FACEM-Begriff zum Item steht; Rangfolge: Orte zuerst archäologische Stätten, dann nach Entfernung, Perioden zuerst Items der Klasse „historische Periode“. Die Entscheidungen stehen in A4 und in der CSV (6 Zeilen `ja`, 38 `nein`, 17 `offen` bei `Roman-Early Imperial`).
+
 **Abnahme:** Jede Zeile hat `confirmed` = ja, nein oder offen; bestätigte Zeilen werden von S6 gelesen, nichts wird ungeprüft übernommen.
 
 ## S5 – SKOS-Vokabulare
@@ -284,5 +290,6 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 - **D4** Ob `facem2lod` ein eigenständiger Producer bleibt oder in die geo-lod-Familie zieht (Decision Log von geo-lod: dort ist geo-lod alleiniger Producer seiner Artefakte).
 - **D5** Die auffälligen Werte aus den Befunden (u. a. `hb-ars-3` Periode und Datierung, `bd-ars-3` Porosität 40 %) den Herausgebenden melden, bevor wir sie bereinigen oder so übernehmen.
 - **D6** erledigt 2026-11-10: Probenseiten haben dasselbe Markup, aber drei Tabs (siehe Befunde).
+- **D9** Wikidata-Objekte für Bordj el Djerbi und Henchir el Biar anlegen (optional, nach Rückfrage bei den Herausgebenden; QuickStatements wären der Weg). Aufgefallen: Typologie „El Mahrine“ (Mackensen 1993) kommt in den Proben vor und liegt namentlich nahe bei Henchir el Biar und Bordj el Djerbi (Kirche El Mehrine `Q53645997`, 1,8 bis 2,8 km); ob ein Zusammenhang besteht, wäre bei S5 zu prüfen.
 - **D8** Satellit (S10): Export in `facem2lod` oder Importer im Paket `wikibase-static`; Namen `facem-static`; wie die Klassen von `facem2lod` und das CRM-Overlay des Pakets zusammenpassen. Vor S6 klären, damit der Ontologie-Entwurf nichts baut, was der Satellit nicht abbilden kann.
 - **D7** DCAT: Ob ein Dataset je Fabric oder je Probe der richtige Schnitt ist (Vorschlag: je Fabric, Proben als Teile), welche DCAT-AP-Fassung (3.0) Zielprofil ist und ob die Zeit-/Raumabdeckung als `dcterms:temporal`/`dcterms:spatial` am Dataset zusätzlich zur Modellierung am Objekt geführt wird. Die Fassung von DCAT-AP und die Pflichtfelder vor S6 prüfen.

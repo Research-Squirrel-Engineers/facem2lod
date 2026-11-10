@@ -113,11 +113,30 @@ class FilterTests(unittest.TestCase):
         self.assertEqual((period["rank"], article["rank"]), ("1", "2"))
 
 
+class SiteRankTests(unittest.TestCase):
+    def test_archaeological_site_before_nearer_monument(self):
+        o = (36.25, 10.40)
+        site = w.make_row("place", "Sidi Khalifa / Pheradi Maius", "q",
+                          w.read_entity(entity("Q1", "Pheradi Majius", 36.252, 10.4003, p31="Q839954")), o)
+        arch = w.make_row("place", "Sidi Khalifa / Pheradi Maius", "q",
+                          w.read_entity(entity("Q2", "Arch", 36.2499, 10.3999, p31="Q143912")), o)
+        w.rank_rows([arch, site])
+        self.assertEqual((site["rank"], arch["rank"]), ("1", "2"))
+
+    def test_only_historical_period_counts_as_period_class(self):
+        country = w.make_row("period", "Roman-Late Antiquity", "q",
+                             w.read_entity(entity("Q1", "Ancient Rome", p31="Q3024240")))
+        period = w.make_row("period", "Roman-Late Antiquity", "q",
+                            w.read_entity(entity("Q9", "Late antiquity", p31="Q11514315")))
+        w.rank_rows([country, period])
+        self.assertEqual((period["rank"], country["rank"]), ("1", "2"))
+
+
 class MergeTests(unittest.TestCase):
     def test_merge_keeps_decisions(self):
         new = [w.make_row("place", "Oudna / Uthina", "Oudna", w.read_entity(entity("Q1", "Oudna", 36.61, 10.17)), (36.6075, 10.1723))]
         old = [{c: "" for c in w.COLUMNS} | {"kind": "place", "source_label": "Oudna / Uthina",
-                                              "qid": "Q1", "confirmed": "ja", "note": "ok"},
+                                              "qid": "Q1", "confirmed": "ja", "note": "ok", "match": "closeMatch"},
                {c: "" for c in w.COLUMNS} | {"kind": "place", "source_label": "Oudna / Uthina",
                                               "qid": "Q7", "label": "gone", "confirmed": "nein"},
                {c: "" for c in w.COLUMNS} | {"kind": "place", "source_label": "Oudna / Uthina",
@@ -126,6 +145,7 @@ class MergeTests(unittest.TestCase):
         by = {r["qid"]: r for r in merged}
         self.assertEqual(by["Q1"]["confirmed"], "ja")
         self.assertEqual(by["Q1"]["note"], "ok")
+        self.assertEqual(by["Q1"]["match"], "closeMatch")
         self.assertIn("Q7", by)                  # decided rows survive
         self.assertNotIn("Q8", by)               # undecided rows that vanished are dropped
 

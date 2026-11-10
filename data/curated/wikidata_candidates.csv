@@ -1,84 +1,62 @@
-kind,source_label,query,qid,label,description,lat,long,distance_km,geonames_id,osm_relation_id,instance_of,rank,confirmed,note
-place,Bordj el Djerbi,around 3 km,Q49762888,,Wadi in Tunesien,36.79667,9.83861,1.67,2584614,,Q187971,1,,
-place,Bordj el Djerbi,around 3 km,Q3049744,El Battan,Tunisian town,36.80361,9.84389,2.00,2473823,,Q41067667;Q3148864,2,,
-place,Bordj el Djerbi,around 3 km,Q67181473,El Batan Horse Stud Farm,haras national tunisien,36.80734,9.84809,2.28,,,Q108696,3,,
-place,Bordj el Djerbi,around 3 km,Q42600879,El Batan Bridge,bridge and dam in Tunisia,36.80835,9.84842,2.39,,,Q537127;Q12323,4,,
-place,Bordj el Djerbi,around 3 km,Q53645997,El Mehrine church,church in Tunisia,36.76258,9.85699,2.76,,,Q16970,5,,
-place,Henchir el Biar,around 3 km,Q30443399,Argoub Khour Attouga,mountain in Tunisia,36.73389,9.86333,1.48,2584544,,Q8502,1,,
-place,Henchir el Biar,around 3 km,Q53645997,El Mehrine church,church in Tunisia,36.76258,9.85699,1.76,,,Q16970,2,,
-place,Henchir el Biar,around 3 km,Q30443582,Jebel en Nahat,mountain in Tunisia,36.75420,9.83310,2.63,2584602,,Q8502,3,,
-place,Oudna / Uthina,around 3 km,Q42600313,Laberii baths,"ancient Roman thermae in Oudna, Tunisia",36.60767,10.17270,0.04,,,Q6581615,1,,
-place,Oudna / Uthina,Oudna,Q269424,Uthina,archaeological site in Tunisia,36.60847,10.17171,0.12,,,Q839954,2,,
-place,Oudna / Uthina,around 3 km,Q963839,Battle of Adys,battle of the First Punic War in which Rome defeated Carthage,36.60850,10.17170,0.12,,,Q178561,3,,
-place,Oudna / Uthina,around 3 km,Q42600410,House of Laberii,listed monument of Tunisia,36.60888,10.17203,0.16,,,Q109607;Q3950,4,,
-place,Oudna / Uthina,around 3 km,Q104589056,Abziri,archaeological site in Tunisia,36.60500,10.17250,0.28,,,Q839954,5,,
-place,Oudna / Uthina,around 3 km,Q49099909,,,36.60875,10.16956,0.28,7870318,,,6,,
-place,Oudna / Uthina,Oudna,Q13429354,Amphitheatre of Oudna,Roman amphitheatre in Tunisia,36.60860,10.16922,0.30,,,Q7362268,7,,
-place,Oudna / Uthina,around 3 km,Q42600815,Capitoline temple in Oudna,ancient Roman temple of Oudna,36.60467,10.17248,0.31,,,Q867143,8,,
-place,Oudna / Uthina,Oudna,Q42600606,Oudna baths,"ancient Roman thermae in Oudna, Tunisia",36.60619,10.17562,0.33,,,Q6581615,9,,
-place,Oudna / Uthina,around 3 km,Q42600694,Three-arched bridge over a tributary of the Oued Miliane,bridge in Tunisia,36.60638,10.16782,0.42,,,Q12280,10,,
-place,Oudna / Uthina,Oudna,Q42600765,Theatre of Oudna,ancient Roman theatre of Oudna,36.60850,10.17730,0.46,,,Q19757,11,,
-place,Oudna / Uthina,around 3 km,Q42600271,Aqueduct of Oudna,ancient Roman aqueduct in Tunisia,36.60359,10.17445,0.48,,,Q474,12,,
-place,Oudna / Uthina,around 3 km,Q42600851,Site situé à l'ouest du temple,listed monument of Tunisia,36.60319,10.17224,0.48,,,Q109607,13,,
-place,Oudna / Uthina,around 3 km,Q34949862,Aïn Metmat,"spring in Tunis Governorate, Tunisia",36.61528,10.17028,0.88,2590445,,Q124714,14,,
-place,Oudna / Uthina,around 3 km,Q34946332,Aïn el Kerma,"spring in Tunis Governorate, Tunisia - Geonames ID = 2590444",36.61472,10.18556,1.43,2590444,,Q124714,15,,
-place,Oudna / Uthina,around 3 km,Q34943196,Aïn Borj es Saidi,"spring in Tunis Governorate, Tunisia",36.59417,10.18222,1.73,2590483,,Q124714,16,,
-place,Oudna / Uthina,around 3 km,Q34945638,Aïn el Hallalif,"spring in Tunis Governorate, Tunisia",36.59250,10.18000,1.80,2590479,,Q124714,17,,
-place,Oudna / Uthina,around 3 km,Q34942659,Aïn Alalguia,"spring in Tunis Governorate, Tunisia",36.59333,10.18306,1.84,2590486,,Q124714,18,,
-place,Oudna / Uthina,around 3 km,Q34946102,Aïn el Kahola,"spring in Tunis Governorate, Tunisia",36.59806,10.19000,1.90,2590469,,Q124714,19,,
-place,Oudna / Uthina,around 3 km,Q34943765,Aïn Deboubia,"spring in Tunis Governorate, Tunisia",36.60611,10.19528,2.06,2590458,,Q124714,20,,
-place,Oudna / Uthina,around 3 km,Q34948248,Aïn ez Zaouia,"spring in Tunis Governorate, Tunisia",36.59611,10.19278,2.22,2590477,,Q124714,21,,
-place,Oudna / Uthina,Oudna,Q7110269,Oudna Airfield,abandoned World War II military airfield in Tunisia,36.63589,10.09691,7.43,,,Q62447;Q140315050,22,,
-place,Oudna / Uthina,Oudna,Q131365529,Oudna,imada of Tunisia,,,,11903943,,Q3148864,23,,
-place,Oudna / Uthina,Uthina,Q27156753,Uthina,titular see in Tunisia,,,,,,Q15217609,24,,
-place,Sidi Khalifa / Pheradi Maius,Pheradi Maius,Q29002299,Pheradi Maius amphitheatre,Roman amphitheatre in Tunisia,36.25000,10.39700,0.12,,,Q7362268,1,,
-place,Sidi Khalifa / Pheradi Maius,Pheradi Majus,Q42762599,Arch of Pheradi Majus,"triumphal arch in Pheradi Majus, Tunisia",36.24886,10.39995,0.17,,,Q143912,2,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q42762630,Nymphaeum of Pheradi Majus,nymphaeum in Tunisia,36.24831,10.39964,0.20,,,Q731966,3,,
-place,Sidi Khalifa / Pheradi Maius,Pheradi Majus,Q3378708,Pheradi Majius,archaeological site in Tunisia,36.25198,10.40034,0.31,,,Q839954,4,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q42762564,Temple of Venus,ancient Roman temple of Pheradi Majus,36.24705,10.40248,0.48,,,Q867143;Q44539;Q109607;Q839954,5,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q30435511,Jebel Chabet Ben Hassene,mountain in Tunisia,36.24472,10.39278,0.74,2586555,,Q8502,6,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q30435300,Hamadet Damous,mountain in Tunisia,36.24194,10.40444,1.02,2586433,,Q8502,7,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q30441122,,mountain in Tunisia,36.23778,10.39028,1.51,2586435,,Q8502,8,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q30435739,Jebel el Ghirane,mountain in Tunisia,36.26361,10.39167,1.66,2586421,,Q8502,9,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q30355188,,mountain in Tunisia,36.26083,10.38556,1.68,2468201,,Q8502,10,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q30440906,Jebel Chabet el Akam,mountain in Tunisia,36.23472,10.40139,1.69,2586437,,Q8502,11,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q30352773,Jebel Aker,mountain in Tunisia,36.24250,10.38000,1.83,2473924,,Q8502,12,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q49757964,,Wadi in Tunesien,36.26722,10.40139,1.97,2586429,,Q187971,13,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q3483242,Sidi Khelifa,village in Tunisia,36.26382,10.41230,2.01,,,,14,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q30440836,Jebel Bayada,mountain in Tunisia,36.23194,10.40389,2.04,2586436,,Q8502,15,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q30436108,Jebel el Oustani,mountain in Tunisia,36.26750,10.39028,2.11,2586420,,Q8502,16,,
-place,Sidi Khalifa / Pheradi Maius,around 3 km,Q30436407,Jebel Sid,mountain in Tunisia,36.27444,10.39111,2.83,2586419,,Q8502,17,,
-place,Sidi Khalifa / Pheradi Maius,Sidi Khalifa,Q138139166,Sidi Khalifa Mosque,Mosque in Egypt,30.22902,31.26447,2047.82,,,Q32815,18,,
-place,Sidi Khalifa / Pheradi Maius,Sidi Khalifa,Q131365730,Sidi Khalifa,imada of Tunisia,,,,11904250,,Q3148864,19,,
-place,Sidi Khalifa / Pheradi Maius,Sidi Khalifa,Q7508749,Sidi Khalifa,"Basic People's Congress division in Benghazi District, Libya",,,,,,Q4866996;Q486972,20,,
-period,Roman-Early Imperial,ancient Rome,Q1747689,Ancient Rome,country that began growing on the Italian Peninsula from the 8th century BC,41.89000,12.48000,,,,Q3024240;Q28171280;Q26907166,1,,
-period,Roman-Early Imperial,Principate,Q206414,Principate,first period of the Roman Empire (ca. 27 BC to 284 AD),,,,,,Q1307214;Q11514315,2,,
-period,Roman-Early Imperial,Roman Empire,Q2277,Roman Empire,period of Ancient Rome following the Republic,41.90000,12.50000,,8354456,,Q48349;Q11514315;Q3024240,3,,
-period,Roman-Early Imperial,ancient Rome,Q1200427,culture of ancient Rome,pattern of human activity and symbolism associated with ancient Rome and its people,,,,,,Q19958368;Q11514315;Q1292119,4,,
-period,Roman-Early Imperial,Roman Empire,Q12544,Byzantine Empire,Roman Empire during Late Antiquity and the Middle Ages,41.01250,28.98000,,,,Q48349;Q3024240;Q11514315;Q392160;Q56061;Q11042,5,,
-period,Roman-Early Imperial,Roman Empire,Q14618893,Classical Roman Empire,Augustus through Theodosius (27 BC to 395 AD),,,,,,Q17524420;Q11514315;Q3024240,6,,
-period,Roman-Early Imperial,Principate,Q158835,Prince-Bishopric of Liège,ecclesiastic state of the Holy Roman Empire,50.66667,5.50000,,,,Q3024240;Q463742,7,,
-period,Roman-Early Imperial,Principate,Q199389,Principality of Iberia,early medieval aristocratic regime in a core Georgian region of Kartli,,,,,,Q208500;Q3024240,8,,
-period,Roman-Early Imperial,Roman Empire,Q42834,Western Roman Empire,independently administered western provinces of the Roman Empire,41.89306,12.48278,,,,Q48349;Q3024240;Q56061,9,,
-period,Roman-Early Imperial,Early Imperial,Q5326669,Early Imperial China,historical period from 221 to 589 BCE,,,,,,Q17524420;Q11514315,10,,
-period,Roman-Early Imperial,early Roman Empire,Q787204,High Roman Empire,time period (ca. 27 BC to 235 AD),,,,,,Q11514315,11,,
-period,Roman-Early Imperial,Principate,Q958291,United Principalities of Moldavia and Wallachia,1859–1881 personal union and early form of the modern Romanian state,,,,,,Q3024240;Q1371288,12,,
-period,Roman-Early Imperial,Roman Empire,Q11351052,Roman Empire,horse,,,,,,Q726;Q26401003,13,,
-period,Roman-Early Imperial,ancient Rome,Q18287233,ancient Roma,ancient city in the Apennine Peninsula; capital city of the Roman Kingdom and Roman Republic as well as at times the Roman Empire; origin of the Roman civilization,41.89222,12.48528,,,,Q839954;Q15661340,14,,
-period,Roman-Early Imperial,Roman Empire,Q2671119,history of the Roman Empire,occurrences and people in the Roman Empire,,,,,,Q17544377,15,,
-period,Roman-Early Imperial,Early Imperial,Q3348645,Early Imperial campaigns in Germania,series of military conflicts between Germanic tribes and the Romans (12 BC - 16 AD),,,,,,Q831663,16,,
-period,Roman-Early Imperial,Early Imperial,Q98209109,early imperial Roman consul,,,,,,,Q17279032,17,,
-period,Roman-Late Antiquity,ancient Rome,Q1747689,Ancient Rome,country that began growing on the Italian Peninsula from the 8th century BC,41.89000,12.48000,,,,Q3024240;Q28171280;Q26907166,1,,
-period,Roman-Late Antiquity,Late Antiquity,Q217050,Late antiquity,last period of ancient history,,,,,,Q11514315;Q465299;Q11042,2,,
-period,Roman-Late Antiquity,Roman Empire,Q2277,Roman Empire,period of Ancient Rome following the Republic,41.90000,12.50000,,8354456,,Q48349;Q11514315;Q3024240,3,,
-period,Roman-Late Antiquity,ancient Rome,Q1200427,culture of ancient Rome,pattern of human activity and symbolism associated with ancient Rome and its people,,,,,,Q19958368;Q11514315;Q1292119,4,,
-period,Roman-Late Antiquity,Roman Empire,Q12544,Byzantine Empire,Roman Empire during Late Antiquity and the Middle Ages,41.01250,28.98000,,,,Q48349;Q3024240;Q11514315;Q392160;Q56061;Q11042,5,,
-period,Roman-Late Antiquity,Roman Empire,Q14618893,Classical Roman Empire,Augustus through Theodosius (27 BC to 395 AD),,,,,,Q17524420;Q11514315;Q3024240,6,,
-period,Roman-Late Antiquity,Roman Empire,Q42834,Western Roman Empire,independently administered western provinces of the Roman Empire,41.89306,12.48278,,,,Q48349;Q3024240;Q56061,7,,
-period,Roman-Late Antiquity,Roman Empire,Q11351052,Roman Empire,horse,,,,,,Q726;Q26401003,8,,
-period,Roman-Late Antiquity,ancient Rome,Q18287233,ancient Roma,ancient city in the Apennine Peninsula; capital city of the Roman Kingdom and Roman Republic as well as at times the Roman Empire; origin of the Roman civilization,41.89222,12.48528,,,,Q839954;Q15661340,9,,
-period,Roman-Late Antiquity,Roman Empire,Q2671119,history of the Roman Empire,occurrences and people in the Roman Empire,,,,,,Q17544377,10,,
-period,Roman-Late Antiquity,Late Antiquity,Q64630067,Late Antiquity fortress Asamus,archaeological site in Bulgaria,43.69498,24.85138,,,,Q839954,11,,
-period,Roman-Late Antiquity,Late Antiquity,Q64630073,Late antiquity fortress Quintodimum,archaeological site in Bulgaria,43.64105,25.22596,,,,Q839954,12,,
-period,Roman-Late Antiquity,Late Antiquity,Q64630085,Late Antiquity and medieval fortress Mediolana/ Pirgus,archaeological site in Bulgaria,43.74942,25.84177,,,,Q839954,13,,
-period,Roman-Late Antiquity,Late Antiquity,Q6495187,Late Antiquity and Medieval Sites in Kosovo,,,,,,,,14,,
+kind,source_label,query,qid,label,description,lat,long,distance_km,geonames_id,osm_relation_id,instance_of,rank,match,confirmed,note
+place,Bordj el Djerbi,around 3 km,Q3049744,El Battan,Tunisian town,36.80361,9.84389,2.00,2473823,,Q41067667;Q3148864,1,,nein,Beschluss 2026-11-10: kein Wikidata-Objekt der Staette; nur FACEM-Ort mit Koordinate
+place,Bordj el Djerbi,around 3 km,Q67181473,El Batan Horse Stud Farm,haras national tunisien,36.80734,9.84809,2.28,,,Q108696,2,,nein,Beschluss 2026-11-10: kein Wikidata-Objekt der Staette; nur FACEM-Ort mit Koordinate
+place,Bordj el Djerbi,around 3 km,Q42600879,El Batan Bridge,bridge and dam in Tunisia,36.80835,9.84842,2.39,,,Q537127;Q12323,3,,nein,Beschluss 2026-11-10: kein Wikidata-Objekt der Staette; nur FACEM-Ort mit Koordinate
+place,Bordj el Djerbi,around 3 km,Q53645997,El Mehrine church,church in Tunisia,36.76258,9.85699,2.76,,,Q16970,4,,nein,Beschluss 2026-11-10: kein Wikidata-Objekt der Staette; nur FACEM-Ort mit Koordinate
+place,Henchir el Biar,around 3 km,Q53645997,El Mehrine church,church in Tunisia,36.76258,9.85699,1.76,,,Q16970,1,,nein,Beschluss 2026-11-10: kein Wikidata-Objekt der Staette; nur FACEM-Ort mit Koordinate
+place,Oudna / Uthina,Oudna,Q269424,Uthina,archaeological site in Tunisia,36.60847,10.17171,0.12,,,Q839954,1,exactMatch,ja,Beschluss 2026-11-10: antike Staette; GeoNames/OSM fehlen in Wikidata
+place,Oudna / Uthina,around 3 km,Q104589056,Abziri,archaeological site in Tunisia,36.60500,10.17250,0.28,,,Q839954,2,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,around 3 km,Q42600313,Laberii baths,"ancient Roman thermae in Oudna, Tunisia",36.60767,10.17270,0.04,,,Q6581615,3,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,around 3 km,Q963839,Battle of Adys,battle of the First Punic War in which Rome defeated Carthage,36.60850,10.17170,0.12,,,Q178561,4,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,around 3 km,Q42600410,House of Laberii,listed monument of Tunisia,36.60888,10.17203,0.16,,,Q109607;Q3950,5,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,around 3 km,Q49099909,,,36.60875,10.16956,0.28,7870318,,,6,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,Oudna,Q13429354,Amphitheatre of Oudna,Roman amphitheatre in Tunisia,36.60860,10.16922,0.30,,,Q7362268,7,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,around 3 km,Q42600815,Capitoline temple in Oudna,ancient Roman temple of Oudna,36.60467,10.17248,0.31,,,Q867143,8,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,Oudna,Q42600606,Oudna baths,"ancient Roman thermae in Oudna, Tunisia",36.60619,10.17562,0.33,,,Q6581615,9,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,around 3 km,Q42600694,Three-arched bridge over a tributary of the Oued Miliane,bridge in Tunisia,36.60638,10.16782,0.42,,,Q12280,10,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,Oudna,Q42600765,Theatre of Oudna,ancient Roman theatre of Oudna,36.60850,10.17730,0.46,,,Q19757,11,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,around 3 km,Q42600271,Aqueduct of Oudna,ancient Roman aqueduct in Tunisia,36.60359,10.17445,0.48,,,Q474,12,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,around 3 km,Q42600851,Site situé à l'ouest du temple,listed monument of Tunisia,36.60319,10.17224,0.48,,,Q109607,13,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,Oudna,Q7110269,Oudna Airfield,abandoned World War II military airfield in Tunisia,36.63589,10.09691,7.43,,,Q62447;Q140315050,14,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Oudna / Uthina,Oudna,Q131365529,Oudna,imada of Tunisia,,,,11903943,,Q3148864,15,within,ja,"Beschluss 2026-11-10: moderne Verwaltungseinheit (imada), Kontext 'liegt in'; GeoNames 11903943"
+place,Oudna / Uthina,Uthina,Q27156753,Uthina,titular see in Tunisia,,,,,,Q15217609,16,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Sidi Khalifa / Pheradi Maius,Pheradi Majus,Q3378708,Pheradi Majius,archaeological site in Tunisia,36.25198,10.40034,0.31,,,Q839954,1,exactMatch,ja,Beschluss 2026-11-10: antike Staette Pheradi Majius; GeoNames/OSM fehlen in Wikidata
+place,Sidi Khalifa / Pheradi Maius,around 3 km,Q42762564,Temple of Venus,ancient Roman temple of Pheradi Majus,36.24705,10.40248,0.48,,,Q867143;Q44539;Q109607;Q839954,2,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Sidi Khalifa / Pheradi Maius,Pheradi Maius,Q29002299,Pheradi Maius amphitheatre,Roman amphitheatre in Tunisia,36.25000,10.39700,0.12,,,Q7362268,3,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Sidi Khalifa / Pheradi Maius,Pheradi Majus,Q42762599,Arch of Pheradi Majus,"triumphal arch in Pheradi Majus, Tunisia",36.24886,10.39995,0.17,,,Q143912,4,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Sidi Khalifa / Pheradi Maius,around 3 km,Q42762630,Nymphaeum of Pheradi Majus,nymphaeum in Tunisia,36.24831,10.39964,0.20,,,Q731966,5,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Sidi Khalifa / Pheradi Maius,around 3 km,Q3483242,Sidi Khelifa,village in Tunisia,36.26382,10.41230,2.01,,,,6,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Sidi Khalifa / Pheradi Maius,Sidi Khalifa,Q138139166,Sidi Khalifa Mosque,Mosque in Egypt,30.22902,31.26447,2047.82,,,Q32815,7,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+place,Sidi Khalifa / Pheradi Maius,Sidi Khalifa,Q131365730,Sidi Khalifa,imada of Tunisia,,,,11904250,,Q3148864,8,within,ja,"Beschluss 2026-11-10: moderne Verwaltungseinheit (imada), Kontext 'liegt in'; GeoNames 11904250"
+place,Sidi Khalifa / Pheradi Maius,Sidi Khalifa,Q7508749,Sidi Khalifa,"Basic People's Congress division in Benghazi District, Libya",,,,,,Q4866996;Q486972,9,,nein,"nicht die Staette selbst (Bauwerk, Nachbarobjekt oder anderer Ort)"
+period,Roman-Early Imperial,Principate,Q206414,Principate,first period of the Roman Empire (ca. 27 BC to 284 AD),,,,,,Q1307214;Q11514315,1,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Roman Empire,Q2277,Roman Empire,period of Ancient Rome following the Republic,41.90000,12.50000,,8354456,,Q48349;Q11514315;Q3024240,2,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,ancient Rome,Q1200427,culture of ancient Rome,pattern of human activity and symbolism associated with ancient Rome and its people,,,,,,Q19958368;Q11514315;Q1292119,3,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Roman Empire,Q12544,Byzantine Empire,Roman Empire during Late Antiquity and the Middle Ages,41.01250,28.98000,,,,Q48349;Q3024240;Q11514315;Q392160;Q56061;Q11042,4,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Roman Empire,Q14618893,Classical Roman Empire,Augustus through Theodosius (27 BC to 395 AD),,,,,,Q17524420;Q11514315;Q3024240,5,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Early Imperial,Q5326669,Early Imperial China,historical period from 221 to 589 BCE,,,,,,Q17524420;Q11514315,6,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,early Roman Empire,Q787204,High Roman Empire,time period (ca. 27 BC to 235 AD),,,,,,Q11514315,7,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Roman Empire,Q11351052,Roman Empire,horse,,,,,,Q726;Q26401003,8,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,ancient Rome,Q1747689,Ancient Rome,country that began growing on the Italian Peninsula from the 8th century BC,41.89000,12.48000,,,,Q3024240;Q28171280;Q26907166,9,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Principate,Q158835,Prince-Bishopric of Liège,ecclesiastic state of the Holy Roman Empire,50.66667,5.50000,,,,Q3024240;Q463742,10,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,ancient Rome,Q18287233,ancient Roma,ancient city in the Apennine Peninsula; capital city of the Roman Kingdom and Roman Republic as well as at times the Roman Empire; origin of the Roman civilization,41.89222,12.48528,,,,Q839954;Q15661340,11,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Principate,Q199389,Principality of Iberia,early medieval aristocratic regime in a core Georgian region of Kartli,,,,,,Q208500;Q3024240,12,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Roman Empire,Q2671119,history of the Roman Empire,occurrences and people in the Roman Empire,,,,,,Q17544377,13,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Early Imperial,Q3348645,Early Imperial campaigns in Germania,series of military conflicts between Germanic tribes and the Romans (12 BC - 16 AD),,,,,,Q831663,14,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Roman Empire,Q42834,Western Roman Empire,independently administered western provinces of the Roman Empire,41.89306,12.48278,,,,Q48349;Q3024240;Q56061,15,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Principate,Q958291,United Principalities of Moldavia and Wallachia,1859–1881 personal union and early form of the modern Romanian state,,,,,,Q3024240;Q1371288,16,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Early Imperial,Early Imperial,Q98209109,early imperial Roman consul,,,,,,,Q17279032,17,,offen,"Beschluss 2026-11-10: vermuteter Eingabefehler (hb-ars-3, D5), nicht verlinken"
+period,Roman-Late Antiquity,Late Antiquity,Q217050,Late antiquity,last period of ancient history,,,,,,Q11514315;Q465299;Q11042,1,closeMatch,ja,Beschluss 2026-11-10: Late Antiquity als Periodenkonzept
+period,Roman-Late Antiquity,Roman Empire,Q2277,Roman Empire,period of Ancient Rome following the Republic,41.90000,12.50000,,8354456,,Q48349;Q11514315;Q3024240,2,broadMatch,ja,Beschluss 2026-11-10: Roman Empire als uebergeordneter Kontext
+period,Roman-Late Antiquity,ancient Rome,Q1200427,culture of ancient Rome,pattern of human activity and symbolism associated with ancient Rome and its people,,,,,,Q19958368;Q11514315;Q1292119,3,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,Roman Empire,Q12544,Byzantine Empire,Roman Empire during Late Antiquity and the Middle Ages,41.01250,28.98000,,,,Q48349;Q3024240;Q11514315;Q392160;Q56061;Q11042,4,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,Roman Empire,Q14618893,Classical Roman Empire,Augustus through Theodosius (27 BC to 395 AD),,,,,,Q17524420;Q11514315;Q3024240,5,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,Roman Empire,Q11351052,Roman Empire,horse,,,,,,Q726;Q26401003,6,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,ancient Rome,Q1747689,Ancient Rome,country that began growing on the Italian Peninsula from the 8th century BC,41.89000,12.48000,,,,Q3024240;Q28171280;Q26907166,7,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,ancient Rome,Q18287233,ancient Roma,ancient city in the Apennine Peninsula; capital city of the Roman Kingdom and Roman Republic as well as at times the Roman Empire; origin of the Roman civilization,41.89222,12.48528,,,,Q839954;Q15661340,8,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,Roman Empire,Q2671119,history of the Roman Empire,occurrences and people in the Roman Empire,,,,,,Q17544377,9,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,Roman Empire,Q42834,Western Roman Empire,independently administered western provinces of the Roman Empire,41.89306,12.48278,,,,Q48349;Q3024240;Q56061,10,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,Late Antiquity,Q64630067,Late Antiquity fortress Asamus,archaeological site in Bulgaria,43.69498,24.85138,,,,Q839954,11,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,Late Antiquity,Q64630073,Late antiquity fortress Quintodimum,archaeological site in Bulgaria,43.64105,25.22596,,,,Q839954,12,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,Late Antiquity,Q64630085,Late Antiquity and medieval fortress Mediolana/ Pirgus,archaeological site in Bulgaria,43.74942,25.84177,,,,Q839954,13,,nein,andere Bedeutung oder anderer Zeitraum
+period,Roman-Late Antiquity,Late Antiquity,Q6495187,Late Antiquity and Medieval Sites in Kosovo,,,,,,,,14,,nein,andere Bedeutung oder anderer Zeitraum

@@ -20,7 +20,7 @@ Obvious noise (taxa, family names, paintings, disambiguation pages ...) is dropp
 number is printed; the class list NOISE_CLASSES is in the CONFIG block.
 
 The result is data/curated/wikidata_candidates.csv. You decide: fill `confirmed` with
-ja, nein or offen (empty = offen). A rerun keeps your `confirmed` and `note` cells and never
+ja, nein or offen (empty = offen) and `match` with how the term relates to the item. A rerun keeps your `match`, `confirmed` and `note` cells and never
 drops a row you confirmed. Nothing is taken over without 'ja' (S6 reads only those rows).
 """
 
@@ -80,9 +80,14 @@ NOISE_CLASSES = {
     "Q133067",     # mosaic
     "Q7725634",    # literary work
     "Q3331189",    # edition
+    "Q8502",       # mountain (GeoNames toponyms near the sites)
+    "Q124714",     # spring
+    "Q187971",     # wadi
 }
-# Classes that make a period candidate more likely (historical period, empire, ...).
-PERIOD_CLASSES = {"Q11514315", "Q186081", "Q1307214", "Q48349", "Q3024240", "Q465299"}
+# Class that makes a period candidate more likely (historical period) and the class that
+# does the same for a place (archaeological site).
+PERIOD_CLASSES = {"Q11514315"}
+SITE_CLASSES = {"Q839954"}
 
 PERIOD_EXTRA_QUERIES = {
     "Roman": ["Roman Empire", "ancient Rome"],
@@ -92,7 +97,9 @@ PERIOD_EXTRA_QUERIES = {
 
 COLUMNS = ["kind", "source_label", "query", "qid", "label", "description", "lat", "long",
            "distance_km", "geonames_id", "osm_relation_id", "instance_of", "rank",
-           "confirmed", "note"]
+           "match", "confirmed", "note"]
+# `match` is yours too: how the FACEM term relates to the item (exactMatch, closeMatch,
+# broadMatch, within); S6 turns it into the SKOS or CRM link.
 KEY = ("kind", "source_label", "qid")
 
 
@@ -210,8 +217,8 @@ def make_row(kind, source_label, query, info, origin=None) -> dict:
 
 
 def rank_rows(rows: list) -> None:
-    """Fills `rank` per (kind, source_label). Places: by distance to the FACEM point (no
-    coordinates last). Periods: items of a period class first, then exact label matches to
+    """Fills `rank` per (kind, source_label). Places: archaeological sites first, then by
+    distance to the FACEM point (no coordinates last). Periods: items of a period class first, then exact label matches to
     one of the search words, then the rest."""
     groups = {}
     for r in rows:
@@ -223,7 +230,9 @@ def rank_rows(rows: list) -> None:
             def sort_key(r):
                 d = float(r["distance_km"]) if r["distance_km"] else 1e9
                 exact = 0 if r["label"].lower() in names else 1
-                return (d, exact, r["qid"])
+                classes = set(filter(None, r["instance_of"].split(";")))
+                site = 0 if classes & SITE_CLASSES else 1
+                return (site, d, exact, r["qid"])
         else:
             words = {q.lower() for q in queries_for_period(source)}
 
@@ -237,7 +246,7 @@ def rank_rows(rows: list) -> None:
 
 
 def merge_rows(new_rows: list, old_rows: list) -> list:
-    """Keep `confirmed` and `note` of old rows; keep old rows with a decision even if the
+    """Keep `match`, `confirmed` and `note` of old rows; keep old rows with a decision even if the
     new search no longer finds them."""
     old = {tuple(r[k] for k in KEY): r for r in old_rows}
     merged, seen = [], set()
@@ -247,11 +256,11 @@ def merge_rows(new_rows: list, old_rows: list) -> list:
             continue
         seen.add(key)
         if key in old:
-            r["confirmed"] = old[key].get("confirmed", "")
-            r["note"] = old[key].get("note", "")
+            for col in ("match", "confirmed", "note"):
+                r[col] = old[key].get(col, "")
         merged.append(r)
     for key, r in old.items():
-        if key not in seen and (r.get("confirmed") or r.get("note")):
+        if key not in seen and (r.get("confirmed") or r.get("note") or r.get("match")):
             merged.append({c: r.get(c, "") for c in COLUMNS})
     rank_rows(merged)
     order = {"place": 0, "period": 1}
