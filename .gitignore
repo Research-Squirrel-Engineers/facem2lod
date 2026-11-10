@@ -209,3 +209,4 @@ __marimo__/
 # --- facem2lod ---
 .venv/
 bundle.zip
+PATCH-README.md
