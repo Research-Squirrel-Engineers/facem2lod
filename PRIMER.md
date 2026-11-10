@@ -129,7 +129,7 @@ Offen: w3id-Registrierung (Pull Request auf `perma-id/w3id.org`), Content Negoti
 | S1 | Skeleton: `main.py`, `facem_utils.py`, Requirements, README, Citation | facem2lod | S0 | erledigt 2026-11-10 |
 | S2 | Scraper: `harvest` und `parse` für die 12 ARS-Fabrics | facem2lod | S1 | erledigt 2026-11-10 |
 | S3 | JSONs lokal ansehen, Modellierungsliste mit Feldkatalog (Entwurf liegt vor, Grundsatzbeschlüsse in A4, Zeilenbeschlüsse offen) | facem2lod | S2 | in Arbeit |
-| S4 | Wikidata-Kandidaten für Orte und Perioden (CSV) | facem2lod | S3 | offen |
+| S4 | Wikidata-Kandidaten für Orte und Perioden (CSV) | facem2lod | S3 | Skript fertig, Lauf und Bestätigung offen |
 | S5 | SKOS-Vokabulare: Hayes-Typen, Perioden, Einschlüsse | facem2lod | S3, S4 | offen |
 | S6 | Ontologie und RDF-Builder neu (offline aus JSON), SHACL | facem2lod | S5 | offen |
 | S7 | Brücke zu geo-lod: Core-Import, Messmuster, Orte als FeatureCollection | facem2lod, geo-lod | S6 | offen |
@@ -227,6 +227,8 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 ## S4 – Wikidata-Kandidaten
 
 **Ziel:** Eine CSV mit je einem Kandidaten pro Produktions-/Fundort und Zeitperiode (Wikidata-ID, Label, Treffer-Qualität), daneben GeoNames-ID und OSM-ID aus den Wikidata-Properties. Das Skript läuft lokal (Netzwerk, eigener Verb), du bestätigst die Zeilen.
+
+**Umsetzung (2026-11-10):** `py/step_wikidata.py`, Verb `python main.py wikidata` (Netzwerk, nie im Standardlauf). Die Begriffe kommen aus den geparsten JSONs: 4 Orte aus den Kartenpunkten (`Oudna / Uthina` wird zu `Oudna` und `Uthina` gesucht; die FACEM-Koordinate dient der Entfernungsprüfung) und 2 Perioden aus dem Anfang von `chronology of object` (`Roman-Late Antiquity` in 59 Seiten, `Roman-Early Imperial` in 1, jeweils als Ganzes und in Teilen gesucht; Zusatzbegriffe wie `Roman Empire` im CONFIG-Block). Je Begriff fragt das Skript Wikidata (`wbsearchentities`, 7 Treffer) und liest die Treffer (`wbgetentities`): Koordinate (P625), GeoNames-ID (P1566), OSM-Relation (P402), Instanz von (P31). Ergebnis: `data/curated/wikidata_candidates.csv` (kein abgeleiteter Ordner, weil du die Spalten `confirmed` und `note` von Hand ausfüllst). Orte sind nach Entfernung zur FACEM-Koordinate gereiht, Perioden nach exakter Label-Übereinstimmung. Ein neuer Lauf behält deine Entscheidungen und lässt keine Zeile mit Entscheidung fallen. 10 Tests laufen offline (`tests/test_wikidata.py`).
 
 **Abnahme:** Jede Zeile hat `confirmed` = ja, nein oder offen; bestätigte Zeilen werden von S6 gelesen, nichts wird ungeprüft übernommen.
 

@@ -25,6 +25,7 @@ Everything is driven by one command. Offline steps are the default; fetching fro
 |---|---|---|
 | `harvest` | fetches the fabric pages configured in `py/step_harvest.py` and the sample pages they list (network) | `data/raw/html/`, `data/raw/harvest_manifest.json` |
 | `parse` | turns each page into JSON (tabs and sections, map points, further samples, images) and builds a catalogue of all fields seen | `data/derived/json/`, `data/derived/field_catalogue.json`, `dist/pipeline_report.txt` |
+| `wikidata` | proposes Wikidata items for the places and periods found in the data, with GeoNames and OSM IDs where Wikidata has them; you confirm the rows by hand (network) | `data/curated/wikidata_candidates.csv` |
 
 Raw pages are stored exactly as the server sent them, so the parser can be improved without crawling again.
 No generated file contains a timestamp; running the pipeline twice leaves `git status` clean.
