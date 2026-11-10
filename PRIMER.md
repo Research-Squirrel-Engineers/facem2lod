@@ -135,6 +135,7 @@ Offen: w3id-Registrierung (Pull Request auf `perma-id/w3id.org`), Content Negoti
 | S7 | Brücke zu geo-lod: Core-Import, Messmuster, Orte als FeatureCollection | facem2lod, geo-lod | S6 | offen |
 | S8 | Doku- und Figure-Seiten (Skill `figure-pages-site`) | facem2lod | S6 | offen |
 | S9 | w3id-Registrierung und Redirects | facem2lod | S6 | offen |
+| S10 | Satellit `n4o-rse/facem-static`: FACEM-Daten als statische Wikibase-Seite im `wikibase-static`-Verbund | facem2lod, wikibase-static | S6, S9 | offen |
 
 Status ist `offen`, `erledigt <Datum>` oder `hinfällig`. Schritt-IDs werden nie umnummeriert.
 
@@ -261,6 +262,16 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 
 **Abnahme:** Jede IRI aus A6 mit Status `aktiv` löst auf die erwartete Seite auf.
 
+## S10 – Satellit für wikibase-static
+
+**Ziel:** Das erzeugte TTL (und der DCAT-Graph) hängt als Satellit an `https://github.com/n4o-rse/wikibase-static`, wie `fuzzy-sl-static`, `chublets-wikibase-demo` und `osm-benchmarks-static`: ein eigenes Site-Repo (`facem-static`) mit `site.yaml`, das durch das Paket zu einer statischen, read-only Wikibase-Seite mit Suche, Karte und SPARQL gebaut wird.
+
+**Was ich im Paket gesehen habe (Stand des Repos am 2026-11-10):** Satelliten bekommen ihre Daten über vier CSV-Tabellen plus `idmap.csv` (`from-csv` macht daraus das Wikibase-JSON); Importer (`import-open-archaeo`, `import-wikidata`, `import-osm`) schreiben diese Tabellen aus einer Quelle, mit einer Zuordnungstabelle Rolle → Property im Site-Repo, Herkunft je Zeile (`origin`) und Handzeilen, die gewinnen. Das Paket erzeugt selbst DCAT 3 (Catalog = Wikibase) und ein CRM-Overlay mit `check-crm`. Ein Import aus TTL oder aus unserem JSON gibt es nicht.
+
+**Folgerung (Vorschlag):** In `facem2lod` entsteht ein Export `data/derived/csv/` im Tabellenformat von `wikibase-static` (Item je Fabric, Probe, Scherbe, Ort, Typ, Periode; Statements mit Referenz auf die Quellseite) und eine Zuordnung unserer Eigenschaften zu den Properties der Satelliten-Wikibase; ob dafür ein Importer ins Paket gehört (wie `import-osm`) oder der Export in `facem2lod` bleibt, ist D8. Die CRM-Zuordnung (`data/crm.csv`) und die w3id-IRIs aus A6 müssen mit dem Overlay des Pakets zusammenpassen, damit TTL von `facem2lod` und TTL des Satelliten dieselben Klassen sagen.
+
+**Abnahme:** Das Site-Repo baut mit `python main.py --strict` zweimal ohne Änderung; `check-crm` ohne Verstoß; jede Fabric-Seite führt über ihre w3id-IRI auf dasselbe Objekt.
+
 ---
 
 ## Teil D – Offene Punkte
@@ -269,4 +280,5 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 - **D4** Ob `facem2lod` ein eigenständiger Producer bleibt oder in die geo-lod-Familie zieht (Decision Log von geo-lod: dort ist geo-lod alleiniger Producer seiner Artefakte).
 - **D5** Die auffälligen Werte aus den Befunden (u. a. `hb-ars-3` Periode und Datierung, `bd-ars-3` Porosität 40 %) den Herausgebenden melden, bevor wir sie bereinigen oder so übernehmen.
 - **D6** erledigt 2026-11-10: Probenseiten haben dasselbe Markup, aber drei Tabs (siehe Befunde).
+- **D8** Satellit (S10): Export in `facem2lod` oder Importer im Paket `wikibase-static`; Namen `facem-static`; wie die Klassen von `facem2lod` und das CRM-Overlay des Pakets zusammenpassen. Vor S6 klären, damit der Ontologie-Entwurf nichts baut, was der Satellit nicht abbilden kann.
 - **D7** DCAT: Ob ein Dataset je Fabric oder je Probe der richtige Schnitt ist (Vorschlag: je Fabric, Proben als Teile), welche DCAT-AP-Fassung (3.0) Zielprofil ist und ob die Zeit-/Raumabdeckung als `dcterms:temporal`/`dcterms:spatial` am Dataset zusätzlich zur Modellierung am Objekt geführt wird. Die Fassung von DCAT-AP und die Pflichtfelder vor S6 prüfen.
