@@ -100,6 +100,9 @@ Eigenschaften, die das Ergebnis haben muss:
 | Orte ohne Wikidata-Treffer | Bordj el Djerbi und Henchir el Biar: nur FACEM-Ort mit Koordinate (GeoSPARQL-Punkt), keine Verknüpfung; Wikidata-Objekte anzulegen ist optional (D9) | 2026-11-10 |
 | Periode `Roman-Late Antiquity` | eigenes SKOS-Konzept (so in 59 Seiten geschrieben) mit `skos:closeMatch` auf Late antiquity `Q217050` und `skos:broadMatch` auf Roman Empire `Q2277` | 2026-11-10 |
 | Periode `Roman-Early Imperial` | nur `hb-ars-3`, vermutlich Eingabefehler: Wert unverändert übernommen, keine Wikidata-Verknüpfung, bis die Herausgebenden antworten (D5) | 2026-11-10 |
+| Typologien | je Typologie ein SKOS-Schema (Hayes, Atlante, El Mahrine, Fulford, PM); Hierarchie aus der Notation (61B3 → 61B → 61, `XLIX, 10` → `XLIX`, `18.2` → `18`); `var. Sidi Khalifa` und `var. PM 34.11` sind Untertyp-Konzepte (die PM-Variante mit `skos:closeMatch` auf das PM-Konzept); `late`, `no. 1`, bloßes `var.`, `?`, `possibly`, `sim.` sind Merkmale der Zuordnung, nicht Konzepte | 2026-11-10 |
+| Mehrfachangaben mit Schrägstrich | mehrere Typ-Zuordnungen am Objekt; Beziehung `alternative` (gleiche Typologie, z. B. `Hayes 61A/B4`, `Atlante VIII A/C`) oder `concordance` (zwei Typologien, z. B. `Hayes 76/EM 10.1`); `EM` = El Mahrine; der Originaltext bleibt am Objekt | 2026-11-10 |
+| Kontrollierte Werte | alle als SKOS-Schema: Fabric, Ware, Objektform, Fragmentierung, Oberfläche, Bruchstruktur, Härte, Sortierung, Methode, Einschlussart, Häufigkeit, Rundung, Form und Farbe der Einschlüsse, Porenform, Periode; Labels genau wie bei FACEM, nichts wird korrigiert; externe Links (AAT, Wikidata) werden danach wie in S4 vorgeschlagen und von dir bestätigt | 2026-11-10 |
 | Lizenz der Quelle | ungeklärt, die Seiten nennen keine; vor Veröffentlichung der Daten bei den Herausgebenden nachfragen | offen |
 
 ### A5 Was in welchem Chat hochgeladen wird
@@ -118,8 +121,7 @@ Nicht hochladen: `.venv/`, `.git/`, `bundle.zip`.
 |---|---|---|---|
 | `http://w3id.org/facem/ontology/` | Ontologie | GitHub Pages dieses Repos | beschlossen (nicht registriert) |
 | `http://w3id.org/facem/entity/` | Instanzen (Fabric, Probe, Objekt, Ort, Analyse) | GitHub Pages | geplant |
-| `http://w3id.org/facem/vocab/hayes/` | Hayes-Typen (SKOS) | GitHub Pages | geplant |
-| `http://w3id.org/facem/vocab/period/` | Zeitperioden (SKOS) | GitHub Pages | geplant |
+| `http://w3id.org/facem/vocab/<schema>/` | 21 SKOS-Schemata (`hayes`, `atlante`, `el-mahrine`, `fulford`, `pm`, `fabric`, `period`, `object-form`, `fragmentation`, `surface`, `fracture-texture`, `hardness`, `sorting`, `method`, `ware`, `inclusion-kind`, `inclusion-frequency`, `inclusion-roundness`, `inclusion-shape`, `inclusion-colour`, `void-form`); Konzept-IRI `<schema>/<slug der notation>` | GitHub Pages | Schema gebaut, nicht registriert |
 
 Offen: w3id-Registrierung (Pull Request auf `perma-id/w3id.org`), Content Negotiation für Turtle und HTML, Verhältnis zu `geo-lod` (selbst noch nicht registriert).
 
@@ -134,7 +136,7 @@ Offen: w3id-Registrierung (Pull Request auf `perma-id/w3id.org`), Content Negoti
 | S2 | Scraper: `harvest` und `parse` für die 12 ARS-Fabrics | facem2lod | S1 | erledigt 2026-11-10 |
 | S3 | JSONs lokal ansehen, Modellierungsliste mit Feldkatalog (Entwurf liegt vor, Grundsatzbeschlüsse in A4, Zeilenbeschlüsse offen) | facem2lod | S2 | in Arbeit |
 | S4 | Wikidata-Kandidaten für Orte und Perioden (CSV) | facem2lod | S3 | erledigt 2026-11-10 |
-| S5 | SKOS-Vokabulare: Hayes-Typen, Perioden, Einschlüsse | facem2lod | S3, S4 | offen |
+| S5 | SKOS-Vokabulare: Typologien, Perioden, Einschlüsse | facem2lod | S3, S4 | Vokabulare gebaut, externe Links (AAT, Wikidata) offen |
 | S6 | Ontologie und RDF-Builder neu (offline aus JSON), SHACL | facem2lod | S5 | offen |
 | S7 | Brücke zu geo-lod: Core-Import, Messmuster, Orte als FeatureCollection | facem2lod, geo-lod | S6 | offen |
 | S8 | Doku- und Figure-Seiten (Skill `figure-pages-site`) | facem2lod | S6 | offen |
@@ -244,7 +246,11 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 
 **Ziel:** Hayes-Typen, Zeitperioden und (falls S3 es nahelegt) Einschlussarten als SKOS-Konzeptschemata mit `skos:notation` und Wikidata-/Getty-Links, wo bestätigt.
 
-**Abnahme:** Jeder in den JSONs vorkommende Hayes-Wert und jede Periode hat ein Konzept oder steht in einer Liste „nicht abgebildet".
+**Umsetzung (2026-11-10):** `py/step_vocab.py`, Schritt `vocab` im Standardlauf (offline, nach `parse`). Schreibt `data/derived/vocab/vocabularies.json` (Schemata und Konzepte mit Notation, Label, Oberbegriff, Anzahl, Herkunft), `data/derived/vocab/object_types.json` (der Objekttyp jeder Seite zerlegt in Zuordnungen mit Typologie, Code, Beziehung, Sicherheit, Merkmalen, Literatur, Hinweis) und `dist/facem-vocabularies.ttl` (SKOS, 794 Tripel, mit rdflib gelesen). Ergebnis: 21 Schemata, 129 Konzepte, alle 60 Objekttypen verstanden; Hayes 40 Konzepte (darunter abgeleitete Oberbegriffe wie `61`), Atlante 7, El Mahrine 9, PM 4, Fulford 1. Die Perioden `Roman-Late Antiquity` (`skos:closeMatch` Q217050, `skos:broadMatch` Q2277) und `Roman-Early Imperial` (ohne Link) kommen aus den Entscheidungen von S4. 12 Tests (`tests/test_vocab.py`).
+
+**Noch offen:** Getty-AAT- und Wikidata-Vorschläge für Objektform, Oberfläche, Härte, Bruchstruktur und Einschlussarten (Skript wie in S4, du bestätigst); die Farbwerte (Munsell) und die Maße sind keine Vokabulare und werden in S6 als Messwerte modelliert.
+
+**Abnahme:** Jeder in den JSONs vorkommende Typ, jede Periode und jeder kontrollierte Wert hat ein Konzept (geprüft: `python main.py` meldet keinen `WARN`); externe Links stehen nur dort, wo du sie bestätigt hast.
 
 ## S6 – Ontologie und RDF-Builder neu
 
@@ -288,6 +294,7 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 
 - **D1** Lizenz und Nachnutzungsbedingungen der FACEM-Daten bei den Herausgebenden erfragen (Babette Bechtold, Barbara Borgers, Verena Gassner, Carina Hasenzagl), bevor RDF veröffentlicht wird. Ein Export oder eine API wäre bequemer als Scraping, und eine Rückfrage kostet wenig.
 - **D4** Ob `facem2lod` ein eigenständiger Producer bleibt oder in die geo-lod-Familie zieht (Decision Log von geo-lod: dort ist geo-lod alleiniger Producer seiner Artefakte).
+- **D5a** (Ergänzung 2026-11-10) Literaturangaben der Typen mit abweichender Jahreszahl: `Hayes 61A (Hayes 1997; Bonifay 2004 )` und `Hayes 91/El Mahrine 54.1 (Hayes 1993; Mackensen 1993 )`, sonst überall `Hayes 1972`; `registration code of context` einmal `surveyes in 1968` statt `surveyed`; die Einschlussfarben `clayey` (60 Mal, bei `more inclusions`) und `dark` (einmal) sind keine Farben im engeren Sinn; der Objekttyp `Atlante X, D2 … rim motifs after …` steht einmal mit und einmal ohne Klammer.
 - **D5** Die auffälligen Werte aus den Befunden (u. a. `hb-ars-3` Periode und Datierung, `bd-ars-3` Porosität 40 %) den Herausgebenden melden, bevor wir sie bereinigen oder so übernehmen.
 - **D6** erledigt 2026-11-10: Probenseiten haben dasselbe Markup, aber drei Tabs (siehe Befunde).
 - **D9** Wikidata-Objekte für Bordj el Djerbi und Henchir el Biar anlegen (optional, nach Rückfrage bei den Herausgebenden; QuickStatements wären der Weg). Aufgefallen: Typologie „El Mahrine“ (Mackensen 1993) kommt in den Proben vor und liegt namentlich nahe bei Henchir el Biar und Bordj el Djerbi (Kirche El Mehrine `Q53645997`, 1,8 bis 2,8 km); ob ein Zusammenhang besteht, wäre bei S5 zu prüfen.

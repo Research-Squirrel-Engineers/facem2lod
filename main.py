@@ -27,6 +27,7 @@ REPORT = ROOT / "dist" / "pipeline_report.txt"
 STEPS = [
     ("harvest", "step_harvest.py", True,  "fetch fabric and sample pages into data/raw/html/"),
     ("parse",   "step_parse.py",   False, "raw HTML -> data/derived/json/ and field catalogue"),
+    ("vocab",   "step_vocab.py",   False, "SKOS vocabularies and structured object types -> data/derived/vocab/, dist/facem-vocabularies.ttl"),
     ("wikidata", "step_wikidata.py", True, "Wikidata candidates for places and periods -> data/curated/wikidata_candidates.csv"),
 ]
 NAMES = [s[0] for s in STEPS]

@@ -1,0 +1,946 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://w3id.org/facem/vocab/atlante> a skos:ConceptScheme ;
+    dct:title "Atlante typology"@en ;
+    dct:source "Atlante I" ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/atlante/viii> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/atlante/x> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/atlante/xlix> .
+
+<http://w3id.org/facem/vocab/atlante/viii> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/atlante> ;
+    skos:prefLabel "Atlante VIII"@en ;
+    skos:notation "VIII" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/atlante> .
+
+<http://w3id.org/facem/vocab/atlante/viii-a> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/atlante> ;
+    skos:prefLabel "Atlante VIII A"@en ;
+    skos:notation "VIII A" ;
+    skos:broader <http://w3id.org/facem/vocab/atlante/viii> .
+
+<http://w3id.org/facem/vocab/atlante/viii-c> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/atlante> ;
+    skos:prefLabel "Atlante VIII C"@en ;
+    skos:notation "VIII C" ;
+    skos:broader <http://w3id.org/facem/vocab/atlante/viii> .
+
+<http://w3id.org/facem/vocab/atlante/x> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/atlante> ;
+    skos:prefLabel "Atlante X"@en ;
+    skos:notation "X" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/atlante> .
+
+<http://w3id.org/facem/vocab/atlante/x-d2> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/atlante> ;
+    skos:prefLabel "Atlante X, D2"@en ;
+    skos:notation "X, D2" ;
+    skos:broader <http://w3id.org/facem/vocab/atlante/x> .
+
+<http://w3id.org/facem/vocab/atlante/xlix> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/atlante> ;
+    skos:prefLabel "Atlante XLIX"@en ;
+    skos:notation "XLIX" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/atlante> .
+
+<http://w3id.org/facem/vocab/atlante/xlix-10> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/atlante> ;
+    skos:prefLabel "Atlante XLIX, 10"@en ;
+    skos:notation "XLIX, 10" ;
+    skos:broader <http://w3id.org/facem/vocab/atlante/xlix> .
+
+<http://w3id.org/facem/vocab/el-mahrine> a skos:ConceptScheme ;
+    dct:title "El Mahrine typology"@en ;
+    dct:source "Mackensen 1993" ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/el-mahrine/7> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/el-mahrine/10> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/el-mahrine/18> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/el-mahrine/19> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/el-mahrine/54> .
+
+<http://w3id.org/facem/vocab/el-mahrine/7> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/el-mahrine> ;
+    skos:prefLabel "El Mahrine 7"@en ;
+    skos:notation "7" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/el-mahrine> .
+
+<http://w3id.org/facem/vocab/el-mahrine/7.2> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/el-mahrine> ;
+    skos:prefLabel "El Mahrine 7.2"@en ;
+    skos:notation "7.2" ;
+    skos:broader <http://w3id.org/facem/vocab/el-mahrine/7> .
+
+<http://w3id.org/facem/vocab/el-mahrine/10> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/el-mahrine> ;
+    skos:prefLabel "El Mahrine 10"@en ;
+    skos:notation "10" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/el-mahrine> .
+
+<http://w3id.org/facem/vocab/el-mahrine/10.1> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/el-mahrine> ;
+    skos:prefLabel "El Mahrine 10.1"@en ;
+    skos:notation "10.1" ;
+    skos:broader <http://w3id.org/facem/vocab/el-mahrine/10> .
+
+<http://w3id.org/facem/vocab/el-mahrine/18> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/el-mahrine> ;
+    skos:prefLabel "El Mahrine 18"@en ;
+    skos:notation "18" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/el-mahrine> .
+
+<http://w3id.org/facem/vocab/el-mahrine/18.2> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/el-mahrine> ;
+    skos:prefLabel "El Mahrine 18.2"@en ;
+    skos:notation "18.2" ;
+    skos:broader <http://w3id.org/facem/vocab/el-mahrine/18> .
+
+<http://w3id.org/facem/vocab/el-mahrine/19> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/el-mahrine> ;
+    skos:prefLabel "El Mahrine 19"@en ;
+    skos:notation "19" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/el-mahrine> .
+
+<http://w3id.org/facem/vocab/el-mahrine/54> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/el-mahrine> ;
+    skos:prefLabel "El Mahrine 54"@en ;
+    skos:notation "54" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/el-mahrine> .
+
+<http://w3id.org/facem/vocab/el-mahrine/54.1> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/el-mahrine> ;
+    skos:prefLabel "El Mahrine 54.1"@en ;
+    skos:notation "54.1" ;
+    skos:broader <http://w3id.org/facem/vocab/el-mahrine/54> .
+
+<http://w3id.org/facem/vocab/fabric> a skos:ConceptScheme ;
+    dct:title "FACEM fabric"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/bd-ars-1> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/bd-ars-2> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/bd-ars-3> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/hb-ars-1> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/hb-ars-2> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/hb-ars-3> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/ou-ars-1> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/ou-ars-2> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/ph-ars-1> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/ph-ars-2> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/ph-ars-3> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fabric/ph-ars-4> .
+
+<http://w3id.org/facem/vocab/fabric/bd-ars-1> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "BD-ARS-1"@en ;
+    skos:notation "BD-ARS-1" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/bd-ars-2> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "BD-ARS-2"@en ;
+    skos:notation "BD-ARS-2" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/bd-ars-3> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "BD-ARS-3"@en ;
+    skos:notation "BD-ARS-3" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/hb-ars-1> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "HB-ARS-1"@en ;
+    skos:notation "HB-ARS-1" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/hb-ars-2> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "HB-ARS-2"@en ;
+    skos:notation "HB-ARS-2" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/hb-ars-3> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "HB-ARS-3"@en ;
+    skos:notation "HB-ARS-3" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/ou-ars-1> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "OU-ARS-1"@en ;
+    skos:notation "OU-ARS-1" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/ou-ars-2> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "OU-ARS-2"@en ;
+    skos:notation "OU-ARS-2" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/ph-ars-1> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "PH-ARS-1"@en ;
+    skos:notation "PH-ARS-1" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/ph-ars-2> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "PH-ARS-2"@en ;
+    skos:notation "PH-ARS-2" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/ph-ars-3> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "PH-ARS-3"@en ;
+    skos:notation "PH-ARS-3" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fabric/ph-ars-4> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fabric> ;
+    skos:prefLabel "PH-ARS-4"@en ;
+    skos:notation "PH-ARS-4" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fabric> .
+
+<http://w3id.org/facem/vocab/fracture-texture> a skos:ConceptScheme ;
+    dct:title "Texture of fresh break"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fracture-texture/fine> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fracture-texture/granular> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fracture-texture/irregular> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fracture-texture/smooth> .
+
+<http://w3id.org/facem/vocab/fracture-texture/fine> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fracture-texture> ;
+    skos:prefLabel "fine"@en ;
+    skos:notation "fine" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fracture-texture> .
+
+<http://w3id.org/facem/vocab/fracture-texture/granular> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fracture-texture> ;
+    skos:prefLabel "granular"@en ;
+    skos:notation "granular" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fracture-texture> .
+
+<http://w3id.org/facem/vocab/fracture-texture/irregular> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fracture-texture> ;
+    skos:prefLabel "irregular"@en ;
+    skos:notation "irregular" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fracture-texture> .
+
+<http://w3id.org/facem/vocab/fracture-texture/smooth> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fracture-texture> ;
+    skos:prefLabel "smooth"@en ;
+    skos:notation "smooth" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fracture-texture> .
+
+<http://w3id.org/facem/vocab/fragmentation> a skos:ConceptScheme ;
+    dct:title "Fragmentation"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fragmentation/base> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fragmentation/discus> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fragmentation/profile> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fragmentation/rim> .
+
+<http://w3id.org/facem/vocab/fragmentation/base> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fragmentation> ;
+    skos:prefLabel "base"@en ;
+    skos:notation "base" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fragmentation> .
+
+<http://w3id.org/facem/vocab/fragmentation/discus> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fragmentation> ;
+    skos:prefLabel "discus"@en ;
+    skos:notation "discus" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fragmentation> .
+
+<http://w3id.org/facem/vocab/fragmentation/profile> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fragmentation> ;
+    skos:prefLabel "profile"@en ;
+    skos:notation "profile" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fragmentation> .
+
+<http://w3id.org/facem/vocab/fragmentation/rim> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fragmentation> ;
+    skos:prefLabel "rim"@en ;
+    skos:notation "rim" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fragmentation> .
+
+<http://w3id.org/facem/vocab/fulford> a skos:ConceptScheme ;
+    dct:title "Fulford typology"@en ;
+    dct:source "Fulford 1984" ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/fulford/27> .
+
+<http://w3id.org/facem/vocab/fulford/27> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/fulford> ;
+    skos:prefLabel "Fulford 27"@en ;
+    skos:notation "27" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/fulford> .
+
+<http://w3id.org/facem/vocab/hardness> a skos:ConceptScheme ;
+    dct:title "Hardness"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hardness/hard> .
+
+<http://w3id.org/facem/vocab/hardness/hard> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hardness> ;
+    skos:prefLabel "hard"@en ;
+    skos:notation "hard" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hardness> .
+
+<http://w3id.org/facem/vocab/hayes> a skos:ConceptScheme ;
+    dct:title "Hayes typology"@en ;
+    dct:source "Hayes 1972" ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/12> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/58> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/59> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/61> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/67> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/68> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/73> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/76> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/79> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/86> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/87> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/88> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/91> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/95> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/97> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/99> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/103> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/104> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/hayes/110> .
+
+<http://w3id.org/facem/vocab/hayes/12> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 12"@en ;
+    skos:notation "12" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/58> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 58"@en ;
+    skos:notation "58" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/58b> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 58B"@en ;
+    skos:notation "58B" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/58> .
+
+<http://w3id.org/facem/vocab/hayes/59> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 59"@en ;
+    skos:notation "59" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/59a> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 59A"@en ;
+    skos:notation "59A" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/59> .
+
+<http://w3id.org/facem/vocab/hayes/59b> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 59B"@en ;
+    skos:notation "59B" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/59> .
+
+<http://w3id.org/facem/vocab/hayes/61> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 61"@en ;
+    skos:notation "61" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/61a> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 61A"@en ;
+    skos:notation "61A" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/61> .
+
+<http://w3id.org/facem/vocab/hayes/61b> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 61B"@en ;
+    skos:notation "61B" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/61> .
+
+<http://w3id.org/facem/vocab/hayes/61b3> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 61B3"@en ;
+    skos:notation "61B3" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/61b> .
+
+<http://w3id.org/facem/vocab/hayes/61b4> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 61B4"@en ;
+    skos:notation "61B4" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/61b> .
+
+<http://w3id.org/facem/vocab/hayes/67> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 67"@en ;
+    skos:notation "67" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/67b> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 67B"@en ;
+    skos:notation "67B" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/67> .
+
+<http://w3id.org/facem/vocab/hayes/67c> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 67C"@en ;
+    skos:notation "67C" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/67> .
+
+<http://w3id.org/facem/vocab/hayes/68> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 68"@en ;
+    skos:notation "68" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/73> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 73"@en ;
+    skos:notation "73" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/73a> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 73A"@en ;
+    skos:notation "73A" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/73> .
+
+<http://w3id.org/facem/vocab/hayes/76> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 76"@en ;
+    skos:notation "76" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/79> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 79"@en ;
+    skos:notation "79" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/86> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 86"@en ;
+    skos:notation "86" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/87> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 87"@en ;
+    skos:notation "87" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/87a> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 87A"@en ;
+    skos:notation "87A" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/87> .
+
+<http://w3id.org/facem/vocab/hayes/88> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 88"@en ;
+    skos:notation "88" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/88-var.-pm-34.8> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 88 var. PM 34.8"@en ;
+    skos:notation "88 var. PM 34.8" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/88> ;
+    skos:closeMatch <http://w3id.org/facem/vocab/pm/34.8> .
+
+<http://w3id.org/facem/vocab/hayes/88-var.-pm-34.11> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 88 var. PM 34.11"@en ;
+    skos:notation "88 var. PM 34.11" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/88> ;
+    skos:closeMatch <http://w3id.org/facem/vocab/pm/34.11> .
+
+<http://w3id.org/facem/vocab/hayes/88a> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 88A"@en ;
+    skos:notation "88A" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/88> .
+
+<http://w3id.org/facem/vocab/hayes/88b> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 88B"@en ;
+    skos:notation "88B" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/88> .
+
+<http://w3id.org/facem/vocab/hayes/88c> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 88C"@en ;
+    skos:notation "88C" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/88> .
+
+<http://w3id.org/facem/vocab/hayes/91> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 91"@en ;
+    skos:notation "91" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/91-var.-sidi-khalifa> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 91 var. Sidi Khalifa"@en ;
+    skos:notation "91 var. Sidi Khalifa" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/91> .
+
+<http://w3id.org/facem/vocab/hayes/95> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 95"@en ;
+    skos:notation "95" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/97> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 97"@en ;
+    skos:notation "97" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/99> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 99"@en ;
+    skos:notation "99" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/99b> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 99B"@en ;
+    skos:notation "99B" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/99> .
+
+<http://w3id.org/facem/vocab/hayes/103> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 103"@en ;
+    skos:notation "103" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/103-var.-sidi-khalifa> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 103 var. Sidi Khalifa"@en ;
+    skos:notation "103 var. Sidi Khalifa" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/103> .
+
+<http://w3id.org/facem/vocab/hayes/104> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 104"@en ;
+    skos:notation "104" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/hayes/104a> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 104A"@en ;
+    skos:notation "104A" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/104> .
+
+<http://w3id.org/facem/vocab/hayes/104a1> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 104A1"@en ;
+    skos:notation "104A1" ;
+    skos:broader <http://w3id.org/facem/vocab/hayes/104a> .
+
+<http://w3id.org/facem/vocab/hayes/110> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/hayes> ;
+    skos:prefLabel "Hayes 110"@en ;
+    skos:notation "110" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/hayes> .
+
+<http://w3id.org/facem/vocab/inclusion-colour> a skos:ConceptScheme ;
+    dct:title "Colour of inclusions"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/beige> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/black> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/clayey> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/clear> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/dark> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/gray> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/reddish-brown> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/rust-coloured> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/silver> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/white> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-colour/yellowish-white> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/beige> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "beige"@en ;
+    skos:notation "beige" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/black> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "black"@en ;
+    skos:notation "black" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/clayey> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "clayey"@en ;
+    skos:notation "clayey" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/clear> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "clear"@en ;
+    skos:notation "clear" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/dark> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "dark"@en ;
+    skos:notation "dark" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/gray> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "gray"@en ;
+    skos:notation "gray" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/reddish-brown> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "reddish brown"@en ;
+    skos:notation "reddish brown" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/rust-coloured> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "rust coloured"@en ;
+    skos:notation "rust coloured" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/silver> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "silver"@en ;
+    skos:notation "silver" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/white> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "white"@en ;
+    skos:notation "white" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-colour/yellowish-white> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-colour> ;
+    skos:prefLabel "yellowish white"@en ;
+    skos:notation "yellowish white" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-colour> .
+
+<http://w3id.org/facem/vocab/inclusion-frequency> a skos:ConceptScheme ;
+    dct:title "Frequency of inclusions"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-frequency/frequent> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-frequency/infrequent> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-frequency/riddled-with> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-frequency/singular> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-frequency/very-frequent> .
+
+<http://w3id.org/facem/vocab/inclusion-frequency/frequent> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-frequency> ;
+    skos:prefLabel "frequent"@en ;
+    skos:notation "frequent" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-frequency> .
+
+<http://w3id.org/facem/vocab/inclusion-frequency/infrequent> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-frequency> ;
+    skos:prefLabel "infrequent"@en ;
+    skos:notation "infrequent" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-frequency> .
+
+<http://w3id.org/facem/vocab/inclusion-frequency/riddled-with> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-frequency> ;
+    skos:prefLabel "riddled with"@en ;
+    skos:notation "riddled with" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-frequency> .
+
+<http://w3id.org/facem/vocab/inclusion-frequency/singular> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-frequency> ;
+    skos:prefLabel "singular"@en ;
+    skos:notation "singular" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-frequency> .
+
+<http://w3id.org/facem/vocab/inclusion-frequency/very-frequent> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-frequency> ;
+    skos:prefLabel "very frequent"@en ;
+    skos:notation "very frequent" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-frequency> .
+
+<http://w3id.org/facem/vocab/inclusion-kind> a skos:ConceptScheme ;
+    dct:title "Kind of inclusion"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-kind/black-inclusions> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-kind/calciumcarbonate> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-kind/carbonate-pseudomorphoses> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-kind/mica> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-kind/more-inclusions> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-kind/quartz> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-kind/reddish-inclusions> .
+
+<http://w3id.org/facem/vocab/inclusion-kind/black-inclusions> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
+    skos:prefLabel "black inclusions"@en ;
+    skos:notation "black inclusions" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
+
+<http://w3id.org/facem/vocab/inclusion-kind/calciumcarbonate> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
+    skos:prefLabel "calciumcarbonate"@en ;
+    skos:notation "calciumcarbonate" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
+
+<http://w3id.org/facem/vocab/inclusion-kind/carbonate-pseudomorphoses> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
+    skos:prefLabel "carbonate pseudomorphoses"@en ;
+    skos:notation "carbonate pseudomorphoses" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
+
+<http://w3id.org/facem/vocab/inclusion-kind/mica> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
+    skos:prefLabel "mica"@en ;
+    skos:notation "mica" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
+
+<http://w3id.org/facem/vocab/inclusion-kind/more-inclusions> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
+    skos:prefLabel "more inclusions"@en ;
+    skos:notation "more inclusions" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
+
+<http://w3id.org/facem/vocab/inclusion-kind/quartz> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
+    skos:prefLabel "quartz"@en ;
+    skos:notation "quartz" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
+
+<http://w3id.org/facem/vocab/inclusion-kind/reddish-inclusions> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-kind> ;
+    skos:prefLabel "reddish inclusions"@en ;
+    skos:notation "reddish inclusions" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-kind> .
+
+<http://w3id.org/facem/vocab/inclusion-roundness> a skos:ConceptScheme ;
+    dct:title "Roundness of inclusions"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-roundness/angular> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-roundness/rounded> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-roundness/subangular> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-roundness/subrounded> .
+
+<http://w3id.org/facem/vocab/inclusion-roundness/angular> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-roundness> ;
+    skos:prefLabel "angular"@en ;
+    skos:notation "angular" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-roundness> .
+
+<http://w3id.org/facem/vocab/inclusion-roundness/rounded> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-roundness> ;
+    skos:prefLabel "rounded"@en ;
+    skos:notation "rounded" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-roundness> .
+
+<http://w3id.org/facem/vocab/inclusion-roundness/subangular> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-roundness> ;
+    skos:prefLabel "subangular"@en ;
+    skos:notation "subangular" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-roundness> .
+
+<http://w3id.org/facem/vocab/inclusion-roundness/subrounded> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-roundness> ;
+    skos:prefLabel "subrounded"@en ;
+    skos:notation "subrounded" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-roundness> .
+
+<http://w3id.org/facem/vocab/inclusion-shape> a skos:ConceptScheme ;
+    dct:title "Shape of inclusions"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-shape/elongate> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-shape/spherical> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-shape/subelongate> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/inclusion-shape/subspherical> .
+
+<http://w3id.org/facem/vocab/inclusion-shape/elongate> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-shape> ;
+    skos:prefLabel "elongate"@en ;
+    skos:notation "elongate" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-shape> .
+
+<http://w3id.org/facem/vocab/inclusion-shape/spherical> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-shape> ;
+    skos:prefLabel "spherical"@en ;
+    skos:notation "spherical" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-shape> .
+
+<http://w3id.org/facem/vocab/inclusion-shape/subelongate> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-shape> ;
+    skos:prefLabel "subelongate"@en ;
+    skos:notation "subelongate" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-shape> .
+
+<http://w3id.org/facem/vocab/inclusion-shape/subspherical> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/inclusion-shape> ;
+    skos:prefLabel "subspherical"@en ;
+    skos:notation "subspherical" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/inclusion-shape> .
+
+<http://w3id.org/facem/vocab/method> a skos:ConceptScheme ;
+    dct:title "Method of sample analysis"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/method/thin-section> .
+
+<http://w3id.org/facem/vocab/method/thin-section> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/method> ;
+    skos:prefLabel "thin section"@en ;
+    skos:notation "thin section" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/method> .
+
+<http://w3id.org/facem/vocab/object-form> a skos:ConceptScheme ;
+    dct:title "Object form"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/object-form/bowl> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/object-form/dish> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/object-form/lamp> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/object-form/plate> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/object-form/unidentified> .
+
+<http://w3id.org/facem/vocab/object-form/bowl> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/object-form> ;
+    skos:prefLabel "Bowl"@en ;
+    skos:notation "Bowl" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/object-form> .
+
+<http://w3id.org/facem/vocab/object-form/dish> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/object-form> ;
+    skos:prefLabel "Dish"@en ;
+    skos:notation "Dish" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/object-form> .
+
+<http://w3id.org/facem/vocab/object-form/lamp> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/object-form> ;
+    skos:prefLabel "Lamp"@en ;
+    skos:notation "Lamp" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/object-form> .
+
+<http://w3id.org/facem/vocab/object-form/plate> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/object-form> ;
+    skos:prefLabel "Plate"@en ;
+    skos:notation "Plate" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/object-form> .
+
+<http://w3id.org/facem/vocab/object-form/unidentified> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/object-form> ;
+    skos:prefLabel "unidentified"@en ;
+    skos:notation "unidentified" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/object-form> .
+
+<http://w3id.org/facem/vocab/period> a skos:ConceptScheme ;
+    dct:title "FACEM period"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/period/roman-early-imperial> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/period/roman-late-antiquity> .
+
+<http://w3id.org/facem/vocab/period/roman-early-imperial> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/period> ;
+    skos:prefLabel "Roman-Early Imperial"@en ;
+    skos:notation "Roman-Early Imperial" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/period> .
+
+<http://w3id.org/facem/vocab/period/roman-late-antiquity> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/period> ;
+    skos:prefLabel "Roman-Late Antiquity"@en ;
+    skos:notation "Roman-Late Antiquity" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/period> ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q2277> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q217050> .
+
+<http://w3id.org/facem/vocab/pm> a skos:ConceptScheme ;
+    dct:title "PM typology"@en ;
+    dct:source "Ben Moussa 2007" ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/pm/34> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/pm/61> .
+
+<http://w3id.org/facem/vocab/pm/34> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/pm> ;
+    skos:prefLabel "PM 34"@en ;
+    skos:notation "34" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/pm> .
+
+<http://w3id.org/facem/vocab/pm/34.8> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/pm> ;
+    skos:prefLabel "PM 34.8"@en ;
+    skos:notation "34.8" ;
+    skos:broader <http://w3id.org/facem/vocab/pm/34> .
+
+<http://w3id.org/facem/vocab/pm/34.11> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/pm> ;
+    skos:prefLabel "PM 34.11"@en ;
+    skos:notation "34.11" ;
+    skos:broader <http://w3id.org/facem/vocab/pm/34> .
+
+<http://w3id.org/facem/vocab/pm/61> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/pm> ;
+    skos:prefLabel "PM 61"@en ;
+    skos:notation "61" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/pm> .
+
+<http://w3id.org/facem/vocab/sorting> a skos:ConceptScheme ;
+    dct:title "Sorting"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/sorting/moderately-sorted-sand> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/sorting/unsorted> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/sorting/well-sorted-sand-in-different-compositions> .
+
+<http://w3id.org/facem/vocab/sorting/moderately-sorted-sand> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/sorting> ;
+    skos:prefLabel "moderately sorted sand"@en ;
+    skos:notation "moderately sorted sand" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/sorting> .
+
+<http://w3id.org/facem/vocab/sorting/unsorted> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/sorting> ;
+    skos:prefLabel "unsorted"@en ;
+    skos:notation "unsorted" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/sorting> .
+
+<http://w3id.org/facem/vocab/sorting/well-sorted-sand-in-different-compositions> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/sorting> ;
+    skos:prefLabel "well-sorted sand in different compositions"@en ;
+    skos:notation "well-sorted sand in different compositions" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/sorting> .
+
+<http://w3id.org/facem/vocab/surface> a skos:ConceptScheme ;
+    dct:title "Surface description"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/surface/slipped> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/surface/smoothed> .
+
+<http://w3id.org/facem/vocab/surface/slipped> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/surface> ;
+    skos:prefLabel "slipped"@en ;
+    skos:notation "slipped" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/surface> .
+
+<http://w3id.org/facem/vocab/surface/smoothed> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/surface> ;
+    skos:prefLabel "smoothed"@en ;
+    skos:notation "smoothed" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/surface> .
+
+<http://w3id.org/facem/vocab/void-form> a skos:ConceptScheme ;
+    dct:title "Form of voids"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/void-form/channel> ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/void-form/vughy> .
+
+<http://w3id.org/facem/vocab/void-form/channel> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/void-form> ;
+    skos:prefLabel "channel"@en ;
+    skos:notation "channel" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/void-form> .
+
+<http://w3id.org/facem/vocab/void-form/vughy> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/void-form> ;
+    skos:prefLabel "vughy"@en ;
+    skos:notation "vughy" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/void-form> .
+
+<http://w3id.org/facem/vocab/ware> a skos:ConceptScheme ;
+    dct:title "Ware"@en ;
+    skos:hasTopConcept <http://w3id.org/facem/vocab/ware/african-red-slip-ware> .
+
+<http://w3id.org/facem/vocab/ware/african-red-slip-ware> a skos:Concept ;
+    skos:inScheme <http://w3id.org/facem/vocab/ware> ;
+    skos:prefLabel "African Red Slip Ware"@en ;
+    skos:notation "African Red Slip Ware" ;
+    skos:topConceptOf <http://w3id.org/facem/vocab/ware> .

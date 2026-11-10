@@ -1,0 +1,1187 @@
+{
+  "bd-ars-1": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "76",
+        "concept": "hayes/76",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 76 ( Hayes 1972 )"
+  },
+  "bd-ars-2": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "59A",
+        "concept": "hayes/59a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 59A ( Hayes 1972 )"
+  },
+  "bd-ars-3": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "67B",
+        "concept": "hayes/67b",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 67B ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "hb-ars-1": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "67C",
+        "concept": "hayes/67c",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 67C ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "hb-ars-2": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "73A",
+        "concept": "hayes/73a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 73A ( Hayes 1972 )"
+  },
+  "hb-ars-3": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "67C",
+        "concept": "hayes/67c",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 67C ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-199-10": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "61A",
+        "concept": "hayes/61a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      },
+      {
+        "certainty": "certain",
+        "code": "61B4",
+        "concept": "hayes/61b4",
+        "qualifiers": [],
+        "relation": "alternative",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 61A/B4 ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-199-12": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "61A",
+        "concept": "hayes/61a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 61A ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-199-13": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "67",
+        "concept": "hayes/67",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 67 ( Hayes 1972 )"
+  },
+  "m-199-14": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "59B",
+        "concept": "hayes/59b",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 59B ( Hayes 1972 )"
+  },
+  "m-199-15": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "67B",
+        "concept": "hayes/67b",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 67B ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-199-2": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "67C",
+        "concept": "hayes/67c",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 67C ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-199-3": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "19",
+        "concept": "el-mahrine/19",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "El Mahrine",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Mackensen 1993"
+    ],
+    "note": "",
+    "raw": "El Mahrine 19 ( Mackensen 1993 )"
+  },
+  "m-199-4": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "7",
+        "concept": "el-mahrine/7",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "El Mahrine",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Mackensen 1993"
+    ],
+    "note": "",
+    "raw": "El Mahrine 7 ( Mackensen 1993 )"
+  },
+  "m-199-5": {
+    "assignments": [
+      {
+        "certainty": "possible",
+        "code": "67",
+        "concept": "hayes/67",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "possibly Hayes 67 ( Hayes 1972 )"
+  },
+  "m-199-7": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "61A",
+        "concept": "hayes/61a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1997",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 61A (Hayes 1997; Bonifay 2004 )"
+  },
+  "m-199-8": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "58B",
+        "concept": "hayes/58b",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 58B ( Hayes 1972 )"
+  },
+  "m-199-9": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "61A",
+        "concept": "hayes/61a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 61A ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-200-10": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "76",
+        "concept": "hayes/76",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      },
+      {
+        "certainty": "certain",
+        "code": "10.1",
+        "concept": "el-mahrine/10.1",
+        "qualifiers": [],
+        "relation": "concordance",
+        "typology": "El Mahrine",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Mackensen 1993"
+    ],
+    "note": "",
+    "raw": "Hayes 76/EM 10.1 ( Hayes 1972 ; Mackensen 1993 )"
+  },
+  "m-200-12": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "73A",
+        "concept": "hayes/73a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 73A ( Hayes 1972 )"
+  },
+  "m-200-13": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "104A1",
+        "concept": "hayes/104a1",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [],
+    "note": "",
+    "raw": "Hayes 104A1"
+  },
+  "m-200-14": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "67C",
+        "concept": "hayes/67c",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 67C ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-200-15": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "VIII A",
+        "concept": "atlante/viii-a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Atlante",
+        "variant": ""
+      },
+      {
+        "certainty": "certain",
+        "code": "VIII C",
+        "concept": "atlante/viii-c",
+        "qualifiers": [],
+        "relation": "alternative",
+        "typology": "Atlante",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Atlante I",
+      "Mackensen 1993"
+    ],
+    "note": "",
+    "raw": "Atlante VIII A/C ( Atlante I ; Mackensen 1993 )"
+  },
+  "m-200-2": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "7.2",
+        "concept": "el-mahrine/7.2",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "El Mahrine",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Mackensen 1993"
+    ],
+    "note": "",
+    "raw": "El Mahrine 7.2 ( Mackensen 1993 )"
+  },
+  "m-200-3": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "104A1",
+        "concept": "hayes/104a1",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 104A1 ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-200-4": {
+    "assignments": [
+      {
+        "certainty": "uncertain",
+        "code": "67",
+        "concept": "hayes/67",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 67? ( Hayes 1972 )"
+  },
+  "m-200-5": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "67C",
+        "concept": "hayes/67c",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 67C ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-200-7": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "67B",
+        "concept": "hayes/67b",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 67B ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-200-8": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "18.2",
+        "concept": "el-mahrine/18.2",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "El Mahrine",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Mackensen 1993"
+    ],
+    "note": "",
+    "raw": "El Mahrine 18.2 ( Mackensen 1993 )"
+  },
+  "m-200-9": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "91",
+        "concept": "hayes/91",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      },
+      {
+        "certainty": "certain",
+        "code": "54.1",
+        "concept": "el-mahrine/54.1",
+        "qualifiers": [],
+        "relation": "concordance",
+        "typology": "El Mahrine",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1993",
+      "Mackensen 1993"
+    ],
+    "note": "",
+    "raw": "Hayes 91/El Mahrine 54.1 (Hayes 1993; Mackensen 1993 )"
+  },
+  "m-201-10": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "X, D2",
+        "concept": "atlante/x-d2",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Atlante",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Atlante I",
+      "Bonifay 2004"
+    ],
+    "note": "rim motifs after Bussière and Rivel 2015",
+    "raw": "Atlante X, D2 ( Atlante I ; Bonifay 2004 ), rim motifs after Bussière and Rivel 2015"
+  },
+  "m-201-2": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "97",
+        "concept": "hayes/97",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 97 ( Hayes 1972 )"
+  },
+  "m-201-3": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "12",
+        "concept": "hayes/12",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      },
+      {
+        "certainty": "certain",
+        "code": "110",
+        "concept": "hayes/110",
+        "qualifiers": [],
+        "relation": "alternative",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 12/110 ( Hayes 1972 )"
+  },
+  "m-201-4": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "X, D2",
+        "concept": "atlante/x-d2",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Atlante",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Atlante I",
+      "Bonifay 2004"
+    ],
+    "note": "rim motifs after Bussière and Rivel 2015",
+    "raw": "Atlante X, D2 ( Atlante I ; Bonifay 2004 ), rim motifs (after Bussière and Rivel 2015 )"
+  },
+  "m-201-5": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "99B",
+        "concept": "hayes/99b",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 99B ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-201-7": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "91",
+        "concept": "hayes/91",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      },
+      {
+        "certainty": "certain",
+        "code": "XLIX, 10",
+        "concept": "atlante/xlix-10",
+        "qualifiers": [],
+        "relation": "concordance",
+        "typology": "Atlante",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Atlante I"
+    ],
+    "note": "",
+    "raw": "Hayes 91/Atlante XLIX, 10 ( Hayes 1972 ; Atlante I )"
+  },
+  "m-201-8": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "97",
+        "concept": "hayes/97",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 97 ( Hayes 1972 )"
+  },
+  "m-201-9": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "95",
+        "concept": "hayes/95",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 95 ( Hayes 1972 )"
+  },
+  "m-202-10": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "88A",
+        "concept": "hayes/88a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 88A ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-202-12": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "87A",
+        "concept": "hayes/87a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      },
+      {
+        "certainty": "certain",
+        "code": "88",
+        "concept": "hayes/88",
+        "qualifiers": [],
+        "relation": "alternative",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 87A/88 ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-202-13": {
+    "assignments": [
+      {
+        "certainty": "similar",
+        "code": "27",
+        "concept": "fulford/27",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Fulford",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Fulford 1984",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "sim. Fulford 27 ( Fulford 1984 ; Bonifay 2004 )"
+  },
+  "m-202-14": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "87A",
+        "concept": "hayes/87a",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 87A ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-202-15": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "103",
+        "concept": "hayes/103-var.-sidi-khalifa",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": "Sidi Khalifa"
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 103, var. Sidi Khalifa ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-202-17": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "91",
+        "concept": "hayes/91-var.-sidi-khalifa",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": "Sidi Khalifa"
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 91, var. Sidi Khalifa ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-202-18": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "68",
+        "concept": "hayes/68",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Ben Moussa 2007"
+    ],
+    "note": "",
+    "raw": "Hayes 68 ( Hayes 1972 ; Ben Moussa 2007 )"
+  },
+  "m-202-19": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "61B3",
+        "concept": "hayes/61b3",
+        "qualifiers": [
+          "late"
+        ],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 61B3, late ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-202-2": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "61B3",
+        "concept": "hayes/61b3",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 61B3 ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-202-20": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "88B",
+        "concept": "hayes/88b",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 88B ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-202-3": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "103",
+        "concept": "hayes/103-var.-sidi-khalifa",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": "Sidi Khalifa"
+      }
+    ],
+    "literature": [
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 103, var. Sidi Khalifa ( Bonifay 2004 )"
+  },
+  "m-202-4": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "88",
+        "concept": "hayes/88-var.-pm-34.8",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": "PM 34.8"
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Ben Moussa 2007"
+    ],
+    "note": "",
+    "raw": "Hayes 88, var. PM 34.8 ( Hayes 1972 ; Ben Moussa 2007 )"
+  },
+  "m-202-5": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "86",
+        "concept": "hayes/86",
+        "qualifiers": [
+          "no. 1"
+        ],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 86, no. 1 ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "m-202-7": {
+    "assignments": [
+      {
+        "certainty": "similar",
+        "code": "61",
+        "concept": "pm/61",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "PM",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Ben Moussa 2007"
+    ],
+    "note": "",
+    "raw": "sim. PM 61 ( Ben Moussa 2007 )"
+  },
+  "m-202-8": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "79",
+        "concept": "hayes/79",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972"
+    ],
+    "note": "",
+    "raw": "Hayes 79 ( Hayes 1972 )"
+  },
+  "m-202-9": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "103",
+        "concept": "hayes/103",
+        "qualifiers": [
+          "var."
+        ],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Ben Moussa 2007"
+    ],
+    "note": "",
+    "raw": "Hayes 103, var. ( Hayes 1972 ; Ben Moussa 2007 )"
+  },
+  "ou-ars-1": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "99B",
+        "concept": "hayes/99b",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [],
+    "note": "",
+    "raw": "Hayes 99B"
+  },
+  "ou-ars-2": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "99B",
+        "concept": "hayes/99b",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 99B ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "ph-ars-1": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "88B",
+        "concept": "hayes/88b",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 88B ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "ph-ars-2": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "88C",
+        "concept": "hayes/88c",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 88C ( Hayes 1972 ; Bonifay 2004 )"
+  },
+  "ph-ars-3": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "88",
+        "concept": "hayes/88-var.-pm-34.11",
+        "qualifiers": [],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": "PM 34.11"
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Ben Moussa 2007"
+    ],
+    "note": "",
+    "raw": "Hayes 88, var. PM 34.11 ( Hayes 1972 ; Ben Moussa 2007 )"
+  },
+  "ph-ars-4": {
+    "assignments": [
+      {
+        "certainty": "certain",
+        "code": "61B3",
+        "concept": "hayes/61b3",
+        "qualifiers": [
+          "late"
+        ],
+        "relation": "",
+        "typology": "Hayes",
+        "variant": ""
+      }
+    ],
+    "literature": [
+      "Hayes 1972",
+      "Bonifay 2004"
+    ],
+    "note": "",
+    "raw": "Hayes 61B3, late ( Hayes 1972 ; Bonifay 2004 )"
+  }
+}
