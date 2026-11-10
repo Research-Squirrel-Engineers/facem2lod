@@ -23,7 +23,7 @@ from bs4 import BeautifulSoup
 
 from facem_utils import (
     BASE_URL, RAW_HTML, RAW_SITES, HARVEST_MANIFEST, DERIVED_JSON,
-    FIELD_CATALOGUE, ensure_dirs, write_json, read_json,
+    FIELD_CATALOGUE, ensure_dirs, write_json, read_json, sha256_bytes,
 )
 
 TAB_MARKERS = ["object data", "fabric description", "archaeometry", "petrography"]
@@ -250,6 +250,12 @@ def source_url_for(rel: str, page_id: str, kind: str, manifest: dict) -> str:
     return f"{BASE_URL}/{page_id}" if kind in ("fabric", "sample") else f"{BASE_URL}/map/{page_id}"
 
 
+def raw_matches_manifest(data: bytes, entry: dict) -> bool:
+    """True if the stored page has the bytes the harvest recorded (or nothing was recorded)."""
+    recorded = (entry or {}).get("sha256")
+    return not recorded or sha256_bytes(data) == recorded
+
+
 def run() -> int:
     ensure_dirs()
     manifest = read_json(HARVEST_MANIFEST) if HARVEST_MANIFEST.exists() else {}
@@ -265,11 +271,17 @@ def run() -> int:
     catalogue_keys = OrderedDict()           # (section, key) -> Counter of values
     section_order = OrderedDict()
     warnings = 0
+    changed = 0
 
     for path, kind, rel in pages:
         page_id = path.stem
         url = source_url_for(rel, page_id, kind, manifest)
-        record = parse_html(path.read_bytes(), url, page_id, kind)
+        raw = path.read_bytes()
+        if not raw_matches_manifest(raw, manifest.get(rel)):
+            changed += 1
+            print(f"WARN {page_id}: stored page differs from the harvest manifest (line endings "
+                  f"changed by git? fetch it again: delete {path.name} and run 'python main.py harvest')")
+        record = parse_html(raw, url, page_id, kind)
         out_name = f"sites__{page_id}" if kind == "site" else page_id
         write_json(DERIVED_JSON / f"{out_name}.json", record)
 
@@ -313,7 +325,8 @@ def run() -> int:
     n_fabric = sum(1 for r in index if r["kind"] == "fabric")
     n_sample = sum(1 for r in index if r["kind"] == "sample")
     print(f"parse: {n_fabric} fabric pages, {n_sample} sample pages, "
-          f"{len(catalogue_keys)} distinct section/key pairs, {warnings} without sections")
+          f"{len(catalogue_keys)} distinct section/key pairs, {warnings} without sections, "
+          f"{changed} differing from the manifest")
     return 0
 
 

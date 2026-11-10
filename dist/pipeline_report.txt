@@ -1,4 +1,4 @@
-[parse] parse: 12 fabric pages, 48 sample pages, 39 distinct section/key pairs, 0 without sections
+[parse] parse: 12 fabric pages, 48 sample pages, 39 distinct section/key pairs, 0 without sections, 0 differing from the manifest
 [vocab] vocab: 21 schemes, 129 concepts, 60 object types parsed
 [vocab]   atlante                  7 concepts
 [vocab]   el-mahrine               9 concepts

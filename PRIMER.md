@@ -103,6 +103,8 @@ Eigenschaften, die das Ergebnis haben muss:
 | Typologien | je Typologie ein SKOS-Schema (Hayes, Atlante, El Mahrine, Fulford, PM); Hierarchie aus der Notation (61B3 → 61B → 61, `XLIX, 10` → `XLIX`, `18.2` → `18`); `var. Sidi Khalifa` und `var. PM 34.11` sind Untertyp-Konzepte (die PM-Variante mit `skos:closeMatch` auf das PM-Konzept); `late`, `no. 1`, bloßes `var.`, `?`, `possibly`, `sim.` sind Merkmale der Zuordnung, nicht Konzepte | 2026-11-10 |
 | Mehrfachangaben mit Schrägstrich | mehrere Typ-Zuordnungen am Objekt; Beziehung `alternative` (gleiche Typologie, z. B. `Hayes 61A/B4`, `Atlante VIII A/C`) oder `concordance` (zwei Typologien, z. B. `Hayes 76/EM 10.1`); `EM` = El Mahrine; der Originaltext bleibt am Objekt | 2026-11-10 |
 | Kontrollierte Werte | alle als SKOS-Schema: Fabric, Ware, Objektform, Fragmentierung, Oberfläche, Bruchstruktur, Härte, Sortierung, Methode, Einschlussart, Häufigkeit, Rundung, Form und Farbe der Einschlüsse, Porenform, Periode; Labels genau wie bei FACEM, nichts wird korrigiert; externe Links (AAT, Wikidata) werden danach wie in S4 vorgeschlagen und von dir bestätigt | 2026-11-10 |
+| Beobachtungen | Kombination: `facem:Observation` ist zugleich `crmsci:S4_Observation` und `sosa:Observation` (Werte mit QUDT-Einheit); Maße als `crm:E54_Dimension`; wo FACEM Labordaten belegt (Dünnschliff, Petrographie), zusätzlich CRMhs (`HS3_Analysis`, `HS9_Study_Object_Sample`) als weitere Oberklasse; nur per IRI, keine Kopie der CC-BY-NC-SA-Ontologie. Dasselbe Muster soll danach in geo-lod nachgezogen werden (D10) | 2026-11-10 |
+| Brücke zu geo-lod | Wiederverwendung per IRI, kein `owl:imports`: `facem:`-Klassen haben dieselben CRM-Anker wie in geo-lod; gemeinsame Teile (`geolod:DataSource`, ObservableProperty, Einheiten) werden über `http://w3id.org/geo-lod/` genutzt; ein Mapping-Block dokumentiert die Gleichungen | 2026-11-10 |
 | Lizenz der Quelle | ungeklärt, die Seiten nennen keine; vor Veröffentlichung der Daten bei den Herausgebenden nachfragen | offen |
 
 ### A5 Was in welchem Chat hochgeladen wird
@@ -137,7 +139,7 @@ Offen: w3id-Registrierung (Pull Request auf `perma-id/w3id.org`), Content Negoti
 | S3 | JSONs lokal ansehen, Modellierungsliste mit Feldkatalog (Entwurf liegt vor, Grundsatzbeschlüsse in A4, Zeilenbeschlüsse offen) | facem2lod | S2 | in Arbeit |
 | S4 | Wikidata-Kandidaten für Orte und Perioden (CSV) | facem2lod | S3 | erledigt 2026-11-10 |
 | S5 | SKOS-Vokabulare: Typologien, Perioden, Einschlüsse | facem2lod | S3, S4 | Vokabulare gebaut, externe Links (AAT, Wikidata) offen |
-| S6 | Ontologie und RDF-Builder neu (offline aus JSON), SHACL | facem2lod | S5 | offen |
+| S6 | Ontologie und RDF-Builder neu (offline aus JSON), SHACL | facem2lod | S5 | Modellentwurf zur Abnahme, Aufbau offen |
 | S7 | Brücke zu geo-lod: Core-Import, Messmuster, Orte als FeatureCollection | facem2lod, geo-lod | S6 | offen |
 | S8 | Doku- und Figure-Seiten (Skill `figure-pages-site`) | facem2lod | S6 | offen |
 | S9 | w3id-Registrierung und Redirects | facem2lod | S6 | offen |
@@ -256,6 +258,99 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 
 **Ziel:** Ontologie und Instanzgraph werden offline aus den JSONs gebaut, mit SHACL-Gate und byte-stabiler Ausgabe; die Legacy-Skripte werden dabei abgelöst.
 
+**Modellentwurf (2026-11-10, zur Abnahme; nach deinem Okay wird gebaut).** Namespace der Klassen `http://w3id.org/facem/ontology/` (Präfix `facem:`), Instanzen unter `http://w3id.org/facem/entity/<typ>_<id>` (Vorschlag), Vokabulare aus S5. Farben nach deinem Schema: Klasse orange, Objekt der Wirklichkeit grün, Vokabularterm lila, Fremdnamensraum weiß.
+
+```mermaid
+flowchart LR
+  classDef cls fill:#9a3412,stroke:#000000,color:#ffffff
+  classDef real fill:#166534,stroke:#000000,color:#ffffff
+  classDef term fill:#4c1d95,stroke:#000000,color:#ffffff
+  classDef owl fill:#ffffff,stroke:#000000,color:#000000
+  classDef inst fill:#e2e8f0,stroke:#000000,color:#000000
+
+  Sherd(["facem:Sherd"]):::real
+  Sample(["facem:Sample"]):::real
+  Place(["facem:Place"]):::real
+  Taking["facem:SampleTaking"]:::cls
+  Prod["facem:Production"]:::cls
+  Survey["facem:Survey"]:::cls
+  TypeA["facem:TypeAssignment"]:::cls
+  DateA["facem:DatingAssignment"]:::cls
+  Obs["facem:Observation"]:::cls
+  Dim["facem:Dimension"]:::cls
+  Img["facem:Image"]:::cls
+  Doc["facem:Publication"]:::cls
+  Person["facem:Person"]:::cls
+  Src["facem:SourceRecord"]:::cls
+
+  Fabric(["vocab: fabric"]):::term
+  TypeC(["vocab: hayes, atlante, el-mahrine, fulford, pm"]):::term
+  Period(["vocab: period"]):::term
+  Prop(["vocab: observable properties and descriptors"]):::term
+  Method(["vocab: method"]):::term
+
+  Geom["geo:Geometry (WKT point)"]:::owl
+  Unit["qudt:Unit (mm, cm, %)"]:::owl
+
+  Sherd -- "P45 consists of" --> Fabric
+  Sample -- "taken from" --> Sherd
+  Taking -- "O5 removed" --> Sample
+  Taking -- "P14 carried out by" --> Person
+  Prod -- "P108 has produced" --> Sherd
+  Prod -- "P7 took place at (supposed)" --> Place
+  Survey -- "P7 took place at" --> Place
+  Survey -- "P12 occurred in the presence of" --> Sherd
+  TypeA -- "P140 assigned attribute to" --> Sherd
+  TypeA -- "P141 assigned" --> TypeC
+  DateA -- "P140 assigned attribute to" --> Sherd
+  DateA -- "P141 assigned" --> Period
+  Obs -- "sosa:hasFeatureOfInterest" --> Sample
+  Obs -- "sosa:observedProperty" --> Prop
+  Obs -- "sosa:usedProcedure" --> Method
+  Obs -- "P14 carried out by" --> Person
+  Obs -- "qudt:unit" --> Unit
+  Sherd -- "P43 has dimension" --> Dim
+  Dim -- "P91 has unit" --> Unit
+  Img -- "P138 represents" --> Sample
+  Doc -- "P70 documents" --> Sherd
+  Place -- "P168 is defined by" --> Geom
+  Src -- "prov:hadPrimarySource" --> Sherd
+
+  subgraph DCAT["DCAT 3 / DCAT-AP"]
+    Cat["dcat:Catalog"]:::owl
+    Ser["dcat:DatasetSeries"]:::owl
+    Ds["dcat:Dataset (one per fabric)"]:::owl
+    Dist["dcat:Distribution"]:::owl
+    Cat -- "dcat:dataset" --> Ds
+    Cat -- "dcat:seriesMember" --> Ser
+    Ds -- "dcat:inSeries" --> Ser
+    Ds -- "dcat:distribution" --> Dist
+  end
+  Ds -- "dcterms:spatial" --> Place
+  Ds -- "dct:hasPart" --> Sample
+```
+
+| Klasse | Anker (CRM und Erweiterungen) | Quelle in den JSONs | Bezug zu geo-lod |
+|---|---|---|---|
+| `facem:Sherd` | `crm:E22_Human-Made_Object` | Tab „object data": Form, Typ, Fragmentierung, Oberfläche, Dekor, Maße, Chronologie | geo-lod hat kein Gegenstück; `geolod:PalaeoclimateSample ⊑ E18` ist das Analogon für Proben |
+| `facem:Sample` | `crmsci:S13_Sample`, `sosa:Sample`, (`crmhs:HS9_Study_Object_Sample`) | `sample no` (`M 201/1`), Probenseiten `m-201-2` usw.; die repräsentative Probe der Fabric trägt die Markierung `facem:representativeSampleOf` | wie `geolod:PalaeoclimateSample` |
+| `facem:SampleTaking` | `crmsci:S2_Sample_Taking` | `sample taken: by Carina Hasenzagl` | – |
+| `facem:Production` | `crm:E12_Production` | `supposed site of production` (Ort, Rolle „vermutet" über `crm:P2_has_type`) | – |
+| `facem:Survey` | `crm:E7_Activity` mit Typ „Survey" | `registration code of context: surveyed in 1968` (Jahr als `crm:E52_Time-Span`), `site of discovery` | – |
+| `facem:Place` | `crm:E53_Place`, `geo:Feature` | `map_points` (Koordinate), Beschluss „ein Ort je Name"; Wikidata/GeoNames aus S4 (`exactMatch`, `within`) | `geolod:SamplingLocation ⊑ geo:Feature` |
+| `facem:TypeAssignment` | `crm:E13_Attribute_Assignment` | `object type` aus `object_types.json`: Typologie, Code, Beziehung (`alternative`/`concordance`), Sicherheit, Merkmale, Literatur, Hinweis | Muster von `geolod:MISAttributeAssignment` |
+| `facem:DatingAssignment` | `crm:E13_Attribute_Assignment`, `crm:E52_Time-Span` | `chronology of object`: Periode (S5), Originaltext, abgeleitetes Jahresintervall mit Regelkennung | Muster `PeriodBeginning`/`PeriodEnd`, `assignmentStatus` |
+| `facem:Observation` | `crmsci:S4_Observation`, `sosa:Observation`, (`crmhs:HS3_Analysis`) | Abschnitte Visual Examination, Binocular, Inclusions, Dünnschliff (archaeometry/petrography): Farbe (Munsell), Porosität, Einschlussanteil, Poren- und Einschlussmerkmale | `geolod:PalaeoclimateObservation`; `an:Analysis` |
+| `facem:ObservableProperty` | `sosa:ObservableProperty` | je Eigenschaft eine Instanz (Porosität, Einschlussanteil, Farbe, Sortierung, Einschlussart je Art …) | `geolod:ObservableProperty` |
+| `facem:Dimension` | `crm:E54_Dimension` mit QUDT-Einheit | `dimensions`: Durchmesser (Rand, Boden), Höhe | `geolod:DepthPosition ⊑ E54` |
+| `facem:Image` | `crm:E36_Visual_Item` | `images` mit Rolle (Dünnschliff, Makro, Zeichnung, Foto), Vergrößerung aus der Unterschrift; Verweis auf die facem.at-URL, keine Kopie | – |
+| `facem:Publication` | `crm:E31_Document` | `publication`, Literatur aus `object type`, `publication (of analysis)` | – |
+| `facem:Person` | `crm:E21_Person` (Zugehörigkeit `crm:E74_Group`) | `analysis author`, `sample taken`, `name of author`, `institution of author` | – |
+| `facem:SourceRecord` | `rdfs:subClassOf geolod:DataSource` (`crm:E73_Information_Object`) | Seiten-URL, Abruf über den Commit datiert, Hash aus dem Manifest | `geolod:DataSource` |
+| DCAT | `dcat:Catalog`, `dcat:DatasetSeries` (Release 10), `dcat:Dataset` je Fabric, `dcat:Distribution` je Quellseite und erzeugter Datei | Manifest, Fabric, Proben; Zeit- und Raumabdeckung aus Chronologie und Kartenpunkt | Muster der `wdt-metadata`-Schicht |
+
+**Abnahme:** Du gibst das Diagramm und die Tabelle frei oder änderst Zeilen; offene Punkte stehen in D10. Danach: Ontologie als Turtle, Builder `step_rdf.py` (offline, aus JSON und Vokabularen), SHACL-Shapes mit Gate, Tests, Kopplung an `main.py`.
+
 **DCAT:** Der Builder schreibt neben dem Instanzgraphen einen DCAT-Graphen (Catalog, DatasetSeries, Dataset, Distribution nach DCAT 3.0 mit den Pflichtfeldern von DCAT-AP) und ein SHACL-Profil dafür; vor dem Bau wird die aktuelle DCAT-AP-Fassung und ihre Shapes geprüft.
 
 **Abnahme:** Zweimal bauen, `git status` sauber; SHACL ohne Verstöße (Instanz- und DCAT-Graph); jede Klasse hat einen CRM-Anker.
@@ -298,5 +393,6 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 - **D5** Die auffälligen Werte aus den Befunden (u. a. `hb-ars-3` Periode und Datierung, `bd-ars-3` Porosität 40 %) den Herausgebenden melden, bevor wir sie bereinigen oder so übernehmen.
 - **D6** erledigt 2026-11-10: Probenseiten haben dasselbe Markup, aber drei Tabs (siehe Befunde).
 - **D9** Wikidata-Objekte für Bordj el Djerbi und Henchir el Biar anlegen (optional, nach Rückfrage bei den Herausgebenden; QuickStatements wären der Weg). Aufgefallen: Typologie „El Mahrine“ (Mackensen 1993) kommt in den Proben vor und liegt namentlich nahe bei Henchir el Biar und Bordj el Djerbi (Kirche El Mehrine `Q53645997`, 1,8 bis 2,8 km); ob ein Zusammenhang besteht, wäre bei S5 zu prüfen.
+- **D10** Modellentwurf S6: (a) die Eigenschaftsnamen von CRMsci (`O5 removed`, `O8`, `O24` usw.) und von CRMhs (`HS3`, `HS9`, `HSP…`) sind aus dem Gedächtnis gesetzt und vor dem Bau gegen die Spezifikationen zu prüfen; (b) Produktion und Fundereignis (`E12`, `E7`) sind schwerer als eine direkte Eigenschaft: ob wir sie so detailliert führen oder eine einfache Beziehung `facem:supposedProductionPlace` genügt; (c) das Muster S4 + SOSA + QUDT + CRMhs soll in geo-lod nachgezogen werden (`geolod:PalaeoclimateObservation`, `an:Analysis`), eigener Schritt dort; (d) CRMhs ist CC BY-NC-SA 4.0 und in geo-lod noch Kandidat (Eintrag 2026-11-03): nur IRI-Verwendung, keine Kopie.
 - **D8** Satellit (S10): Export in `facem2lod` oder Importer im Paket `wikibase-static`; Namen `facem-static`; wie die Klassen von `facem2lod` und das CRM-Overlay des Pakets zusammenpassen. Vor S6 klären, damit der Ontologie-Entwurf nichts baut, was der Satellit nicht abbilden kann.
 - **D7** DCAT: Ob ein Dataset je Fabric oder je Probe der richtige Schnitt ist (Vorschlag: je Fabric, Proben als Teile), welche DCAT-AP-Fassung (3.0) Zielprofil ist und ob die Zeit-/Raumabdeckung als `dcterms:temporal`/`dcterms:spatial` am Dataset zusätzlich zur Modellierung am Objekt geführt wird. Die Fassung von DCAT-AP und die Pflichtfelder vor S6 prüfen.

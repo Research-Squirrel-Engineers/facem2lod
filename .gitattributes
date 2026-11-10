@@ -1,0 +1,19 @@
+# Keep the line endings of everything the pipeline writes or fetches exactly as it is,
+# also on Windows with core.autocrlf=true (no LF/CRLF warnings, no changed bytes).
+
+# Pages as received from facem.at: bytes must match data/raw/harvest_manifest.json (sha256).
+data/raw/** -text
+
+# Everything written by the pipeline or kept by hand: LF in repository and working copy.
+*.py   text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.csv  text eol=lf
+*.ttl  text eol=lf
+*.txt  text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.cff  text eol=lf
+dist/** text eol=lf
+data/derived/** text eol=lf
+data/curated/** text eol=lf

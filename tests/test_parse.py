@@ -108,6 +108,15 @@ class ParseRealPage(unittest.TestCase):
         self.assertEqual(sample_ids(html, "https://facem.at/ou-ars-1"),
                          ["m-201-2", "m-201-3", "m-201-4", "m-201-5"])
 
+    def test_manifest_hash_check(self):
+        from step_parse import raw_matches_manifest
+        from facem_utils import sha256_bytes
+        data = b"<html>a\r\nb</html>"
+        self.assertTrue(raw_matches_manifest(data, {"sha256": sha256_bytes(data)}))
+        self.assertFalse(raw_matches_manifest(data.replace(b"\r\n", b"\n"), {"sha256": sha256_bytes(data)}))
+        self.assertTrue(raw_matches_manifest(data, {}))
+        self.assertTrue(raw_matches_manifest(data, None))
+
 
 if __name__ == "__main__":
     unittest.main()
