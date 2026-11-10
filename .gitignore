@@ -10,7 +10,7 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
+# dist/ holds the versioned products of this repository and is NOT ignored
 downloads/
 eggs/
 .eggs/
@@ -205,3 +205,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- facem2lod ---
+.venv/
+bundle.zip

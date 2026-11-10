@@ -1,0 +1,242 @@
+[
+  {
+    "id": "bd-ars-1",
+    "kind": "fabric",
+    "n_fields": 42,
+    "n_images": 22,
+    "n_links": 15,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "BD-ARS-1"
+  },
+  {
+    "id": "bd-ars-2",
+    "kind": "fabric",
+    "n_fields": 42,
+    "n_images": 22,
+    "n_links": 15,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "BD-ARS-2"
+  },
+  {
+    "id": "bd-ars-3",
+    "kind": "fabric",
+    "n_fields": 42,
+    "n_images": 22,
+    "n_links": 15,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "BD-ARS-3"
+  },
+  {
+    "id": "hb-ars-1",
+    "kind": "fabric",
+    "n_fields": 42,
+    "n_images": 22,
+    "n_links": 15,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "HB-ARS-1"
+  },
+  {
+    "id": "hb-ars-2",
+    "kind": "fabric",
+    "n_fields": 42,
+    "n_images": 22,
+    "n_links": 15,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "HB-ARS-2"
+  },
+  {
+    "id": "hb-ars-3",
+    "kind": "fabric",
+    "n_fields": 42,
+    "n_images": 22,
+    "n_links": 15,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "HB-ARS-3"
+  },
+  {
+    "id": "ou-ars-1",
+    "kind": "fabric",
+    "n_fields": 43,
+    "n_images": 23,
+    "n_links": 16,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "OU-ARS-1"
+  },
+  {
+    "id": "ou-ars-2",
+    "kind": "fabric",
+    "n_fields": 43,
+    "n_images": 23,
+    "n_links": 16,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "OU-ARS-2"
+  },
+  {
+    "id": "ph-ars-1",
+    "kind": "fabric",
+    "n_fields": 42,
+    "n_images": 22,
+    "n_links": 15,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "PH-ARS-1"
+  },
+  {
+    "id": "ph-ars-2",
+    "kind": "fabric",
+    "n_fields": 42,
+    "n_images": 22,
+    "n_links": 15,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "PH-ARS-2"
+  },
+  {
+    "id": "ph-ars-3",
+    "kind": "fabric",
+    "n_fields": 42,
+    "n_images": 22,
+    "n_links": 15,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "PH-ARS-3"
+  },
+  {
+    "id": "ph-ars-4",
+    "kind": "fabric",
+    "n_fields": 42,
+    "n_images": 22,
+    "n_links": 15,
+    "sections": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry",
+      "petrography"
+    ],
+    "title": "PH-ARS-4"
+  }
+]

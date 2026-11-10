@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "facem2lod: FACEM ceramic fabrics as Linked Open Data"
+abstract: >-
+  Python pipeline that harvests the fabric descriptions of the FACEM database
+  (facem.at) and models them as Linked Open Data with CIDOC CRM and its
+  extensions, bridged to the geo-lod palaeoclimate model.
+type: software
+authors:
+  - family-names: Thiery
+    given-names: Florian
+    orcid: "https://orcid.org/0000-0002-3246-3531"
+license: MIT
+version: "0.3.0"
+date-released: "2026-11-10"
+repository-code: "https://github.com/Research-Squirrel-Engineers/facem2lod"
+keywords:
+  - FACEM
+  - ceramic fabrics
+  - Linked Open Data
+  - CIDOC CRM
+  - archaeometry
