@@ -9,7 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "py"))
 import step_wikidata as w
 
 
-def entity(qid, label, lat=None, lon=None, geonames=None, osm=None):
+def entity(qid, label, lat=None, lon=None, geonames=None, osm=None, p31="Q839954", lang="en"):
     claims = {}
     if lat is not None:
         claims["P625"] = [{"rank": "normal", "mainsnak": {
@@ -21,8 +21,9 @@ def entity(qid, label, lat=None, lon=None, geonames=None, osm=None):
         claims["P402"] = [{"rank": "deprecated", "mainsnak": {
             "snaktype": "value", "datavalue": {"value": osm}}}]
     claims["P31"] = [{"rank": "normal", "mainsnak": {
-        "snaktype": "value", "datavalue": {"value": {"id": "Q839954"}}}}]
-    return {"id": qid, "labels": {"en": {"value": label}},
+        "snaktype": "value", "datavalue": {"value": {"id": p31}}}}]
+    labels = {lang: {"value": label}} if label else {}
+    return {"id": qid, "labels": labels,
             "descriptions": {"en": {"value": "test"}}, "claims": claims}
 
 
@@ -37,7 +38,7 @@ class TermTests(unittest.TestCase):
 
     def test_place_names_split(self):
         self.assertEqual(w.queries_for_place("Oudna / Uthina"), ["Oudna", "Uthina"])
-        self.assertEqual(w.queries_for_place("Bordj el Djerbi"), ["Bordj el Djerbi"])
+        self.assertEqual(w.queries_for_place("Bordj el Djerbi")[0], "Bordj el Djerbi")
 
     def test_period_queries_unique_and_include_parts(self):
         q = w.queries_for_period("Roman-Late Antiquity")
@@ -79,6 +80,37 @@ class ReadTests(unittest.TestCase):
         b = w.make_row("period", "Roman-Late Antiquity", "q", w.read_entity(entity("Q1", "Roman Late Antiquity")))
         w.rank_rows([a, b])
         self.assertEqual((b["rank"], a["rank"]), ("1", "2"))
+
+
+class FilterTests(unittest.TestCase):
+    def test_roman_alone_is_not_searched_but_extras_are(self):
+        q = w.queries_for_period("Roman-Late Antiquity")
+        self.assertNotIn("Roman", q)
+        self.assertIn("Roman Empire", q)
+        self.assertIn("Late Antiquity", q)
+
+    def test_place_variants_are_added(self):
+        q = w.queries_for_place("Henchir el Biar")
+        self.assertEqual(q[0], "Henchir el Biar")
+        self.assertIn("Henchir el-Biar", q)
+        self.assertEqual(w.queries_for_place("Oudna / Uthina"), ["Oudna", "Uthina"])
+
+    def test_noise_classes(self):
+        self.assertTrue(w.is_noise(w.read_entity(entity("Q1", "Uthina luzonica", p31="Q16521"))))
+        self.assertFalse(w.is_noise(w.read_entity(entity("Q2", "Uthina"))))
+
+    def test_label_falls_back_to_other_language(self):
+        info = w.read_entity(entity("Q1", "Oudna", lang="fr"))
+        self.assertEqual(info["label"], "Oudna")
+        self.assertEqual(w.read_entity(entity("Q2", ""))["label"], "")
+
+    def test_period_class_ranks_first(self):
+        article = w.make_row("period", "Roman-Late Antiquity", "q",
+                             w.read_entity(entity("Q1", "Late Antiquity", p31="Q839954")))
+        period = w.make_row("period", "Roman-Late Antiquity", "q",
+                            w.read_entity(entity("Q9", "Late antiquity", p31="Q11514315")))
+        w.rank_rows([article, period])
+        self.assertEqual((period["rank"], article["rank"]), ("1", "2"))
 
 
 class MergeTests(unittest.TestCase):

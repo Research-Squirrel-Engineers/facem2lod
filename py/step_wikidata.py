@@ -14,6 +14,10 @@ The terms come from the data, not from a list in this file:
 For each term Wikidata is asked (wbsearchentities), then the hits are read in one go
 (wbgetentities): coordinates (P625), GeoNames ID (P1566), OSM relation ID (P402), instance of (P31).
 GeoNames and OSM are not searched, only taken from Wikidata where Wikidata has them.
+Places are also looked up by position (Wikidata Query Service, items within AROUND_KM of the
+FACEM coordinate), because a name search misses sites that Wikidata spells differently.
+Obvious noise (taxa, family names, paintings, disambiguation pages ...) is dropped, the
+number is printed; the class list NOISE_CLASSES is in the CONFIG block.
 
 The result is data/curated/wikidata_candidates.csv. You decide: fill `confirmed` with
 ja, nein or offen (empty = offen). A rerun keeps your `confirmed` and `note` cells and never
@@ -50,6 +54,36 @@ OUT_CSV = ROOT / "data" / "curated" / "wikidata_candidates.csv"
 
 # Extra search words for period parts that Wikidata names differently. Keys are the parts
 # as they appear in FACEM; the part itself is always searched too.
+LANGUAGES = ["en", "fr", "de", "ar", "la", "it"]   # label fallback order (first found wins)
+WDQS = "https://query.wikidata.org/sparql"
+AROUND_KM = 3.0             # position search around the FACEM point; 0 switches it off
+AROUND_LIMIT = 25
+
+# Other spellings to search for a place (the FACEM label is always searched too).
+PLACE_EXTRA_QUERIES = {
+    "Bordj el Djerbi": ["Bordj el-Djerbi", "Bordj Djerbi", "Borj el Djerbi"],
+    "Henchir el Biar": ["Henchir el-Biar", "Henchir Biar", "Hr el Biar"],
+    "Pheradi Maius": ["Pheradi Majus", "Pheradi Maius titular see"],
+}
+# Period parts that are searched only through PERIOD_EXTRA_QUERIES (alone they match noise).
+PERIOD_SKIP_PARTS = {"Roman"}
+# Classes (P31) that are never a place or a period here: dropped from the candidates.
+NOISE_CLASSES = {
+    "Q16521",      # taxon
+    "Q4167410",    # Wikimedia disambiguation page
+    "Q13433827",   # encyclopedia article
+    "Q13442814",   # scholarly article
+    "Q3305213",    # painting
+    "Q101352",     # family name
+    "Q12308941",   # male given name
+    "Q5398426",    # television series
+    "Q133067",     # mosaic
+    "Q7725634",    # literary work
+    "Q3331189",    # edition
+}
+# Classes that make a period candidate more likely (historical period, empire, ...).
+PERIOD_CLASSES = {"Q11514315", "Q186081", "Q1307214", "Q48349", "Q3024240", "Q465299"}
+
 PERIOD_EXTRA_QUERIES = {
     "Roman": ["Roman Empire", "ancient Rome"],
     "Early Imperial": ["Principate", "early Roman Empire"],
@@ -93,12 +127,16 @@ def collect_terms(pages: list) -> tuple:
 
 
 def queries_for_place(label: str) -> list:
-    return split_place_names(label)
+    out = []
+    for name in split_place_names(label):
+        out.append(name)
+        out += PLACE_EXTRA_QUERIES.get(name, [])
+    return out
 
 
 def queries_for_period(label: str) -> list:
     parts = [p for p in label.split("-") if p]
-    out = [label.replace("-", " ")] + parts
+    out = [label.replace("-", " ")] + [p for p in parts if p not in PERIOD_SKIP_PARTS]
     for part in parts:
         out += PERIOD_EXTRA_QUERIES.get(part, [])
     seen, uniq = set(), []
@@ -131,16 +169,26 @@ def claim_values(entity: dict, prop: str) -> list:
     return out
 
 
+def pick_language(values: dict) -> str:
+    """English if there is one, otherwise the first language of LANGUAGES, otherwise any."""
+    for lang in LANGUAGES:
+        if lang in values:
+            return values[lang]["value"]
+    return values[sorted(values)[0]]["value"] if values else ""
+
+
+def is_noise(info: dict) -> bool:
+    return bool(NOISE_CLASSES & set(filter(None, info["instance_of"].split(";"))))
+
+
 def read_entity(entity: dict) -> dict:
     coords = claim_values(entity, "P625")
     lat = coords[0]["latitude"] if coords else None
     lon = coords[0]["longitude"] if coords else None
-    labels = entity.get("labels", {})
-    descs = entity.get("descriptions", {})
     return {
         "qid": entity.get("id", ""),
-        "label": labels.get(LANGUAGE, {}).get("value", ""),
-        "description": descs.get(LANGUAGE, {}).get("value", ""),
+        "label": pick_language(entity.get("labels", {})),
+        "description": pick_language(entity.get("descriptions", {})),
         "lat": lat, "long": lon,
         "geonames_id": ";".join(str(v) for v in claim_values(entity, "P1566")),
         "osm_relation_id": ";".join(str(v) for v in claim_values(entity, "P402")),
@@ -162,25 +210,28 @@ def make_row(kind, source_label, query, info, origin=None) -> dict:
 
 
 def rank_rows(rows: list) -> None:
-    """Fills `rank` per (kind, source_label): places by distance (no coordinates last),
-    periods by exact label match first, then by how many queries found the item."""
+    """Fills `rank` per (kind, source_label). Places: by distance to the FACEM point (no
+    coordinates last). Periods: items of a period class first, then exact label matches to
+    one of the search words, then the rest."""
     groups = {}
     for r in rows:
         groups.setdefault((r["kind"], r["source_label"]), []).append(r)
     for (kind, source), grp in groups.items():
         if kind == "place":
-            names = [n.lower() for n in split_place_names(source)]
+            names = {n.lower() for n in queries_for_place(source)}
 
             def sort_key(r):
                 d = float(r["distance_km"]) if r["distance_km"] else 1e9
                 exact = 0 if r["label"].lower() in names else 1
                 return (d, exact, r["qid"])
         else:
-            want = source.replace("-", " ").lower()
+            words = {q.lower() for q in queries_for_period(source)}
 
             def sort_key(r):
-                exact = 0 if r["label"].lower() == want else 1
-                return (exact, r["qid"])
+                classes = set(filter(None, r["instance_of"].split(";")))
+                period = 0 if classes & PERIOD_CLASSES else 1
+                exact = 0 if r["label"].lower() in words else 1
+                return (period, exact, r["qid"])
         for i, r in enumerate(sorted(grp, key=sort_key), 1):
             r["rank"] = str(i)
 
@@ -262,12 +313,29 @@ def search(term: str) -> list:
     return [h["id"] for h in data.get("search", [])]
 
 
+def around(lat: float, lon: float, km: float) -> list:
+    """Item IDs within km of a point, nearest first (Wikidata Query Service)."""
+    query = ("SELECT ?item ?dist WHERE { SERVICE wikibase:around { ?item wdt:P625 ?loc . "
+             f'bd:serviceParam wikibase:center "Point({lon} {lat})"^^geo:wktLiteral . '
+             f'bd:serviceParam wikibase:radius "{km}" . bd:serviceParam wikibase:distance ?dist . }} }} '
+             f"ORDER BY ?dist LIMIT {AROUND_LIMIT}")
+    url = WDQS + "?" + urllib.parse.urlencode({"query": query, "format": "json"})
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT,
+                                               "Accept": "application/sparql-results+json"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except (urllib.error.URLError, ValueError) as e:
+        raise WikidataError(f"position search failed: {getattr(e, 'reason', e)}")
+    return [b["item"]["value"].rsplit("/", 1)[-1] for b in data["results"]["bindings"]]
+
+
 def fetch_entities(qids: list) -> dict:
     out = {}
     for i in range(0, len(qids), 50):
         batch = qids[i:i + 50]
         data = api_get({"action": "wbgetentities", "ids": "|".join(batch),
-                        "props": "labels|descriptions|claims", "languages": LANGUAGE})
+                        "props": "labels|descriptions|claims", "languages": "|".join(LANGUAGES)})
         for qid, ent in data.get("entities", {}).items():
             if "missing" not in ent:
                 out[qid] = read_entity(ent)
@@ -313,17 +381,32 @@ def run(probe: bool = False) -> int:
             print(f"  {kind:6s} {label} / {q!r}: {len(ids)} hits")
             hits.append((kind, label, q, origin, ids))
             time.sleep(DELAY)
+        if AROUND_KM:
+            for label, origin in sorted(places.items()):
+                try:
+                    ids = around(origin[0], origin[1], AROUND_KM)
+                except WikidataError as e:
+                    print(f"  WARN position search for {label}: {e}")
+                    continue
+                print(f"  place  {label} / within {AROUND_KM:g} km: {len(ids)} hits")
+                hits.append(("place", label, f"around {AROUND_KM:g} km", origin, ids))
+                time.sleep(DELAY)
         qids = sorted({i for h in hits for i in h[4]})
         info = fetch_entities(qids)
     except WikidataError as e:
         print(f"wikidata: {e}")
         return 1
 
-    rows = []
+    rows, dropped = [], 0
     for kind, label, q, origin, ids in hits:
         for qid in ids:
-            if qid in info:
-                rows.append(make_row(kind, label, q, info[qid], origin))
+            if qid not in info:
+                continue
+            if is_noise(info[qid]):
+                dropped += 1
+                continue
+            rows.append(make_row(kind, label, q, info[qid], origin))
+    print(f"wikidata: {dropped} noise hits dropped (NOISE_CLASSES)")
     merged = merge_rows(rows, read_csv(OUT_CSV))
     write_csv(OUT_CSV, merged)
 
