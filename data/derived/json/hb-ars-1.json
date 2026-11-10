@@ -30,111 +30,133 @@
     {
       "alt": "FACEM - provenience studies on pottery in the central mediterranean",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/title.png"
     },
     {
       "alt": "",
       "caption": "HB-ARS-1, M 200/1, scale bar 0.2mm",
+      "role": "thin_section",
       "src": "https://facem.at/img/thin-sections/M-200-1-10x.jpg"
     },
     {
       "alt": "",
       "caption": "HB-ARS-1, M 200/1, scale bar 0.2mm",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/frame_c.png"
     },
     {
       "alt": "",
       "caption": "HB-ARS-1, M 200/1, scale bar 0.5mm",
+      "role": "thin_section",
       "src": "https://facem.at/img/thin-sections/M-200-1-4x.jpg"
     },
     {
       "alt": "",
       "caption": "HB-ARS-1, M 200/1, 40x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M200_1_4.jpg"
     },
     {
       "alt": "",
       "caption": "HB-ARS-1, M 200/1, 25x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M200_1_3.jpg"
     },
     {
       "alt": "",
       "caption": "HB-ARS-1, M 200/1, 16x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M200_1_2.jpg"
     },
     {
       "alt": "",
       "caption": "HB-ARS-1, M 200/1, 16x",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/frame_b.png"
     },
     {
       "alt": "",
       "caption": "HB-ARS-1, M 200/1, 8x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M200_1_1.jpg"
     },
     {
       "alt": "",
       "caption": "HB-ARS-1, M 200/1, 8x",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/frame_a.png"
     },
     {
       "alt": "Star2",
       "caption": "M 200/1 representative sample for HB-ARS-1",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/star.png"
     },
     {
       "alt": "",
       "caption": "",
+      "role": "drawing",
       "src": "https://facem.at/img/medium-drawings/M200_1_Z.png"
     },
     {
       "alt": "",
       "caption": "Distribution of fabric type “HB-ARS-1” Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar production discovery Representative sample for “HB-ARS-1” M 200/1 There are 4 more samples assigned t",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/symbol-red.png"
     },
     {
       "alt": "",
       "caption": "Distribution of fabric type “HB-ARS-1” Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar production discovery Representative sample for “HB-ARS-1” M 200/1 There are 4 more samples assigned t",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/symbol-blue.png"
     },
     {
       "alt": "",
       "caption": "Distribution of fabric type “HB-ARS-1” Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar production discovery Representative sample for “HB-ARS-1” M 200/1 There are 4 more samples assigned t",
+      "role": "thumbnail_sample",
       "src": "https://facem.at/img/pad/M200_1_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “HB-ARS-1” M 200/2 M 200/3 M 200/4 M 200/5",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M200_2_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “HB-ARS-1” M 200/2 M 200/3 M 200/4 M 200/5",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M200_3_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “HB-ARS-1” M 200/2 M 200/3 M 200/4 M 200/5",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M200_4_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “HB-ARS-1” M 200/2 M 200/3 M 200/4 M 200/5",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M200_5_1.jpg"
     },
     {
       "alt": "",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/pictures/pdf.png"
     },
     {
       "alt": "FWF",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/fwf.png"
     },
     {
       "alt": "Uni Wien",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/uni-wien.png"
     }
   ],
@@ -216,6 +238,44 @@
       "text": ""
     }
   ],
+  "map_points": [
+    {
+      "label": "Henchir el Biar",
+      "lat": 36.7471,
+      "long": 9.86121,
+      "n_samples": 5,
+      "role": "discovery"
+    },
+    {
+      "label": "Henchir el Biar",
+      "lat": 36.7471,
+      "long": 9.86121,
+      "n_samples": 5,
+      "role": "production"
+    }
+  ],
+  "other_samples": [
+    {
+      "href": "https://facem.at/m-200-2",
+      "id": "m-200-2",
+      "label": "M 200/2"
+    },
+    {
+      "href": "https://facem.at/m-200-3",
+      "id": "m-200-3",
+      "label": "M 200/3"
+    },
+    {
+      "href": "https://facem.at/m-200-4",
+      "id": "m-200-4",
+      "label": "M 200/4"
+    },
+    {
+      "href": "https://facem.at/m-200-5",
+      "id": "m-200-5",
+      "label": "M 200/5"
+    }
+  ],
   "sections": [
     {
       "fields": [
@@ -234,11 +294,14 @@
         {
           "key": "sample taken",
           "value": "by Carina Hasenzagl"
-        },
-        {
-          "key": "",
-          "value": "Context Data"
-        },
+        }
+      ],
+      "name": "",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
         {
           "key": "site of discovery",
           "value": "Henchir el Biar"
@@ -254,11 +317,14 @@
         {
           "key": "registration code of object",
           "value": "HB-1"
-        },
-        {
-          "key": "",
-          "value": "Object"
-        },
+        }
+      ],
+      "name": "Context Data",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
         {
           "key": "ware",
           "value": "African Red Slip Ware"
@@ -296,15 +362,12 @@
           "value": "Hasenzagl 2019 , cat. Hb.008, pl. 7"
         }
       ],
-      "name": "",
+      "name": "Object",
+      "tab": "object data",
       "table": 1
     },
     {
       "fields": [
-        {
-          "key": "",
-          "value": "Visual Examination of Fresh Break"
-        },
         {
           "key": "visual examination of fresh break",
           "value": "smooth texture with some small light and dark particles"
@@ -320,11 +383,14 @@
         {
           "key": "hardness",
           "value": "hard"
-        },
-        {
-          "key": "",
-          "value": "Observation Under the Binocular Stereoscope (all lengths in mm)"
-        },
+        }
+      ],
+      "name": "Visual Examination of Fresh Break",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
         {
           "key": "porosity",
           "value": "5–7.5%; void form: channel;vughy; void length: 0.025-0.25"
@@ -336,11 +402,14 @@
         {
           "key": "sorting",
           "value": "moderately sorted sand"
-        },
-        {
-          "key": "",
-          "value": "Inclusions (all lengths in mm)"
-        },
+        }
+      ],
+      "name": "Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
         {
           "key": "black inclusions",
           "value": "infrequent, subrounded, subspherical, black, 0.025-0.125"
@@ -370,7 +439,8 @@
           "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.5"
         }
       ],
-      "name": "",
+      "name": "Inclusions (all lengths in mm)",
+      "tab": "fabric description",
       "table": 3
     },
     {
@@ -389,6 +459,7 @@
         }
       ],
       "name": "",
+      "tab": "archaeometry",
       "table": 5
     },
     {
@@ -407,6 +478,7 @@
         }
       ],
       "name": "",
+      "tab": "petrography",
       "table": 7
     }
   ],

@@ -30,111 +30,133 @@
     {
       "alt": "FACEM - provenience studies on pottery in the central mediterranean",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/title.png"
     },
     {
       "alt": "",
       "caption": "BD-ARS-2, M 199/6, scale bar 0.2mm",
+      "role": "thin_section",
       "src": "https://facem.at/img/thin-sections/M-199-6-10x.jpg"
     },
     {
       "alt": "",
       "caption": "BD-ARS-2, M 199/6, scale bar 0.2mm",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/frame_c.png"
     },
     {
       "alt": "",
       "caption": "BD-ARS-2, M 199/6, scale bar 0.5mm",
+      "role": "thin_section",
       "src": "https://facem.at/img/thin-sections/M-199-6-4x.jpg"
     },
     {
       "alt": "",
       "caption": "BD-ARS-2, M 199/6, 40x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M199_6_4.jpg"
     },
     {
       "alt": "",
       "caption": "BD-ARS-2, M 199/6, 25x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M199_6_3.jpg"
     },
     {
       "alt": "",
       "caption": "BD-ARS-2, M 199/6, 16x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M199_6_2.jpg"
     },
     {
       "alt": "",
       "caption": "BD-ARS-2, M 199/6, 16x",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/frame_b.png"
     },
     {
       "alt": "",
       "caption": "BD-ARS-2, M 199/6, 8x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M199_6_1.jpg"
     },
     {
       "alt": "",
       "caption": "BD-ARS-2, M 199/6, 8x",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/frame_a.png"
     },
     {
       "alt": "Star2",
       "caption": "M 199/6 representative sample for BD-ARS-2",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/star.png"
     },
     {
       "alt": "",
       "caption": "",
+      "role": "drawing",
       "src": "https://facem.at/img/medium-drawings/M199_6_Z.png"
     },
     {
       "alt": "",
       "caption": "Distribution of fabric type “BD-ARS-2” Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi production discovery Representative sample for “BD-ARS-2” M 199/6 There are 4 more samples assigned t",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/symbol-red.png"
     },
     {
       "alt": "",
       "caption": "Distribution of fabric type “BD-ARS-2” Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi production discovery Representative sample for “BD-ARS-2” M 199/6 There are 4 more samples assigned t",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/symbol-blue.png"
     },
     {
       "alt": "",
       "caption": "Distribution of fabric type “BD-ARS-2” Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi production discovery Representative sample for “BD-ARS-2” M 199/6 There are 4 more samples assigned t",
+      "role": "thumbnail_sample",
       "src": "https://facem.at/img/pad/M199_6_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “BD-ARS-2” M 199/7 M 199/8 M 199/9 M 199/10",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M199_7_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “BD-ARS-2” M 199/7 M 199/8 M 199/9 M 199/10",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M199_8_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “BD-ARS-2” M 199/7 M 199/8 M 199/9 M 199/10",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M199_9_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “BD-ARS-2” M 199/7 M 199/8 M 199/9 M 199/10",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M199_10_1.jpg"
     },
     {
       "alt": "",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/pictures/pdf.png"
     },
     {
       "alt": "FWF",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/fwf.png"
     },
     {
       "alt": "Uni Wien",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/uni-wien.png"
     }
   ],
@@ -216,6 +238,44 @@
       "text": ""
     }
   ],
+  "map_points": [
+    {
+      "label": "Bordj el Djerbi",
+      "lat": 36.7872,
+      "long": 9.85311,
+      "n_samples": 5,
+      "role": "discovery"
+    },
+    {
+      "label": "Bordj el Djerbi",
+      "lat": 36.7872,
+      "long": 9.85311,
+      "n_samples": 5,
+      "role": "production"
+    }
+  ],
+  "other_samples": [
+    {
+      "href": "https://facem.at/m-199-7",
+      "id": "m-199-7",
+      "label": "M 199/7"
+    },
+    {
+      "href": "https://facem.at/m-199-8",
+      "id": "m-199-8",
+      "label": "M 199/8"
+    },
+    {
+      "href": "https://facem.at/m-199-9",
+      "id": "m-199-9",
+      "label": "M 199/9"
+    },
+    {
+      "href": "https://facem.at/m-199-10",
+      "id": "m-199-10",
+      "label": "M 199/10"
+    }
+  ],
   "sections": [
     {
       "fields": [
@@ -234,11 +294,14 @@
         {
           "key": "sample taken",
           "value": "by Carina Hasenzagl"
-        },
-        {
-          "key": "",
-          "value": "Context Data"
-        },
+        }
+      ],
+      "name": "",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
         {
           "key": "site of discovery",
           "value": "Bordj el Djerbi"
@@ -254,11 +317,14 @@
         {
           "key": "registration code of object",
           "value": "BD-32"
-        },
-        {
-          "key": "",
-          "value": "Object"
-        },
+        }
+      ],
+      "name": "Context Data",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
         {
           "key": "ware",
           "value": "African Red Slip Ware"
@@ -296,15 +362,12 @@
           "value": "Hasenzagl 2019 , cat. Bd.012, pl. 1"
         }
       ],
-      "name": "",
+      "name": "Object",
+      "tab": "object data",
       "table": 1
     },
     {
       "fields": [
-        {
-          "key": "",
-          "value": "Visual Examination of Fresh Break"
-        },
         {
           "key": "visual examination of fresh break",
           "value": "granular texture with some medium-sized white and reddish particles"
@@ -320,11 +383,14 @@
         {
           "key": "hardness",
           "value": "hard"
-        },
-        {
-          "key": "",
-          "value": "Observation Under the Binocular Stereoscope (all lengths in mm)"
-        },
+        }
+      ],
+      "name": "Visual Examination of Fresh Break",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
         {
           "key": "porosity",
           "value": "10–15%; void form: channel;vughy; void length: 0.025-0.25"
@@ -336,11 +402,14 @@
         {
           "key": "sorting",
           "value": "moderately sorted sand"
-        },
-        {
-          "key": "",
-          "value": "Inclusions (all lengths in mm)"
-        },
+        }
+      ],
+      "name": "Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
         {
           "key": "black inclusions",
           "value": "singular, subrounded, spherical, black, 0.025-0.125"
@@ -370,7 +439,8 @@
           "value": "infrequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.85"
         }
       ],
-      "name": "",
+      "name": "Inclusions (all lengths in mm)",
+      "tab": "fabric description",
       "table": 3
     },
     {
@@ -389,6 +459,7 @@
         }
       ],
       "name": "",
+      "tab": "archaeometry",
       "table": 5
     },
     {
@@ -407,6 +478,7 @@
         }
       ],
       "name": "",
+      "tab": "petrography",
       "table": 7
     }
   ],

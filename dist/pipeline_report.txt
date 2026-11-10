@@ -1,1 +1,1 @@
-[parse] parse: 12 fabric pages, 0 site pages, 40 distinct section/key pairs, 0 without sections
+[parse] parse: 12 fabric pages, 48 sample pages, 39 distinct section/key pairs, 0 without sections

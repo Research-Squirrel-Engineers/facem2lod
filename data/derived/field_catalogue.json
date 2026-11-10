@@ -1,72 +1,86 @@
 {
-  "n_pages": 12,
+  "n_pages": 60,
   "sections": {
-    "": {
-      "": {
-        "count": 60,
-        "n_distinct": 5,
-        "values": [
-          {
-            "count": 12,
-            "value": "Context Data"
-          },
-          {
-            "count": 12,
-            "value": "Inclusions (all lengths in mm)"
-          },
-          {
-            "count": 12,
-            "value": "Object"
-          },
-          {
-            "count": 12,
-            "value": "Observation Under the Binocular Stereoscope (all lengths in mm)"
-          },
-          {
-            "count": 12,
-            "value": "Visual Examination of Fresh Break"
-          }
-        ]
-      },
+    "archaeometry": {
       "analysis author": {
-        "count": 12,
+        "count": 13,
         "n_distinct": 1,
         "values": [
           {
-            "count": 12,
+            "count": 13,
             "value": "Claudio Capelli"
           }
         ]
       },
       "applied method for sample analysis": {
-        "count": 12,
+        "count": 13,
         "n_distinct": 1,
         "values": [
           {
-            "count": 12,
+            "count": 13,
             "value": "thin section"
           }
         ]
       },
-      "black inclusions": {
-        "count": 12,
-        "n_distinct": 8,
+      "publication (of analysis)": {
+        "count": 11,
+        "n_distinct": 2,
         "values": [
           {
-            "count": 5,
+            "count": 7,
+            "value": "Hasenzagl and Capelli 2021"
+          },
+          {
+            "count": 4,
+            "value": "Hasenzagl and Capelli 2019"
+          }
+        ]
+      }
+    },
+    "fabric description > Inclusions (all lengths in mm)": {
+      "black inclusions": {
+        "count": 58,
+        "n_distinct": 15,
+        "values": [
+          {
+            "count": 22,
             "value": "singular, subrounded, subspherical, black, 0.025-0.125"
           },
           {
-            "count": 1,
+            "count": 9,
+            "value": "singular, subrounded, subspherical, black, 0.025-0.25"
+          },
+          {
+            "count": 5,
             "value": "infrequent, subangular;subrounded, subelongate;subspherical, black, 0.025-0.25"
           },
           {
-            "count": 1,
+            "count": 5,
+            "value": "singular, subangular, subspherical, black, 0.025-0.125"
+          },
+          {
+            "count": 4,
+            "value": "infrequent, subrounded, subspherical, black, 0.025-0.25"
+          },
+          {
+            "count": 2,
             "value": "infrequent, subrounded, subspherical, black, 0.025-0.125"
           },
           {
+            "count": 2,
+            "value": "infrequent, subrounded, subspherical, black, 0.025-0.5"
+          },
+          {
+            "count": 2,
+            "value": "singular, subangular;subrounded, subelongate;subspherical, black, 0.025-0.25"
+          },
+          {
             "count": 1,
-            "value": "infrequent, subrounded, subspherical, black, 0.025-0.25"
+            "value": "infrequent, subangular;subrounded, subelongate;subspherical, black, 0.025-0.125"
+          },
+          {
+            "count": 1,
+            "value": "infrequent, subrounded, subspherical, black, 0.025-0.025"
           },
           {
             "count": 1,
@@ -74,399 +88,165 @@
           },
           {
             "count": 1,
-            "value": "singular, subangular, subspherical, black, 0.025-0.125"
+            "value": "singular, subangular;subrounded, subelongate;subspherical, black, 0.025-0.125"
+          },
+          {
+            "count": 1,
+            "value": "singular, subangular;subrounded, subelongate;subspherical, black, 0.025-0.5"
+          },
+          {
+            "count": 1,
+            "value": "singular, subangular;subrounded, subspherical, black, 0.025-0.125"
           },
           {
             "count": 1,
             "value": "singular, subrounded, spherical, black, 0.025-0.125"
-          },
-          {
-            "count": 1,
-            "value": "singular, subrounded, subspherical, black, 0.025-0.25"
           }
         ]
       },
       "calciumcarbonate": {
-        "count": 12,
-        "n_distinct": 7,
+        "count": 60,
+        "n_distinct": 18,
         "values": [
           {
-            "count": 4,
+            "count": 12,
             "value": "infrequent, rounded, spherical, white;yellowish white, 0.025-0.5"
           },
           {
-            "count": 2,
-            "value": "infrequent, rounded, spherical, white, 0.025-0.375"
+            "count": 7,
+            "value": "infrequent, rounded, spherical, white;yellowish white, 0.025-0.25"
           },
           {
-            "count": 2,
+            "count": 6,
+            "value": "infrequent, rounded, spherical, white, 0.025-0.5"
+          },
+          {
+            "count": 5,
             "value": "singular, rounded, spherical, white, 0.025-0.125"
           },
           {
-            "count": 1,
-            "value": "infrequent, rounded, spherical, white, 0.025-0.625"
+            "count": 4,
+            "value": "infrequent, rounded, spherical, white, 0.025-0.25"
           },
           {
-            "count": 1,
+            "count": 4,
             "value": "infrequent, rounded, spherical, white;yellowish white, 0.025-0.625"
           },
           {
-            "count": 1,
+            "count": 3,
+            "value": "infrequent, rounded, spherical, white, 0.025-0.375"
+          },
+          {
+            "count": 3,
+            "value": "infrequent, rounded, spherical, white, 0.025-0.625"
+          },
+          {
+            "count": 3,
             "value": "infrequent, rounded, spherical, white;yellowish white, 0.025-0.75"
+          },
+          {
+            "count": 2,
+            "value": "infrequent, rounded, spherical, white, 0.025-0.125"
+          },
+          {
+            "count": 2,
+            "value": "infrequent, rounded, subspherical, white;yellowish white, 0.025-0.5"
+          },
+          {
+            "count": 2,
+            "value": "singular, rounded, spherical, white, 0.025-0.25"
+          },
+          {
+            "count": 2,
+            "value": "singular, rounded, spherical, white, 0.025-0.5"
+          },
+          {
+            "count": 1,
+            "value": "infrequent, rounded, spherical, white;yellowish white, 0.025-1"
+          },
+          {
+            "count": 1,
+            "value": "infrequent, rounded, subspherical, white;yellowish white, 0.025-0.75"
+          },
+          {
+            "count": 1,
+            "value": "singular, rounded, spherical, white, 0.025-0.375"
           },
           {
             "count": 1,
             "value": "singular, rounded, spherical, white, 0.025-0.75"
+          },
+          {
+            "count": 1,
+            "value": "singular, rounded, spherical, white, 0.25-0.125"
           }
         ]
       },
       "carbonate pseudomorphoses": {
-        "count": 12,
-        "n_distinct": 9,
+        "count": 60,
+        "n_distinct": 11,
         "values": [
           {
-            "count": 3,
-            "value": "singular, rounded, spherical, white, 0.025-0.125"
-          },
-          {
-            "count": 2,
+            "count": 14,
             "value": "infrequent, rounded, spherical, yellowish white;white, 0.025-0.25"
           },
           {
-            "count": 1,
+            "count": 11,
+            "value": "singular, rounded, spherical, white, 0.025-0.125"
+          },
+          {
+            "count": 8,
+            "value": "infrequent, rounded, spherical, yellowish white;white, 0.025-0.5"
+          },
+          {
+            "count": 7,
             "value": "infrequent, rounded, spherical, white, 0.025-0.125"
           },
           {
-            "count": 1,
-            "value": "infrequent, rounded, spherical, white, 0.025-0.25"
-          },
-          {
-            "count": 1,
-            "value": "infrequent, rounded, spherical, white, 0.025-0.375"
-          },
-          {
-            "count": 1,
+            "count": 5,
             "value": "infrequent, rounded, spherical, white, 0.025-0.5"
           },
           {
-            "count": 1,
+            "count": 5,
             "value": "infrequent, rounded, spherical, yellowish white;white, 0.025-0.125"
           },
           {
-            "count": 1,
+            "count": 4,
+            "value": "infrequent, rounded, spherical, white, 0.025-0.25"
+          },
+          {
+            "count": 2,
+            "value": "infrequent, rounded, spherical, white, 0.025-0.375"
+          },
+          {
+            "count": 2,
             "value": "infrequent, rounded, spherical, yellowish white;white, 0.025-0.375"
           },
           {
             "count": 1,
-            "value": "infrequent, rounded, spherical, yellowish white;white, 0.025-0.5"
-          }
-        ]
-      },
-      "chronology of object": {
-        "count": 12,
-        "n_distinct": 11,
-        "values": [
-          {
-            "count": 2,
-            "value": "Roman-Late Antiquity c. 530–580 CE"
+            "value": "infrequent, subrounded, subspherical, yellowish white;white, 0.025-0.5"
           },
           {
             "count": 1,
-            "value": "Roman-Early Imperial second half of 5th century CE"
-          },
-          {
-            "count": 1,
-            "value": "Roman-Late Antiquity 6th century CE"
-          },
-          {
-            "count": 1,
-            "value": "Roman-Late Antiquity c. 320–410(+) CE"
-          },
-          {
-            "count": 1,
-            "value": "Roman-Late Antiquity c. 425–475 CE"
-          },
-          {
-            "count": 1,
-            "value": "Roman-Late Antiquity end of 4th–first half of 5th century CE"
-          },
-          {
-            "count": 1,
-            "value": "Roman-Late Antiquity end of 5th century CE"
-          },
-          {
-            "count": 1,
-            "value": "Roman-Late Antiquity end of 6th–beginning of 7th century CE"
-          },
-          {
-            "count": 1,
-            "value": "Roman-Late Antiquity late 4th–mid-5th century CE"
-          },
-          {
-            "count": 1,
-            "value": "Roman-Late Antiquity second half of 5th century CE"
-          },
-          {
-            "count": 1,
-            "value": "Roman-Late Antiquity second half of 6th century CE"
-          }
-        ]
-      },
-      "colour of fresh break": {
-        "count": 12,
-        "n_distinct": 6,
-        "values": [
-          {
-            "count": 6,
-            "value": "5YR 6/8"
-          },
-          {
-            "count": 2,
-            "value": "5YR 6/6"
-          },
-          {
-            "count": 1,
-            "value": "2.5YR 5/8"
-          },
-          {
-            "count": 1,
-            "value": "2.5YR 6/6"
-          },
-          {
-            "count": 1,
-            "value": "5 YR 6/6"
-          },
-          {
-            "count": 1,
-            "value": "5YR 6/8–2.5YR 5/8"
-          }
-        ]
-      },
-      "decoration": {
-        "count": 2,
-        "n_distinct": 2,
-        "values": [
-          {
-            "count": 1,
-            "value": "cross (pres. h. 1.9 cm. w. 1.6 cm), one small circle in each arm and two concentric circles in centrum of cross; surrounded by groove"
-          },
-          {
-            "count": 1,
-            "value": "stamp style E(i): cross (h. 2.4 cm, w. 2 cm) similar Hayes 320n; surrounded by groove"
-          }
-        ]
-      },
-      "dimensions": {
-        "count": 12,
-        "n_distinct": 8,
-        "values": [
-          {
-            "count": 3,
-            "value": "diameter: 34cm (rim)"
-          },
-          {
-            "count": 2,
-            "value": "diameter: 36cm (rim)"
-          },
-          {
-            "count": 2,
-            "value": "diameter: 42cm (rim)"
-          },
-          {
-            "count": 1,
-            "value": "diameter: 19cm (rim), 8.6cm (base); height: 5cm"
-          },
-          {
-            "count": 1,
-            "value": "diameter: 19cm (rim), 9cm (base); height: 5cm"
-          },
-          {
-            "count": 1,
-            "value": "diameter: 20cm (rim)"
-          },
-          {
-            "count": 1,
-            "value": "diameter: 38cm (rim)"
-          },
-          {
-            "count": 1,
-            "value": "diameter: 40cm (rim)"
-          }
-        ]
-      },
-      "drawing": {
-        "count": 12,
-        "n_distinct": 1,
-        "values": [
-          {
-            "count": 12,
-            "value": ""
-          }
-        ]
-      },
-      "fabric type": {
-        "count": 12,
-        "n_distinct": 12,
-        "values": [
-          {
-            "count": 1,
-            "value": "BD-ARS-1"
-          },
-          {
-            "count": 1,
-            "value": "BD-ARS-2"
-          },
-          {
-            "count": 1,
-            "value": "BD-ARS-3"
-          },
-          {
-            "count": 1,
-            "value": "HB-ARS-1"
-          },
-          {
-            "count": 1,
-            "value": "HB-ARS-2"
-          },
-          {
-            "count": 1,
-            "value": "HB-ARS-3"
-          },
-          {
-            "count": 1,
-            "value": "OU-ARS-1"
-          },
-          {
-            "count": 1,
-            "value": "OU-ARS-2"
-          },
-          {
-            "count": 1,
-            "value": "PH-ARS-1"
-          },
-          {
-            "count": 1,
-            "value": "PH-ARS-2"
-          },
-          {
-            "count": 1,
-            "value": "PH-ARS-3"
-          },
-          {
-            "count": 1,
-            "value": "PH-ARS-4"
-          }
-        ]
-      },
-      "fragmentation": {
-        "count": 12,
-        "n_distinct": 2,
-        "values": [
-          {
-            "count": 10,
-            "value": "rim"
-          },
-          {
-            "count": 2,
-            "value": "profile"
-          }
-        ]
-      },
-      "hardness": {
-        "count": 12,
-        "n_distinct": 1,
-        "values": [
-          {
-            "count": 12,
-            "value": "hard"
-          }
-        ]
-      },
-      "inclusions": {
-        "count": 12,
-        "n_distinct": 12,
-        "values": [
-          {
-            "count": 1,
-            "value": "15%, length: 0.025-0.375"
-          },
-          {
-            "count": 1,
-            "value": "20%, length: 0.025-0.5"
-          },
-          {
-            "count": 1,
-            "value": "20–25% %, length: 0.025-0.75"
-          },
-          {
-            "count": 1,
-            "value": "20–25%, length: 0.025-0.5"
-          },
-          {
-            "count": 1,
-            "value": "25%, length: 0.025-0.5"
-          },
-          {
-            "count": 1,
-            "value": "25%, length: 0.025-0.625"
-          },
-          {
-            "count": 1,
-            "value": "25–30%, length: 0.025-0.625"
-          },
-          {
-            "count": 1,
-            "value": "30%, length: 0.025-0.5"
-          },
-          {
-            "count": 1,
-            "value": "30%, length: 0.025-0.75"
-          },
-          {
-            "count": 1,
-            "value": "30–35%, length: 0.025-0.625"
-          },
-          {
-            "count": 1,
-            "value": "30–35%, length: 0.025-0.85"
-          },
-          {
-            "count": 1,
-            "value": "7.5%, length: 0.025-0.75"
-          }
-        ]
-      },
-      "institution of author": {
-        "count": 12,
-        "n_distinct": 1,
-        "values": [
-          {
-            "count": 12,
-            "value": "independent researcher in collaboration with the University of Genoa"
-          }
-        ]
-      },
-      "interpretation of context": {
-        "count": 12,
-        "n_distinct": 1,
-        "values": [
-          {
-            "count": 12,
-            "value": "production"
+            "value": "singular, rounded, spherical, white, 0.025-0.25"
           }
         ]
       },
       "mica": {
-        "count": 12,
-        "n_distinct": 6,
+        "count": 60,
+        "n_distinct": 9,
         "values": [
           {
-            "count": 5,
+            "count": 33,
             "value": "infrequent, subangular, elongate;subspherical, silver, 0.025-0.125"
           },
           {
-            "count": 3,
+            "count": 19,
             "value": "singular, subangular, elongate;subspherical, silver, 0.025-0.125"
+          },
+          {
+            "count": 2,
+            "value": "singular, subangular, elongate;subspherical, silver, 0.025-0.0125"
           },
           {
             "count": 1,
@@ -478,25 +258,49 @@
           },
           {
             "count": 1,
+            "value": "infrequent, subangular, subelongate;spherical, silver, 0.025-0.125"
+          },
+          {
+            "count": 1,
+            "value": "infrequent, subangular, subelongate;subspherical, silver, 0.025-0.125"
+          },
+          {
+            "count": 1,
             "value": "infrequent, subangular, subspherical, silver, 0.025-0.125"
           },
           {
             "count": 1,
-            "value": "singular, subangular, elongate;subspherical, silver, 0.025-0.0125"
+            "value": "singular, subangular, subspherical, silver, 0.025-0.0125"
           }
         ]
       },
       "more inclusions": {
-        "count": 12,
-        "n_distinct": 10,
+        "count": 60,
+        "n_distinct": 19,
         "values": [
           {
-            "count": 2,
+            "count": 12,
             "value": "singular, subangular;subrounded, elongate;subspherical, beige;clayey, 0.25"
           },
           {
-            "count": 2,
+            "count": 10,
+            "value": "singular, subangular;subrounded, subelongate;subspherical, clayey, 0.5"
+          },
+          {
+            "count": 9,
             "value": "singular, subrounded, elongate;subspherical, beige;clayey, 0.25"
+          },
+          {
+            "count": 8,
+            "value": "infrequent, subangular;subrounded, subelongate;subspherical, clayey, 0.5"
+          },
+          {
+            "count": 5,
+            "value": "singular, subangular;subrounded, subelongate;subspherical, clayey, 0.25"
+          },
+          {
+            "count": 3,
+            "value": "singular, subrounded, elongate;subspherical, beige;clayey, 0.75"
           },
           {
             "count": 1,
@@ -504,7 +308,7 @@
           },
           {
             "count": 1,
-            "value": "infrequent, subangular;subrounded, subelongate;subspherical, clayey, 0.5"
+            "value": "infrequent, subangular;subrounded, subelongate;subspherical, clayey, 0.625"
           },
           {
             "count": 1,
@@ -512,11 +316,15 @@
           },
           {
             "count": 1,
+            "value": "singular, subangular, subspherical, clayey, 0.25"
+          },
+          {
+            "count": 1,
             "value": "singular, subangular, subspherical, clayey, 0.5"
           },
           {
             "count": 1,
-            "value": "singular, subangular;subrounded, subelongate;subspherical, clayey, 0.25"
+            "value": "singular, subangular;subrounded, subelongate;subspherical, clayey"
           },
           {
             "count": 1,
@@ -524,7 +332,23 @@
           },
           {
             "count": 1,
-            "value": "singular, subangular;subrounded, subelongate;subspherical, clayey, 0.5"
+            "value": "singular, subangular;subrounded, subelongate;subspherical, clayey, 1"
+          },
+          {
+            "count": 1,
+            "value": "singular, subangular;subrounded, subspherical, beige;clayey, 1"
+          },
+          {
+            "count": 1,
+            "value": "singular, subangular;subrounded, subspherical, clayey, 0.25"
+          },
+          {
+            "count": 1,
+            "value": "singular, subrounded, elongate;spherical, beige;clayey, 0.25"
+          },
+          {
+            "count": 1,
+            "value": "singular, subrounded, elongate;subspherical, beige;clayey, 0.125"
           },
           {
             "count": 1,
@@ -532,241 +356,111 @@
           }
         ]
       },
-      "name of author": {
-        "count": 12,
-        "n_distinct": 1,
-        "values": [
-          {
-            "count": 12,
-            "value": "Claudio Capelli"
-          }
-        ]
-      },
-      "object form": {
-        "count": 12,
-        "n_distinct": 3,
-        "values": [
-          {
-            "count": 6,
-            "value": "Bowl"
-          },
-          {
-            "count": 4,
-            "value": "Dish"
-          },
-          {
-            "count": 2,
-            "value": "Plate"
-          }
-        ]
-      },
-      "object type": {
-        "count": 12,
-        "n_distinct": 11,
-        "values": [
-          {
-            "count": 2,
-            "value": "Hayes 67C ( Hayes 1972 ; Bonifay 2004 )"
-          },
-          {
-            "count": 1,
-            "value": "Hayes 59A ( Hayes 1972 )"
-          },
-          {
-            "count": 1,
-            "value": "Hayes 61B3, late ( Hayes 1972 ; Bonifay 2004 )"
-          },
-          {
-            "count": 1,
-            "value": "Hayes 67B ( Hayes 1972 ; Bonifay 2004 )"
-          },
-          {
-            "count": 1,
-            "value": "Hayes 73A ( Hayes 1972 )"
-          },
-          {
-            "count": 1,
-            "value": "Hayes 76 ( Hayes 1972 )"
-          },
-          {
-            "count": 1,
-            "value": "Hayes 88, var. PM 34.11 ( Hayes 1972 ; Ben Moussa 2007 )"
-          },
-          {
-            "count": 1,
-            "value": "Hayes 88B ( Hayes 1972 ; Bonifay 2004 )"
-          },
-          {
-            "count": 1,
-            "value": "Hayes 88C ( Hayes 1972 ; Bonifay 2004 )"
-          },
-          {
-            "count": 1,
-            "value": "Hayes 99B"
-          },
-          {
-            "count": 1,
-            "value": "Hayes 99B ( Hayes 1972 ; Bonifay 2004 )"
-          }
-        ]
-      },
-      "photo": {
-        "count": 2,
-        "n_distinct": 1,
-        "values": [
-          {
-            "count": 2,
-            "value": ""
-          }
-        ]
-      },
-      "porosity": {
-        "count": 12,
-        "n_distinct": 8,
-        "values": [
-          {
-            "count": 3,
-            "value": "5–7.5%; void form: channel;vughy; void length: 0.025-0.25"
-          },
-          {
-            "count": 2,
-            "value": "10%; void form: vughy; void length: 0.025-0.25"
-          },
-          {
-            "count": 2,
-            "value": "10–15%; void form: channel;vughy; void length: 0.025-0.25"
-          },
-          {
-            "count": 1,
-            "value": "10%; void form: channel;vughy; void length: 0.025-0.25"
-          },
-          {
-            "count": 1,
-            "value": "2.5–7.5%; void form: channel;vughy; void length: 0.025-0.25"
-          },
-          {
-            "count": 1,
-            "value": "40%; void form: channel;vughy; void length: 0.025-0.25"
-          },
-          {
-            "count": 1,
-            "value": "5%; void form: vughy; void length: 0.025-0.25"
-          },
-          {
-            "count": 1,
-            "value": "7.5%; void form: vughy; void length: 0.025-0.25"
-          }
-        ]
-      },
-      "publication": {
-        "count": 12,
-        "n_distinct": 12,
-        "values": [
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , ,cat. Hb.021, pl.8"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat. Bd.012, pl. 1"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat. Bd.034, pl. 3"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat. Bd.070, pl.5"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat. Hb.008, pl. 7"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat. Ou.022, pl.11"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat. Ou.023, pl.11"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat. Ph.010, pl.15"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat. Ph.103, pl.18"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat. Ph.120, pl.19"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat. Ph.128, pl.19"
-          },
-          {
-            "count": 1,
-            "value": "Hasenzagl 2019 , cat.Hb.0011, pl.7"
-          }
-        ]
-      },
-      "publication (of analysis)": {
-        "count": 10,
-        "n_distinct": 2,
-        "values": [
-          {
-            "count": 6,
-            "value": "Hasenzagl and Capelli 2021"
-          },
-          {
-            "count": 4,
-            "value": "Hasenzagl and Capelli 2019"
-          }
-        ]
-      },
       "quartz": {
-        "count": 12,
-        "n_distinct": 6,
+        "count": 60,
+        "n_distinct": 16,
         "values": [
           {
-            "count": 5,
+            "count": 24,
             "value": "frequent, subangular;subrounded, subspherical, clear;gray;white, 0.025-0.25"
           },
           {
-            "count": 2,
+            "count": 8,
             "value": "frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.5"
           },
           {
-            "count": 2,
+            "count": 6,
             "value": "very frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.5"
           },
           {
-            "count": 1,
+            "count": 3,
+            "value": "frequent, subangular;subrounded, subspherical, clear;gray;white, 0.025-0.5"
+          },
+          {
+            "count": 3,
+            "value": "frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.625"
+          },
+          {
+            "count": 3,
+            "value": "riddled with, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.5"
+          },
+          {
+            "count": 2,
             "value": "frequent, subangular;subrounded, subspherical, clear;gray;white, 0.025-0.125"
           },
           {
+            "count": 2,
+            "value": "frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.25"
+          },
+          {
+            "count": 2,
+            "value": "very frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.625"
+          },
+          {
             "count": 1,
-            "value": "frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.625"
+            "value": "frequent, subangular;subrounded, subspherical, clear;gray;white, 0.025-0.375"
+          },
+          {
+            "count": 1,
+            "value": "frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.75"
+          },
+          {
+            "count": 1,
+            "value": "riddled with, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.375"
           },
           {
             "count": 1,
             "value": "riddled with, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.625"
+          },
+          {
+            "count": 1,
+            "value": "very frequent, subangular;subrounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.5"
+          },
+          {
+            "count": 1,
+            "value": "very frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.25"
+          },
+          {
+            "count": 1,
+            "value": "very frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.75"
           }
         ]
       },
       "reddish inclusions": {
-        "count": 12,
-        "n_distinct": 6,
+        "count": 60,
+        "n_distinct": 12,
         "values": [
           {
-            "count": 4,
+            "count": 22,
             "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.5"
           },
           {
-            "count": 4,
+            "count": 12,
             "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.625"
+          },
+          {
+            "count": 7,
+            "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.25"
+          },
+          {
+            "count": 4,
+            "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.75"
+          },
+          {
+            "count": 4,
+            "value": "infrequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.5"
+          },
+          {
+            "count": 3,
+            "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-1"
+          },
+          {
+            "count": 2,
+            "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.375"
+          },
+          {
+            "count": 2,
+            "value": "infrequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.25"
           },
           {
             "count": 1,
@@ -774,36 +468,736 @@
           },
           {
             "count": 1,
-            "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.375"
-          },
-          {
-            "count": 1,
-            "value": "infrequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.5"
+            "value": "infrequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.125"
           },
           {
             "count": 1,
             "value": "infrequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.85"
+          },
+          {
+            "count": 1,
+            "value": "infrequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-1"
+          }
+        ]
+      }
+    },
+    "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)": {
+      "inclusions": {
+        "count": 60,
+        "n_distinct": 32,
+        "values": [
+          {
+            "count": 5,
+            "value": "25%, length: 0.025-0.5"
+          },
+          {
+            "count": 4,
+            "value": "20%, length: 0.025-0.5"
+          },
+          {
+            "count": 4,
+            "value": "30%, length: 0.025-0.5"
+          },
+          {
+            "count": 3,
+            "value": "20–25%, length: 0.025-0.5"
+          },
+          {
+            "count": 3,
+            "value": "25%, length: 0.025-0.625"
+          },
+          {
+            "count": 3,
+            "value": "25–30%, length: 0.025-0.625"
+          },
+          {
+            "count": 3,
+            "value": "30%, length: 0.025-0.625"
+          },
+          {
+            "count": 3,
+            "value": "30–35%, length: 0.025-0.5"
+          },
+          {
+            "count": 2,
+            "value": "15%, length: 0.025-0.5"
+          },
+          {
+            "count": 2,
+            "value": "20–25%, length: 0.025-0.625"
+          },
+          {
+            "count": 2,
+            "value": "20–25%, length: 0.025-0.75"
+          },
+          {
+            "count": 2,
+            "value": "20–25%, length: 0.025-1"
+          },
+          {
+            "count": 2,
+            "value": "25–30%, length: 0.025-0.5"
+          },
+          {
+            "count": 2,
+            "value": "30%, length: 0.025-0.75"
+          },
+          {
+            "count": 2,
+            "value": "30–35%, length: 0.025-0.75"
+          },
+          {
+            "count": 2,
+            "value": "40%, length: 0.025-0.625"
+          },
+          {
+            "count": 1,
+            "value": "15%, length: 0.025-0.375"
+          },
+          {
+            "count": 1,
+            "value": "15%, length: 0.025-0.625"
+          },
+          {
+            "count": 1,
+            "value": "15%, length: 0.025-0.75"
+          },
+          {
+            "count": 1,
+            "value": "20%, length: 0.025-0.625"
+          },
+          {
+            "count": 1,
+            "value": "20–25% %, length: 0.025-0.75"
+          },
+          {
+            "count": 1,
+            "value": "20–25%, length: 0.025-0.25"
+          },
+          {
+            "count": 1,
+            "value": "25%, length: 0.025-0.375"
+          },
+          {
+            "count": 1,
+            "value": "25%, length: 0.025-1"
+          },
+          {
+            "count": 1,
+            "value": "30%, length: 0.025-1"
+          },
+          {
+            "count": 1,
+            "value": "30–35%, length: 0.025-0.375"
+          },
+          {
+            "count": 1,
+            "value": "30–35%, length: 0.025-0.625"
+          },
+          {
+            "count": 1,
+            "value": "30–35%, length: 0.025-0.85"
+          },
+          {
+            "count": 1,
+            "value": "30–35%, length: 0.025-1"
+          },
+          {
+            "count": 1,
+            "value": "40%, length: 0.025-0.75"
+          },
+          {
+            "count": 1,
+            "value": "7.5%, length: 0.025-0.75"
+          },
+          {
+            "count": 1,
+            "value": "7.5%, length: 0.025-1"
+          }
+        ]
+      },
+      "porosity": {
+        "count": 60,
+        "n_distinct": 16,
+        "values": [
+          {
+            "count": 11,
+            "value": "5–7.5%; void form: channel;vughy; void length: 0.025-0.25"
+          },
+          {
+            "count": 10,
+            "value": "10%; void form: vughy; void length: 0.025-0.25"
+          },
+          {
+            "count": 8,
+            "value": "10–15%; void form: channel;vughy; void length: 0.025-0.25"
+          },
+          {
+            "count": 6,
+            "value": "2.5–7.5%; void form: channel;vughy; void length: 0.025-0.25"
+          },
+          {
+            "count": 5,
+            "value": "5%; void form: vughy; void length: 0.025-0.25"
+          },
+          {
+            "count": 4,
+            "value": "10%; void form: channel;vughy; void length: 0.025-0.25"
+          },
+          {
+            "count": 4,
+            "value": "7.5%; void form: vughy; void length: 0.025-0.25"
+          },
+          {
+            "count": 2,
+            "value": "40%; void form: channel;vughy; void length: 0.025-0.25"
+          },
+          {
+            "count": 2,
+            "value": "5–7.5%; void form: channel;vughy; void length: 0.025-0.125"
+          },
+          {
+            "count": 2,
+            "value": "7.5%; void form: channel;vughy; void length: 0.025-0.25"
+          },
+          {
+            "count": 1,
+            "value": "10%; void form: channel;vughy; void length: 0.025-0.5"
+          },
+          {
+            "count": 1,
+            "value": "10–15%; void form: channel;vughy; void length: 0.025-0.375"
+          },
+          {
+            "count": 1,
+            "value": "40%; void form: channel;vughy; void length: 0.025-0.5"
+          },
+          {
+            "count": 1,
+            "value": "5–7.5%; void form: channel;vughy; void length: 0.025-0.375"
+          },
+          {
+            "count": 1,
+            "value": "5–7.5%; void form: channel;vughy; void length: 0.025-0.5"
+          },
+          {
+            "count": 1,
+            "value": "7.5%; void form: vughy; void length: 0.025-0.5"
+          }
+        ]
+      },
+      "sorting": {
+        "count": 60,
+        "n_distinct": 3,
+        "values": [
+          {
+            "count": 30,
+            "value": "moderately sorted sand"
+          },
+          {
+            "count": 25,
+            "value": "well-sorted sand in different compositions"
+          },
+          {
+            "count": 5,
+            "value": "unsorted"
+          }
+        ]
+      }
+    },
+    "fabric description > Visual Examination of Fresh Break": {
+      "colour of fresh break": {
+        "count": 60,
+        "n_distinct": 11,
+        "values": [
+          {
+            "count": 34,
+            "value": "5YR 6/8"
+          },
+          {
+            "count": 9,
+            "value": "5YR 6/6"
+          },
+          {
+            "count": 5,
+            "value": "5YR 6/8–2.5YR 5/8"
+          },
+          {
+            "count": 4,
+            "value": "2.5YR 5/8"
+          },
+          {
+            "count": 2,
+            "value": "2.5YR 6/6"
+          },
+          {
+            "count": 1,
+            "value": "5 YR 6/6"
+          },
+          {
+            "count": 1,
+            "value": "5 YR 6/8"
+          },
+          {
+            "count": 1,
+            "value": "5YR 5/6"
+          },
+          {
+            "count": 1,
+            "value": "5YR 5/8"
+          },
+          {
+            "count": 1,
+            "value": "5YR 6/4 (discolored)"
+          },
+          {
+            "count": 1,
+            "value": "5YR 6/6, partly discolored"
+          }
+        ]
+      },
+      "hardness": {
+        "count": 60,
+        "n_distinct": 1,
+        "values": [
+          {
+            "count": 60,
+            "value": "hard"
+          }
+        ]
+      },
+      "texture of fresh break": {
+        "count": 60,
+        "n_distinct": 4,
+        "values": [
+          {
+            "count": 35,
+            "value": "granular"
+          },
+          {
+            "count": 10,
+            "value": "fine"
+          },
+          {
+            "count": 9,
+            "value": "smooth"
+          },
+          {
+            "count": 6,
+            "value": "irregular"
+          }
+        ]
+      },
+      "visual examination of fresh break": {
+        "count": 60,
+        "n_distinct": 7,
+        "values": [
+          {
+            "count": 15,
+            "value": "fine-grained sherd with a few light and dark inclusions"
+          },
+          {
+            "count": 10,
+            "value": "fine sherd with only a few visible inclusions"
+          },
+          {
+            "count": 10,
+            "value": "granular texture with some medium-sized white and reddish particles"
+          },
+          {
+            "count": 10,
+            "value": "granular texture with some small white and reddish particles"
+          },
+          {
+            "count": 5,
+            "value": "fine-grained sherd with a few big rust-colored inclusions"
+          },
+          {
+            "count": 5,
+            "value": "many, partly large, light and dark particles standing out against the fine-grained matrix"
+          },
+          {
+            "count": 5,
+            "value": "smooth texture with some small light and dark particles"
+          }
+        ]
+      }
+    },
+    "object data": {
+      "fabric type": {
+        "count": 60,
+        "n_distinct": 12,
+        "values": [
+          {
+            "count": 5,
+            "value": "BD-ARS-1"
+          },
+          {
+            "count": 5,
+            "value": "BD-ARS-2"
+          },
+          {
+            "count": 5,
+            "value": "BD-ARS-3"
+          },
+          {
+            "count": 5,
+            "value": "HB-ARS-1"
+          },
+          {
+            "count": 5,
+            "value": "HB-ARS-2"
+          },
+          {
+            "count": 5,
+            "value": "HB-ARS-3"
+          },
+          {
+            "count": 5,
+            "value": "OU-ARS-1"
+          },
+          {
+            "count": 5,
+            "value": "OU-ARS-2"
+          },
+          {
+            "count": 5,
+            "value": "PH-ARS-1"
+          },
+          {
+            "count": 5,
+            "value": "PH-ARS-2"
+          },
+          {
+            "count": 5,
+            "value": "PH-ARS-3"
+          },
+          {
+            "count": 5,
+            "value": "PH-ARS-4"
+          }
+        ]
+      },
+      "sample no": {
+        "count": 60,
+        "n_distinct": 60,
+        "values": [
+          {
+            "count": 1,
+            "value": "M 199/1 representative sample for BD-ARS-1"
+          },
+          {
+            "count": 1,
+            "value": "M 199/10"
+          },
+          {
+            "count": 1,
+            "value": "M 199/11 representative sample for BD-ARS-3"
+          },
+          {
+            "count": 1,
+            "value": "M 199/12"
+          },
+          {
+            "count": 1,
+            "value": "M 199/13"
+          },
+          {
+            "count": 1,
+            "value": "M 199/14"
+          },
+          {
+            "count": 1,
+            "value": "M 199/15"
+          },
+          {
+            "count": 1,
+            "value": "M 199/2"
+          },
+          {
+            "count": 1,
+            "value": "M 199/3"
+          },
+          {
+            "count": 1,
+            "value": "M 199/4"
+          },
+          {
+            "count": 1,
+            "value": "M 199/5"
+          },
+          {
+            "count": 1,
+            "value": "M 199/6 representative sample for BD-ARS-2"
+          },
+          {
+            "count": 1,
+            "value": "M 199/7"
+          },
+          {
+            "count": 1,
+            "value": "M 199/8"
+          },
+          {
+            "count": 1,
+            "value": "M 199/9"
+          },
+          {
+            "count": 1,
+            "value": "M 200/1 representative sample for HB-ARS-1"
+          },
+          {
+            "count": 1,
+            "value": "M 200/10"
+          },
+          {
+            "count": 1,
+            "value": "M 200/11 representative sample for HB-ARS-3"
+          },
+          {
+            "count": 1,
+            "value": "M 200/12"
+          },
+          {
+            "count": 1,
+            "value": "M 200/13"
+          },
+          {
+            "count": 1,
+            "value": "M 200/14"
+          },
+          {
+            "count": 1,
+            "value": "M 200/15"
+          },
+          {
+            "count": 1,
+            "value": "M 200/2"
+          },
+          {
+            "count": 1,
+            "value": "M 200/3"
+          },
+          {
+            "count": 1,
+            "value": "M 200/4"
+          },
+          {
+            "count": 1,
+            "value": "M 200/5"
+          },
+          {
+            "count": 1,
+            "value": "M 200/6 representative sample for HB-ARS-2"
+          },
+          {
+            "count": 1,
+            "value": "M 200/7"
+          },
+          {
+            "count": 1,
+            "value": "M 200/8"
+          },
+          {
+            "count": 1,
+            "value": "M 200/9"
+          },
+          {
+            "count": 1,
+            "value": "M 201/1 representative sample for OU-ARS-1"
+          },
+          {
+            "count": 1,
+            "value": "M 201/10"
+          },
+          {
+            "count": 1,
+            "value": "M 201/2"
+          },
+          {
+            "count": 1,
+            "value": "M 201/3"
+          },
+          {
+            "count": 1,
+            "value": "M 201/4"
+          },
+          {
+            "count": 1,
+            "value": "M 201/5"
+          },
+          {
+            "count": 1,
+            "value": "M 201/6 representative sample for OU-ARS-2"
+          },
+          {
+            "count": 1,
+            "value": "M 201/7"
+          },
+          {
+            "count": 1,
+            "value": "M 201/8"
+          },
+          {
+            "count": 1,
+            "value": "M 201/9"
+          },
+          {
+            "count": 1,
+            "value": "M 202/1 representative sample for PH-ARS-1"
+          },
+          {
+            "count": 1,
+            "value": "M 202/10"
+          },
+          {
+            "count": 1,
+            "value": "M 202/11 representative sample for PH-ARS-3"
+          },
+          {
+            "count": 1,
+            "value": "M 202/12"
+          },
+          {
+            "count": 1,
+            "value": "M 202/13"
+          },
+          {
+            "count": 1,
+            "value": "M 202/14"
+          },
+          {
+            "count": 1,
+            "value": "M 202/15"
+          },
+          {
+            "count": 1,
+            "value": "M 202/16 representative sample for PH-ARS-4"
+          },
+          {
+            "count": 1,
+            "value": "M 202/17"
+          },
+          {
+            "count": 1,
+            "value": "M 202/18"
+          },
+          {
+            "count": 1,
+            "value": "M 202/19"
+          },
+          {
+            "count": 1,
+            "value": "M 202/2"
+          },
+          {
+            "count": 1,
+            "value": "M 202/20"
+          },
+          {
+            "count": 1,
+            "value": "M 202/3"
+          },
+          {
+            "count": 1,
+            "value": "M 202/4"
+          },
+          {
+            "count": 1,
+            "value": "M 202/5"
+          },
+          {
+            "count": 1,
+            "value": "M 202/6 representative sample for PH-ARS-2"
+          },
+          {
+            "count": 1,
+            "value": "M 202/7"
+          },
+          {
+            "count": 1,
+            "value": "M 202/8"
+          },
+          {
+            "count": 1,
+            "value": "M 202/9"
+          }
+        ]
+      },
+      "sample taken": {
+        "count": 60,
+        "n_distinct": 1,
+        "values": [
+          {
+            "count": 60,
+            "value": "by Carina Hasenzagl"
+          }
+        ]
+      },
+      "supposed site of production": {
+        "count": 60,
+        "n_distinct": 4,
+        "values": [
+          {
+            "count": 20,
+            "value": "Sidi Khalifa / Pheradi Maius"
+          },
+          {
+            "count": 15,
+            "value": "Bordj el Djerbi"
+          },
+          {
+            "count": 15,
+            "value": "Henchir el Biar"
+          },
+          {
+            "count": 10,
+            "value": "Oudna / Uthina"
+          }
+        ]
+      }
+    },
+    "object data > Context Data": {
+      "interpretation of context": {
+        "count": 60,
+        "n_distinct": 1,
+        "values": [
+          {
+            "count": 60,
+            "value": "production"
           }
         ]
       },
       "registration code of context": {
-        "count": 12,
-        "n_distinct": 2,
+        "count": 60,
+        "n_distinct": 3,
         "values": [
           {
-            "count": 8,
+            "count": 42,
             "value": "surveyed in 1968"
           },
           {
-            "count": 4,
+            "count": 17,
             "value": "surveyed in 1961"
+          },
+          {
+            "count": 1,
+            "value": "surveyes in 1968"
           }
         ]
       },
       "registration code of object": {
-        "count": 12,
-        "n_distinct": 12,
+        "count": 60,
+        "n_distinct": 60,
         "values": [
+          {
+            "count": 1,
+            "value": "BD-1"
+          },
+          {
+            "count": 1,
+            "value": "BD-10"
+          },
           {
             "count": 1,
             "value": "BD-32"
@@ -814,11 +1208,63 @@
           },
           {
             "count": 1,
+            "value": "BD-35"
+          },
+          {
+            "count": 1,
+            "value": "BD-36"
+          },
+          {
+            "count": 1,
+            "value": "BD-37"
+          },
+          {
+            "count": 1,
+            "value": "BD-40"
+          },
+          {
+            "count": 1,
+            "value": "BD-46"
+          },
+          {
+            "count": 1,
+            "value": "BD-49"
+          },
+          {
+            "count": 1,
             "value": "BD-51"
           },
           {
             "count": 1,
+            "value": "BD-58"
+          },
+          {
+            "count": 1,
+            "value": "BD-70"
+          },
+          {
+            "count": 1,
+            "value": "BD-96"
+          },
+          {
+            "count": 1,
+            "value": "BD-99"
+          },
+          {
+            "count": 1,
             "value": "HB-1"
+          },
+          {
+            "count": 1,
+            "value": "HB-11"
+          },
+          {
+            "count": 1,
+            "value": "HB-13"
+          },
+          {
+            "count": 1,
+            "value": "HB-2"
           },
           {
             "count": 1,
@@ -830,7 +1276,51 @@
           },
           {
             "count": 1,
+            "value": "HB-44"
+          },
+          {
+            "count": 1,
+            "value": "HB-64"
+          },
+          {
+            "count": 1,
+            "value": "HB-D14"
+          },
+          {
+            "count": 1,
+            "value": "HB-III2"
+          },
+          {
+            "count": 1,
+            "value": "HB-IX1"
+          },
+          {
+            "count": 1,
+            "value": "HB-IX2"
+          },
+          {
+            "count": 1,
+            "value": "HB-XIII5"
+          },
+          {
+            "count": 1,
+            "value": "HB-XIV10"
+          },
+          {
+            "count": 1,
+            "value": "HB-n15"
+          },
+          {
+            "count": 1,
             "value": "OU-2"
+          },
+          {
+            "count": 1,
+            "value": "OU-25"
+          },
+          {
+            "count": 1,
+            "value": "OU-26"
           },
           {
             "count": 1,
@@ -838,7 +1328,47 @@
           },
           {
             "count": 1,
+            "value": "OU-36"
+          },
+          {
+            "count": 1,
+            "value": "OU-41"
+          },
+          {
+            "count": 1,
+            "value": "OU-57"
+          },
+          {
+            "count": 1,
+            "value": "OU-63"
+          },
+          {
+            "count": 1,
+            "value": "OU-64"
+          },
+          {
+            "count": 1,
+            "value": "OU-76"
+          },
+          {
+            "count": 1,
+            "value": "PH-106"
+          },
+          {
+            "count": 1,
+            "value": "PH-123"
+          },
+          {
+            "count": 1,
             "value": "PH-125"
+          },
+          {
+            "count": 1,
+            "value": "PH-131"
+          },
+          {
+            "count": 1,
+            "value": "PH-145"
           },
           {
             "count": 1,
@@ -846,65 +1376,927 @@
           },
           {
             "count": 1,
+            "value": "PH-164"
+          },
+          {
+            "count": 1,
+            "value": "PH-168"
+          },
+          {
+            "count": 1,
+            "value": "PH-20"
+          },
+          {
+            "count": 1,
             "value": "PH-201"
           },
           {
             "count": 1,
+            "value": "PH-22"
+          },
+          {
+            "count": 1,
+            "value": "PH-254"
+          },
+          {
+            "count": 1,
+            "value": "PH-266"
+          },
+          {
+            "count": 1,
+            "value": "PH-271"
+          },
+          {
+            "count": 1,
             "value": "PH-4"
+          },
+          {
+            "count": 1,
+            "value": "PH-44"
+          },
+          {
+            "count": 1,
+            "value": "PH-5"
+          },
+          {
+            "count": 1,
+            "value": "PH-6"
+          },
+          {
+            "count": 1,
+            "value": "PH-8"
+          },
+          {
+            "count": 1,
+            "value": "PH-9"
           }
         ]
       },
-      "sample no": {
-        "count": 12,
-        "n_distinct": 12,
+      "site of discovery": {
+        "count": 60,
+        "n_distinct": 4,
+        "values": [
+          {
+            "count": 20,
+            "value": "Sidi Khalifa / Pheradi Maius"
+          },
+          {
+            "count": 15,
+            "value": "Bordj el Djerbi"
+          },
+          {
+            "count": 15,
+            "value": "Henchir el Biar"
+          },
+          {
+            "count": 10,
+            "value": "Oudna / Uthina"
+          }
+        ]
+      }
+    },
+    "object data > Object": {
+      "chronology of object": {
+        "count": 60,
+        "n_distinct": 36,
+        "values": [
+          {
+            "count": 5,
+            "value": "Roman-Late Antiquity second half of 5th century CE"
+          },
+          {
+            "count": 3,
+            "value": "Roman-Late Antiquity (end of 5th?)–6th century AD"
+          },
+          {
+            "count": 3,
+            "value": "Roman-Late Antiquity c. 320–430 CE"
+          },
+          {
+            "count": 3,
+            "value": "Roman-Late Antiquity c. 530–580 CE"
+          },
+          {
+            "count": 3,
+            "value": "Roman-Late Antiquity end of 4th–first half of 5th century CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity 4th/5th century CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity 6th century CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity c. 425–475 CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity c. 490–550 CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity end of 5th century CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity end of 5th–beginning of 6th century CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity end of 5th–first third of 6th century CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity end of 5th–mid-6th century CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity first half of 6th century CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity late 4th–early 5th century CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity late 4th–mid-5th century CE"
+          },
+          {
+            "count": 2,
+            "value": "Roman-Late Antiquity second half of 6th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Early Imperial second half of 5th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity 320–mid-5th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity 5th/6th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity 5th–early 6th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity 7th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity c. 320–375 CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity c. 320–410 CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity c. 320–410(+) CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity c. 360–480 CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity c. 440–490 CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity c. 460–520 CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity c. 460–530 CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity end of 5th–7th (?) century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity end of 6th/early 7th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity end of 6th–beginning of 7th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity first third 5th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity second half of 4th–first half of 5th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity second half of 5th–mid-6th century CE"
+          },
+          {
+            "count": 1,
+            "value": "Roman-Late Antiquity second quarter of 6th–mid-6th century AD"
+          }
+        ]
+      },
+      "decoration": {
+        "count": 7,
+        "n_distinct": 7,
         "values": [
           {
             "count": 1,
-            "value": "M 199/1 representative sample for BD-ARS-1"
+            "value": "cross (pres. h. 1.9 cm. w. 1.6 cm), one small circle in each arm and two concentric circles in centrum of cross; surrounded by groove"
           },
           {
             "count": 1,
-            "value": "M 199/11 representative sample for BD-ARS-3"
+            "value": "on each side of the rim: 1 heart-shaped motif (J); 1(?) set of lozenges with volutes (Bd); on discus: grazing deer?"
           },
           {
             "count": 1,
-            "value": "M 199/6 representative sample for BD-ARS-2"
+            "value": "on each side of the rim: 3x set of high arches, one within another, and lines of dots in the center (Ha16); 3x two circles with four inscribed arcs and small circle at center (De1); 1x semicircle ending in volutes and with dots in the center (Ig)"
           },
           {
             "count": 1,
-            "value": "M 200/1 representative sample for HB-ARS-1"
+            "value": "stamp style A(ii): fringed concentric circles (⌀ 1.5 cm) between two palm branches with double stem, sourounded by grooves"
           },
           {
             "count": 1,
-            "value": "M 200/11 representative sample for HB-ARS-3"
+            "value": "stamp style E(i): cross (h. 2.4 cm, w. 2 cm) similar Hayes 320n; surrounded by groove"
           },
           {
             "count": 1,
-            "value": "M 200/6 representative sample for HB-ARS-2"
+            "value": "stamp style Hayes A(ii)–A(ii): two palm branches and three concentric circles surrounded by three grooves"
           },
           {
             "count": 1,
-            "value": "M 201/1 representative sample for OU-ARS-1"
+            "value": "stamp style Hayes A(ii)–A(iii): circular (⌀2 cm) grille pattern with diagonal cross bars; rest of another grille pattern; surrounded by four grooves"
+          }
+        ]
+      },
+      "dimensions": {
+        "count": 56,
+        "n_distinct": 24,
+        "values": [
+          {
+            "count": 9,
+            "value": "diameter: 40cm (rim)"
+          },
+          {
+            "count": 7,
+            "value": "diameter: 30cm (rim)"
+          },
+          {
+            "count": 5,
+            "value": "diameter: 34cm (rim)"
+          },
+          {
+            "count": 5,
+            "value": "diameter: 42cm (rim)"
+          },
+          {
+            "count": 4,
+            "value": "diameter: 32cm (rim)"
+          },
+          {
+            "count": 3,
+            "value": "diameter: 28cm (rim)"
+          },
+          {
+            "count": 3,
+            "value": "diameter: 38cm (rim)"
+          },
+          {
+            "count": 2,
+            "value": "diameter: 20cm (rim)"
+          },
+          {
+            "count": 2,
+            "value": "diameter: 26cm (rim)"
+          },
+          {
+            "count": 2,
+            "value": "diameter: 36cm (rim)"
           },
           {
             "count": 1,
-            "value": "M 201/6 representative sample for OU-ARS-2"
+            "value": "diameter: 14cm (base)"
           },
           {
             "count": 1,
-            "value": "M 202/1 representative sample for PH-ARS-1"
+            "value": "diameter: 14cm (rim)"
           },
           {
             "count": 1,
-            "value": "M 202/11 representative sample for PH-ARS-3"
+            "value": "diameter: 14cm (rim), 7cm (base); height: 5cm"
           },
           {
             "count": 1,
-            "value": "M 202/16 representative sample for PH-ARS-4"
+            "value": "diameter: 16cm (base)"
           },
           {
             "count": 1,
-            "value": "M 202/6 representative sample for PH-ARS-2"
+            "value": "diameter: 16cm (rim)"
+          },
+          {
+            "count": 1,
+            "value": "diameter: 17cm (rim), 6.6cm (base); height: 5cm"
+          },
+          {
+            "count": 1,
+            "value": "diameter: 18cm (rim)"
+          },
+          {
+            "count": 1,
+            "value": "diameter: 19cm (rim)"
+          },
+          {
+            "count": 1,
+            "value": "diameter: 19cm (rim), 8.6cm (base); height: 5cm"
+          },
+          {
+            "count": 1,
+            "value": "diameter: 19cm (rim), 9cm (base); height: 4cm"
+          },
+          {
+            "count": 1,
+            "value": "diameter: 19cm (rim), 9cm (base); height: 5cm"
+          },
+          {
+            "count": 1,
+            "value": "diameter: 31cm (rim)"
+          },
+          {
+            "count": 1,
+            "value": "diameter: 36cm (rim), 5.2cm (base); height: 5cm"
+          },
+          {
+            "count": 1,
+            "value": "diameter: 44cm (rim)"
+          }
+        ]
+      },
+      "drawing": {
+        "count": 56,
+        "n_distinct": 1,
+        "values": [
+          {
+            "count": 56,
+            "value": ""
+          }
+        ]
+      },
+      "fragmentation": {
+        "count": 60,
+        "n_distinct": 4,
+        "values": [
+          {
+            "count": 50,
+            "value": "rim"
+          },
+          {
+            "count": 6,
+            "value": "profile"
+          },
+          {
+            "count": 3,
+            "value": "base"
+          },
+          {
+            "count": 1,
+            "value": "rim and discus"
+          }
+        ]
+      },
+      "object form": {
+        "count": 60,
+        "n_distinct": 5,
+        "values": [
+          {
+            "count": 27,
+            "value": "Bowl"
+          },
+          {
+            "count": 22,
+            "value": "Dish"
+          },
+          {
+            "count": 7,
+            "value": "Plate"
+          },
+          {
+            "count": 3,
+            "value": "Lamp"
+          },
+          {
+            "count": 1,
+            "value": "unidentified"
+          }
+        ]
+      },
+      "object type": {
+        "count": 60,
+        "n_distinct": 48,
+        "values": [
+          {
+            "count": 5,
+            "value": "Hayes 67C ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 3,
+            "value": "Hayes 67B ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 2,
+            "value": "Hayes 61A ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 2,
+            "value": "Hayes 61B3, late ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 2,
+            "value": "Hayes 73A ( Hayes 1972 )"
+          },
+          {
+            "count": 2,
+            "value": "Hayes 88B ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 2,
+            "value": "Hayes 97 ( Hayes 1972 )"
+          },
+          {
+            "count": 2,
+            "value": "Hayes 99B ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Atlante VIII A/C ( Atlante I ; Mackensen 1993 )"
+          },
+          {
+            "count": 1,
+            "value": "Atlante X, D2 ( Atlante I ; Bonifay 2004 ), rim motifs (after Bussière and Rivel 2015 )"
+          },
+          {
+            "count": 1,
+            "value": "Atlante X, D2 ( Atlante I ; Bonifay 2004 ), rim motifs after Bussière and Rivel 2015"
+          },
+          {
+            "count": 1,
+            "value": "El Mahrine 18.2 ( Mackensen 1993 )"
+          },
+          {
+            "count": 1,
+            "value": "El Mahrine 19 ( Mackensen 1993 )"
+          },
+          {
+            "count": 1,
+            "value": "El Mahrine 7 ( Mackensen 1993 )"
+          },
+          {
+            "count": 1,
+            "value": "El Mahrine 7.2 ( Mackensen 1993 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 103, var. ( Hayes 1972 ; Ben Moussa 2007 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 103, var. Sidi Khalifa ( Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 103, var. Sidi Khalifa ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 104A1"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 104A1 ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 12/110 ( Hayes 1972 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 58B ( Hayes 1972 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 59A ( Hayes 1972 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 59B ( Hayes 1972 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 61A (Hayes 1997; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 61A/B4 ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 61B3 ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 67 ( Hayes 1972 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 67? ( Hayes 1972 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 68 ( Hayes 1972 ; Ben Moussa 2007 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 76 ( Hayes 1972 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 76/EM 10.1 ( Hayes 1972 ; Mackensen 1993 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 79 ( Hayes 1972 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 86, no. 1 ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 87A ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 87A/88 ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 88, var. PM 34.11 ( Hayes 1972 ; Ben Moussa 2007 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 88, var. PM 34.8 ( Hayes 1972 ; Ben Moussa 2007 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 88A ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 88C ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 91, var. Sidi Khalifa ( Hayes 1972 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 91/Atlante XLIX, 10 ( Hayes 1972 ; Atlante I )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 91/El Mahrine 54.1 (Hayes 1993; Mackensen 1993 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 95 ( Hayes 1972 )"
+          },
+          {
+            "count": 1,
+            "value": "Hayes 99B"
+          },
+          {
+            "count": 1,
+            "value": "possibly Hayes 67 ( Hayes 1972 )"
+          },
+          {
+            "count": 1,
+            "value": "sim. Fulford 27 ( Fulford 1984 ; Bonifay 2004 )"
+          },
+          {
+            "count": 1,
+            "value": "sim. PM 61 ( Ben Moussa 2007 )"
+          }
+        ]
+      },
+      "photo": {
+        "count": 7,
+        "n_distinct": 1,
+        "values": [
+          {
+            "count": 7,
+            "value": ""
+          }
+        ]
+      },
+      "publication": {
+        "count": 60,
+        "n_distinct": 60,
+        "values": [
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , ,cat. Hb.021, pl.8"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , Ph.181, pl.22"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.002, pl. 1"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.012, pl. 1"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.014, pl.1"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.017, pl. 2"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.023, pl.2"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.025, pl. 2"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.029, pl. 2"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.033, pl. 3"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.034, pl. 3"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.035, pl.3"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.040, pl. 3"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.066, pl.4"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.070, pl.5"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.075, pl. 5"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Bd.084, pl. 6"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Hb.008, pl. 7"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Hb.009, pl.7"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Hb.014, pl.8"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Hb.030, pl.8"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ou.009, pl.10"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ou.011, pl.10"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ou.012, pl.10"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ou.014, pl.11"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ou.022, pl.11"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ou.023, pl.11"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ou.025"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ou.052, pl.12"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ou.068, pl.14"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ou.069, pl.14"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.007, pl.15"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.009, pl.15"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.010, pl.15"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.021, pl.16"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.026, pl.16"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.028, pl.16"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.031, pl.16"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.033, pl.17"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.041, pl.17"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.062, pl.18"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.075, pl.18"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.103, pl.18"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.120, pl.19"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.126, pl.19"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.128, pl.19"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.135, pl.20"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.153, pl.21"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.154, pl.21"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat. Ph.176, pl.21"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat.Hb.0011, pl.7"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat.Hb.004, pl.7"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2019 , cat.Hb.056, pl.9"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2021 , cat.105, pl. 9"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2021 , cat.106, pl.9"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2021 , cat.122, pl.10"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2021 , cat.16, pl.2"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2021 , cat.35, pl.4"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2021 , cat.63, pl.6"
+          },
+          {
+            "count": 1,
+            "value": "Hasenzagl 2021 , cat.92, pl.8"
+          }
+        ]
+      },
+      "surface description": {
+        "count": 57,
+        "n_distinct": 2,
+        "values": [
+          {
+            "count": 56,
+            "value": "slipped"
+          },
+          {
+            "count": 1,
+            "value": "smoothed"
+          }
+        ]
+      },
+      "ware": {
+        "count": 60,
+        "n_distinct": 1,
+        "values": [
+          {
+            "count": 60,
+            "value": "African Red Slip Ware"
+          }
+        ]
+      }
+    },
+    "petrography": {
+      "institution of author": {
+        "count": 12,
+        "n_distinct": 1,
+        "values": [
+          {
+            "count": 12,
+            "value": "independent researcher in collaboration with the University of Genoa"
+          }
+        ]
+      },
+      "name of author": {
+        "count": 12,
+        "n_distinct": 1,
+        "values": [
+          {
+            "count": 12,
+            "value": "Claudio Capelli"
           }
         ]
       },
@@ -959,154 +2351,6 @@
           {
             "count": 1,
             "value": "M 202/6"
-          }
-        ]
-      },
-      "sample taken": {
-        "count": 12,
-        "n_distinct": 1,
-        "values": [
-          {
-            "count": 12,
-            "value": "by Carina Hasenzagl"
-          }
-        ]
-      },
-      "site of discovery": {
-        "count": 12,
-        "n_distinct": 4,
-        "values": [
-          {
-            "count": 4,
-            "value": "Sidi Khalifa / Pheradi Maius"
-          },
-          {
-            "count": 3,
-            "value": "Bordj el Djerbi"
-          },
-          {
-            "count": 3,
-            "value": "Henchir el Biar"
-          },
-          {
-            "count": 2,
-            "value": "Oudna / Uthina"
-          }
-        ]
-      },
-      "sorting": {
-        "count": 12,
-        "n_distinct": 3,
-        "values": [
-          {
-            "count": 6,
-            "value": "moderately sorted sand"
-          },
-          {
-            "count": 5,
-            "value": "well-sorted sand in different compositions"
-          },
-          {
-            "count": 1,
-            "value": "unsorted"
-          }
-        ]
-      },
-      "supposed site of production": {
-        "count": 12,
-        "n_distinct": 4,
-        "values": [
-          {
-            "count": 4,
-            "value": "Sidi Khalifa / Pheradi Maius"
-          },
-          {
-            "count": 3,
-            "value": "Bordj el Djerbi"
-          },
-          {
-            "count": 3,
-            "value": "Henchir el Biar"
-          },
-          {
-            "count": 2,
-            "value": "Oudna / Uthina"
-          }
-        ]
-      },
-      "surface description": {
-        "count": 12,
-        "n_distinct": 1,
-        "values": [
-          {
-            "count": 12,
-            "value": "slipped"
-          }
-        ]
-      },
-      "texture of fresh break": {
-        "count": 12,
-        "n_distinct": 4,
-        "values": [
-          {
-            "count": 7,
-            "value": "granular"
-          },
-          {
-            "count": 2,
-            "value": "fine"
-          },
-          {
-            "count": 2,
-            "value": "smooth"
-          },
-          {
-            "count": 1,
-            "value": "irregular"
-          }
-        ]
-      },
-      "visual examination of fresh break": {
-        "count": 12,
-        "n_distinct": 7,
-        "values": [
-          {
-            "count": 3,
-            "value": "fine-grained sherd with a few light and dark inclusions"
-          },
-          {
-            "count": 2,
-            "value": "fine sherd with only a few visible inclusions"
-          },
-          {
-            "count": 2,
-            "value": "granular texture with some medium-sized white and reddish particles"
-          },
-          {
-            "count": 2,
-            "value": "granular texture with some small white and reddish particles"
-          },
-          {
-            "count": 1,
-            "value": "fine-grained sherd with a few big rust-colored inclusions"
-          },
-          {
-            "count": 1,
-            "value": "many, partly large, light and dark particles standing out against the fine-grained matrix"
-          },
-          {
-            "count": 1,
-            "value": "smooth texture with some small light and dark particles"
-          }
-        ]
-      },
-      "ware": {
-        "count": 12,
-        "n_distinct": 1,
-        "values": [
-          {
-            "count": 12,
-            "value": "African Red Slip Ware"
           }
         ]
       }

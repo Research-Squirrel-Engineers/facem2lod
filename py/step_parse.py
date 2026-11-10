@@ -48,6 +48,43 @@ def classify_link(href: str) -> str:
     return "other"
 
 
+IMAGE_ROLES = [
+    ("/img/thin-sections/", "thin_section"),
+    ("/img/medium-drawings/", "drawing"),
+    ("/img/medium/", "macro"),
+    ("/img/photos/", "photo"),
+    ("/img/smallpad/", "thumbnail_other_sample"),
+    ("/img/pad/", "thumbnail_sample"),
+    ("/prototype/images/", "interface"),
+    ("/pictures/", "interface"),
+]
+
+
+def image_role(src: str) -> str:
+    for part, role in IMAGE_ROLES:
+        if part in src:
+            return role
+    return "other"
+
+
+def page_kind(page_id: str) -> str:
+    """Sample pages have slugs like m-201-2, fabric pages like ou-ars-1."""
+    return "sample" if re.fullmatch(r"[a-z]{1,2}-\d+-\d+", page_id) else "fabric"
+
+
+def card_tab(table):
+    """facem.at wraps the four tabs in <div id="card_1".."card_4">."""
+    card = table.find_parent("div", id=re.compile(r"^card_\d+$"))
+    if card is None:
+        return None
+    n = int(card["id"].split("_")[1])
+    return TAB_MARKERS[n - 1] if 1 <= n <= len(TAB_MARKERS) else None
+
+
+def section_label(s) -> str:
+    return " > ".join(x for x in (s.get("tab"), s["name"]) if x)
+
+
 def table_rows(table):
     """Rows of this table only (not of nested tables), as lists of cell texts."""
     rows = []
@@ -60,21 +97,23 @@ def table_rows(table):
     return rows
 
 
-def rows_to_sections(rows, table_index):
+def rows_to_sections(rows, table_index, tab=None):
     """Group rows into sections. A one-cell row starts a new section."""
     sections, current = [], None
 
     def new_section(name):
         nonlocal current
-        current = {"name": name, "table": table_index, "fields": []}
+        current = {"name": name, "tab": tab, "table": table_index, "fields": []}
         sections.append(current)
 
     for cells in rows:
         filled = [c for c in cells if c]
         if filled and all(c.lower() in TAB_MARKERS for c in filled):
             continue                      # the tab bar, not data
-        if len(cells) == 1:
-            new_section(cells[0])
+        # A section header is a row with one filled cell and no key: either a
+        # single cell, or (as on facem.at) an empty first cell and the name second.
+        if len(filled) == 1 and (len(cells) == 1 or not cells[0]):
+            new_section(filled[0])
             continue
         if current is None:
             new_section("")
@@ -112,7 +151,7 @@ def parse_html(markup, source_url: str, page_id: str, kind: str) -> dict:
         if not rows:
             continue
         tables.append({"index": i, "rows": rows})
-        sections.extend(rows_to_sections(rows, i))
+        sections.extend(rows_to_sections(rows, i, card_tab(table)))
 
     dls = []
     for dl in soup.find_all("dl"):
@@ -155,7 +194,32 @@ def parse_html(markup, source_url: str, page_id: str, kind: str) -> dict:
         if key in seen_img:
             continue
         seen_img.add(key)
-        images.append({"src": full, "alt": clean(img.get("alt", "")), "caption": caption})
+        images.append({"src": full, "alt": clean(img.get("alt", "")), "caption": caption,
+                       "role": image_role(full)})
+
+    # Map points: facem.at puts coordinates on <a lat=.. long=..> elements, one per
+    # sample; the symbol tells production (red) from discovery (blue) sites.
+    points = {}
+    for a in soup.find_all("a", attrs={"lat": True, "long": True}):
+        symbol = a.get("symbolsrc", "")
+        role = ("production" if "symbol-red" in symbol
+                else "discovery" if "symbol-blue" in symbol else "unknown")
+        key = (role, clean(a.get_text(" ")), a["lat"], a["long"])
+        points[key] = points.get(key, 0) + 1
+    map_points = [
+        {"role": r, "label": lab, "lat": float(lat), "long": float(lon), "n_samples": n}
+        for (r, lab, lat, lon), n in sorted(points.items())
+    ]
+
+    # Further samples of the same fabric (own pages, e.g. /m-201-2).
+    other_samples = []
+    for a in soup.find_all("a", class_="sample", href=True):
+        pad = a.find(class_="padtitle")
+        other_samples.append({
+            "id": urljoin(source_url, a["href"]).rstrip("/").rsplit("/", 1)[-1],
+            "label": clean(pad.get_text(" ")) if pad else clean(a.get_text(" ")),
+            "href": urljoin(source_url, a["href"]),
+        })
 
     low_lines = {l.lower() for l in lines}
     tabs_found = [m for m in TAB_MARKERS if m in low_lines]
@@ -173,6 +237,8 @@ def parse_html(markup, source_url: str, page_id: str, kind: str) -> dict:
         "definition_lists": dls,
         "links": links,
         "images": images,
+        "map_points": map_points,
+        "other_samples": other_samples,
         "text_lines": lines,
     }
 
@@ -181,14 +247,14 @@ def source_url_for(rel: str, page_id: str, kind: str, manifest: dict) -> str:
     entry = manifest.get(rel) or {}
     if entry.get("url"):
         return entry["url"]
-    return f"{BASE_URL}/{page_id}" if kind == "fabric" else f"{BASE_URL}/map/{page_id}"
+    return f"{BASE_URL}/{page_id}" if kind in ("fabric", "sample") else f"{BASE_URL}/map/{page_id}"
 
 
 def run() -> int:
     ensure_dirs()
     manifest = read_json(HARVEST_MANIFEST) if HARVEST_MANIFEST.exists() else {}
 
-    pages = [(p, "fabric", f"html/{p.name}") for p in sorted(RAW_HTML.glob("*.html"))]
+    pages = [(p, page_kind(p.stem), f"html/{p.name}") for p in sorted(RAW_HTML.glob("*.html"))]
     pages += [(p, "site", f"html/sites/{p.name}") for p in sorted(RAW_SITES.glob("*.html"))]
 
     if not pages:
@@ -204,25 +270,28 @@ def run() -> int:
         page_id = path.stem
         url = source_url_for(rel, page_id, kind, manifest)
         record = parse_html(path.read_bytes(), url, page_id, kind)
-        out_name = page_id if kind == "fabric" else f"sites__{page_id}"
+        out_name = f"sites__{page_id}" if kind == "site" else page_id
         write_json(DERIVED_JSON / f"{out_name}.json", record)
 
         n_fields = sum(len(s["fields"]) for s in record["sections"])
         index.append({
             "id": page_id, "kind": kind, "title": record["title"],
-            "sections": [s["name"] for s in record["sections"]],
+            "sections": [section_label(s) for s in record["sections"]],
             "n_fields": n_fields, "n_images": len(record["images"]),
             "n_links": len(record["links"]), "tabs_found": record["tabs_found"],
+            "n_map_points": len(record["map_points"]),
+            "n_other_samples": len(record["other_samples"]),
         })
-        if kind == "fabric" and not record["sections"]:
+        if kind in ("fabric", "sample") and not record["sections"]:
             warnings += 1
             print(f"WARN {page_id}: no table sections found (layout changed?)")
 
         for s in record["sections"]:
-            section_order.setdefault(s["name"], 0)
-            section_order[s["name"]] += 1
+            label = section_label(s)
+            section_order.setdefault(label, 0)
+            section_order[label] += 1
             for f in s["fields"]:
-                counter = catalogue_keys.setdefault((s["name"], f["key"]), Counter())
+                counter = catalogue_keys.setdefault((label, f["key"]), Counter())
                 val = f.get("value")
                 if val is None:
                     val = " | ".join(f.get("values", []))
@@ -242,7 +311,8 @@ def run() -> int:
     write_json(FIELD_CATALOGUE, catalogue)
 
     n_fabric = sum(1 for r in index if r["kind"] == "fabric")
-    print(f"parse: {n_fabric} fabric pages, {len(index) - n_fabric} site pages, "
+    n_sample = sum(1 for r in index if r["kind"] == "sample")
+    print(f"parse: {n_fabric} fabric pages, {n_sample} sample pages, "
           f"{len(catalogue_keys)} distinct section/key pairs, {warnings} without sections")
     return 0
 

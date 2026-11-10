@@ -30,116 +30,139 @@
     {
       "alt": "FACEM - provenience studies on pottery in the central mediterranean",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/title.png"
     },
     {
       "alt": "",
       "caption": "OU-ARS-2, M 201/6, scale bar 0.2mm",
+      "role": "thin_section",
       "src": "https://facem.at/img/thin-sections/M-201-6-10x.jpg"
     },
     {
       "alt": "",
       "caption": "OU-ARS-2, M 201/6, scale bar 0.2mm",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/frame_c.png"
     },
     {
       "alt": "",
       "caption": "OU-ARS-2, M 201/6, scale bar 0.5mm",
+      "role": "thin_section",
       "src": "https://facem.at/img/thin-sections/M-201-6-4x.jpg"
     },
     {
       "alt": "",
       "caption": "OU-ARS-2, M 201/6, 40x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M201_6_4.jpg"
     },
     {
       "alt": "",
       "caption": "OU-ARS-2, M 201/6, 25x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M201_6_3.jpg"
     },
     {
       "alt": "",
       "caption": "OU-ARS-2, M 201/6, 16x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M201_6_2.jpg"
     },
     {
       "alt": "",
       "caption": "OU-ARS-2, M 201/6, 16x",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/frame_b.png"
     },
     {
       "alt": "",
       "caption": "OU-ARS-2, M 201/6, 8x",
+      "role": "macro",
       "src": "https://facem.at/img/medium/M201_6_1.jpg"
     },
     {
       "alt": "",
       "caption": "OU-ARS-2, M 201/6, 8x",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/frame_a.png"
     },
     {
       "alt": "Star2",
       "caption": "M 201/6 representative sample for OU-ARS-2",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/star.png"
     },
     {
       "alt": "",
       "caption": "",
+      "role": "drawing",
       "src": "https://facem.at/img/medium-drawings/M201_6_Z.png"
     },
     {
       "alt": "",
       "caption": "",
+      "role": "photo",
       "src": "https://facem.at/img/photos/M201_6_P.jpg"
     },
     {
       "alt": "",
       "caption": "Distribution of fabric type “OU-ARS-2” Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina production discovery Representative sample for “OU-ARS-2” M 201/6 There are 4 more samples assigned to fabric t",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/symbol-red.png"
     },
     {
       "alt": "",
       "caption": "Distribution of fabric type “OU-ARS-2” Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina production discovery Representative sample for “OU-ARS-2” M 201/6 There are 4 more samples assigned to fabric t",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/symbol-blue.png"
     },
     {
       "alt": "",
       "caption": "Distribution of fabric type “OU-ARS-2” Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina Oudna / Uthina production discovery Representative sample for “OU-ARS-2” M 201/6 There are 4 more samples assigned to fabric t",
+      "role": "thumbnail_sample",
       "src": "https://facem.at/img/pad/M201_6_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “OU-ARS-2” M 201/7 M 201/8 M 201/9 M 201/10",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M201_7_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “OU-ARS-2” M 201/7 M 201/8 M 201/9 M 201/10",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M201_8_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “OU-ARS-2” M 201/7 M 201/8 M 201/9 M 201/10",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M201_9_1.jpg"
     },
     {
       "alt": "",
       "caption": "Other samples assigned to “OU-ARS-2” M 201/7 M 201/8 M 201/9 M 201/10",
+      "role": "thumbnail_other_sample",
       "src": "https://facem.at/img/smallpad/M201_10_1.jpg"
     },
     {
       "alt": "",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/pictures/pdf.png"
     },
     {
       "alt": "FWF",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/fwf.png"
     },
     {
       "alt": "Uni Wien",
       "caption": "",
+      "role": "interface",
       "src": "https://facem.at/prototype/images/uni-wien.png"
     }
   ],
@@ -226,6 +249,44 @@
       "text": ""
     }
   ],
+  "map_points": [
+    {
+      "label": "Oudna / Uthina",
+      "lat": 36.6075,
+      "long": 10.1723,
+      "n_samples": 5,
+      "role": "discovery"
+    },
+    {
+      "label": "Oudna / Uthina",
+      "lat": 36.6075,
+      "long": 10.1723,
+      "n_samples": 5,
+      "role": "production"
+    }
+  ],
+  "other_samples": [
+    {
+      "href": "https://facem.at/m-201-7",
+      "id": "m-201-7",
+      "label": "M 201/7"
+    },
+    {
+      "href": "https://facem.at/m-201-8",
+      "id": "m-201-8",
+      "label": "M 201/8"
+    },
+    {
+      "href": "https://facem.at/m-201-9",
+      "id": "m-201-9",
+      "label": "M 201/9"
+    },
+    {
+      "href": "https://facem.at/m-201-10",
+      "id": "m-201-10",
+      "label": "M 201/10"
+    }
+  ],
   "sections": [
     {
       "fields": [
@@ -244,11 +305,14 @@
         {
           "key": "sample taken",
           "value": "by Carina Hasenzagl"
-        },
-        {
-          "key": "",
-          "value": "Context Data"
-        },
+        }
+      ],
+      "name": "",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
         {
           "key": "site of discovery",
           "value": "Oudna / Uthina"
@@ -264,11 +328,14 @@
         {
           "key": "registration code of object",
           "value": "OU-2"
-        },
-        {
-          "key": "",
-          "value": "Object"
-        },
+        }
+      ],
+      "name": "Context Data",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
         {
           "key": "ware",
           "value": "African Red Slip Ware"
@@ -314,15 +381,12 @@
           "value": "Hasenzagl 2019 , cat. Ou.022, pl.11"
         }
       ],
-      "name": "",
+      "name": "Object",
+      "tab": "object data",
       "table": 1
     },
     {
       "fields": [
-        {
-          "key": "",
-          "value": "Visual Examination of Fresh Break"
-        },
         {
           "key": "visual examination of fresh break",
           "value": "fine-grained sherd with a few light and dark inclusions"
@@ -338,11 +402,14 @@
         {
           "key": "hardness",
           "value": "hard"
-        },
-        {
-          "key": "",
-          "value": "Observation Under the Binocular Stereoscope (all lengths in mm)"
-        },
+        }
+      ],
+      "name": "Visual Examination of Fresh Break",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
         {
           "key": "porosity",
           "value": "5%; void form: vughy; void length: 0.025-0.25"
@@ -354,11 +421,14 @@
         {
           "key": "sorting",
           "value": "well-sorted sand in different compositions"
-        },
-        {
-          "key": "",
-          "value": "Inclusions (all lengths in mm)"
-        },
+        }
+      ],
+      "name": "Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
         {
           "key": "black inclusions",
           "value": "infrequent, subrounded, subspherical, black, 0.025-0.375"
@@ -388,7 +458,8 @@
           "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.375"
         }
       ],
-      "name": "",
+      "name": "Inclusions (all lengths in mm)",
+      "tab": "fabric description",
       "table": 3
     },
     {
@@ -403,6 +474,7 @@
         }
       ],
       "name": "",
+      "tab": "archaeometry",
       "table": 5
     },
     {
@@ -421,6 +493,7 @@
         }
       ],
       "name": "",
+      "tab": "petrography",
       "table": 7
     }
   ],

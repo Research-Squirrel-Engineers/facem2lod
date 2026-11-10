@@ -26,9 +26,10 @@ FABRIC_IDS = [
 SEARCH_URL = None
 # SEARCH_URL = "https://facem.at/search/results.php?c=29&page=1"
 
-# Also fetch the map pages (production sites, discovery sites) that the fabric
-# pages link to. They are the source for place names and coordinates.
-FOLLOW_SITE_PAGES = True
+# Also fetch the other samples of each fabric (the "Other samples assigned to ..."
+# list on a fabric page, e.g. m-201-2). Each sample has its own page with its own
+# object data. Decided 2026-11-10.
+FOLLOW_SAMPLE_PAGES = True
 
 # True = fetch again even if the file is already on disk.
 FORCE = False
@@ -42,14 +43,15 @@ import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import urljoin, urlparse, parse_qs
+from urllib.parse import urljoin, urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import requests
+from bs4 import BeautifulSoup
 
 from facem_utils import (
-    BASE_URL, RAW_HTML, RAW_SITES, HARVEST_MANIFEST,
+    BASE_URL, RAW_HTML, HARVEST_MANIFEST,
     ensure_dirs, write_json, read_json, sha256_bytes,
 )
 
@@ -60,10 +62,6 @@ HEADERS = {
 
 # Slugs look like ou-ars-1 or bnap-a-11; sample pages like m-160-1 also match.
 RECORD_URL_RE = re.compile(r"^https://facem\.at/[a-z0-9]{1,8}-[a-z0-9]{1,6}-\d+/?$")
-SITE_HREF_RE = re.compile(
-    r"""href\s*=\s*["']([^"']*map/[A-Za-z_]+\.php\?[^"']*id=\d+[^"']*)["']""",
-    re.IGNORECASE,
-)
 
 
 def fetch(session: requests.Session, url: str):
@@ -103,21 +101,47 @@ def crawl_search_results(session: requests.Session, search_url: str) -> list[str
     return ids
 
 
-def site_file_name(url: str) -> str | None:
-    """map/production_site.php?id=12 -> production_site_12.html"""
-    parts = urlparse(url)
-    m = re.search(r"/map/([A-Za-z_]+)\.php", parts.path)
-    ident = parse_qs(parts.query).get("id", [None])[0]
-    if not m or not ident or not ident.isdigit():
+def sample_ids(html: str, base_url: str) -> list[str]:
+    """Slugs of the further samples listed on a fabric page."""
+    soup = BeautifulSoup(html, "html.parser")
+    found = []
+    for a in soup.find_all("a", class_="sample", href=True):
+        slug = urlparse(urljoin(base_url, a["href"])).path.strip("/").lower()
+        if re.fullmatch(r"[a-z0-9]{1,8}-[a-z0-9]{1,6}-\d+", slug) and slug not in found:
+            found.append(slug)
+    return found
+
+
+def get_page(session, slug: str, manifest: dict, counts: dict):
+    """Store one page unchanged. Returns its bytes, or None if it failed."""
+    target = RAW_HTML / f"{slug}.html"
+    url = f"{BASE_URL}/{slug}"
+    if target.exists() and not FORCE:
+        counts["kept"] += 1
+        print(f"  kept     {slug}")
+        return target.read_bytes()
+    status, body = fetch(session, url)
+    time.sleep(DELAY)
+    if status != 200:
+        counts["failed"] += 1
+        print(f"WARN {slug}: {status if status else 'no response'} "
+              f"{body if status is None else ''}")
+        manifest[f"html/{slug}.html"] = {"url": url, "status": status}
         return None
-    return f"{m.group(1)}_{ident}.html"
+    target.write_bytes(body)
+    manifest[f"html/{slug}.html"] = {
+        "url": url, "status": status,
+        "sha256": sha256_bytes(body), "bytes": len(body),
+    }
+    counts["fetched"] += 1
+    print(f"  fetched  {slug}  ({len(body)} bytes)")
+    return body
 
 
 def run() -> int:
     ensure_dirs()
     manifest = read_json(HARVEST_MANIFEST) if HARVEST_MANIFEST.exists() else {}
-    failures = 0
-    fetched = kept = 0
+    counts = {"fetched": 0, "kept": 0, "failed": 0}
 
     with requests.Session() as session:
         session.headers.update(HEADERS)
@@ -130,66 +154,24 @@ def run() -> int:
                     ids.append(i)
         print(f"{len(ids)} fabric pages to harvest")
 
-        site_urls: dict[str, str] = {}   # file name -> url
-
+        samples: list[str] = []
         for fid in ids:
-            target = RAW_HTML / f"{fid}.html"
-            url = f"{BASE_URL}/{fid}"
-            body = None
-            if target.exists() and not FORCE:
-                kept += 1
-                body = target.read_bytes()
-                print(f"  kept     {fid}")
-            else:
-                status, body = fetch(session, url)
-                time.sleep(DELAY)
-                if status != 200:
-                    failures += 1
-                    print(f"WARN {fid}: {status if status else 'no response'} "
-                          f"{body if status is None else ''}")
-                    manifest[f"html/{fid}.html"] = {"url": url, "status": status}
-                    continue
-                target.write_bytes(body)
-                manifest[f"html/{fid}.html"] = {
-                    "url": url, "status": status,
-                    "sha256": sha256_bytes(body), "bytes": len(body),
-                }
-                fetched += 1
-                print(f"  fetched  {fid}  ({len(body)} bytes)")
+            body = get_page(session, fid, manifest, counts)
+            if body is not None and FOLLOW_SAMPLE_PAGES:
+                for sid in sample_ids(body.decode("utf-8", errors="replace"),
+                                      f"{BASE_URL}/{fid}"):
+                    if sid not in ids and sid not in samples:
+                        samples.append(sid)
 
-            if FOLLOW_SITE_PAGES:
-                text = body.decode("utf-8", errors="replace")
-                for href in SITE_HREF_RE.findall(text):
-                    full = urljoin(url + "/", href.replace("&amp;", "&"))
-                    name = site_file_name(full)
-                    if name:
-                        site_urls[name] = full
-
-        for name, url in sorted(site_urls.items()):
-            target = RAW_SITES / name
-            if target.exists() and not FORCE:
-                kept += 1
-                print(f"  kept     sites/{name}")
-                continue
-            status, body = fetch(session, url)
-            time.sleep(DELAY)
-            if status != 200:
-                failures += 1
-                print(f"WARN sites/{name}: {status if status else 'no response'} "
-                      f"{body if status is None else ''}")
-                manifest[f"html/sites/{name}"] = {"url": url, "status": status}
-                continue
-            target.write_bytes(body)
-            manifest[f"html/sites/{name}"] = {
-                "url": url, "status": status,
-                "sha256": sha256_bytes(body), "bytes": len(body),
-            }
-            fetched += 1
-            print(f"  fetched  sites/{name}  ({len(body)} bytes)")
+        if FOLLOW_SAMPLE_PAGES:
+            print(f"{len(samples)} sample pages to harvest")
+            for sid in samples:
+                get_page(session, sid, manifest, counts)
 
     write_json(HARVEST_MANIFEST, manifest)
-    print(f"harvest: {fetched} fetched, {kept} kept, {failures} failed")
-    return 1 if failures else 0
+    print(f"harvest: {counts['fetched']} fetched, {counts['kept']} kept, "
+          f"{counts['failed']} failed")
+    return 1 if counts["failed"] else 0
 
 
 if __name__ == "__main__":

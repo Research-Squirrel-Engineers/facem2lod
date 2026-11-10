@@ -1,0 +1,764 @@
+{
+  "breadcrumb": [
+    "»"
+  ],
+  "definition_lists": [],
+  "headings": [
+    {
+      "level": 3,
+      "text": "Context Data"
+    },
+    {
+      "level": 3,
+      "text": "Object"
+    },
+    {
+      "level": 3,
+      "text": "Visual Examination of Fresh Break"
+    },
+    {
+      "level": 3,
+      "text": "Observation Under the Binocular Stereoscope (all lengths in mm)"
+    },
+    {
+      "level": 3,
+      "text": "Inclusions (all lengths in mm)"
+    }
+  ],
+  "id": "m-202-17",
+  "images": [
+    {
+      "alt": "FACEM - provenience studies on pottery in the central mediterranean",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/title.png"
+    },
+    {
+      "alt": "",
+      "caption": "PH-ARS-4, M 202/17, 40x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M202_17_4.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "PH-ARS-4, M 202/17, 40x",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/frame_c.png"
+    },
+    {
+      "alt": "",
+      "caption": "PH-ARS-4, M 202/17, 25x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M202_17_3.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "PH-ARS-4, M 202/17, 16x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M202_17_2.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "PH-ARS-4, M 202/17, 16x",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/frame_b.png"
+    },
+    {
+      "alt": "",
+      "caption": "PH-ARS-4, M 202/17, 8x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M202_17_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "PH-ARS-4, M 202/17, 8x",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/frame_a.png"
+    },
+    {
+      "alt": "",
+      "caption": "",
+      "role": "drawing",
+      "src": "https://facem.at/img/medium-drawings/M202_17_Z.png"
+    },
+    {
+      "alt": "",
+      "caption": "Distribution of fabric type “PH-ARS-4” Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius ",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/symbol-red.png"
+    },
+    {
+      "alt": "",
+      "caption": "Distribution of fabric type “PH-ARS-4” Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius ",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/symbol-blue.png"
+    },
+    {
+      "alt": "",
+      "caption": "Distribution of fabric type “PH-ARS-4” Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius Sidi Khalifa / Pheradi Maius ",
+      "role": "thumbnail_sample",
+      "src": "https://facem.at/img/pad/M202_16_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “PH-ARS-4” M 202/17 M 202/18 M 202/19 M 202/20",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M202_17_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “PH-ARS-4” M 202/17 M 202/18 M 202/19 M 202/20",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M202_18_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “PH-ARS-4” M 202/17 M 202/18 M 202/19 M 202/20",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M202_19_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “PH-ARS-4” M 202/17 M 202/18 M 202/19 M 202/20",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M202_20_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/pictures/pdf.png"
+    },
+    {
+      "alt": "FWF",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/fwf.png"
+    },
+    {
+      "alt": "Uni Wien",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/uni-wien.png"
+    }
+  ],
+  "kind": "sample",
+  "links": [
+    {
+      "href": "https://facem.at/",
+      "kind": "other",
+      "text": ""
+    },
+    {
+      "href": "https://facem.at/",
+      "kind": "other",
+      "text": "FACEM"
+    },
+    {
+      "href": "https://facem.at/",
+      "kind": "other",
+      "text": "project"
+    },
+    {
+      "href": "https://facem.at/search/",
+      "kind": "other",
+      "text": "search"
+    },
+    {
+      "href": "https://facem.at/map/",
+      "kind": "site",
+      "text": "maps"
+    },
+    {
+      "href": "https://facem.at/project/impressum.php",
+      "kind": "other",
+      "text": "impressum"
+    },
+    {
+      "href": "https://facem.at/img/medium-drawings/M202_17_Z.png",
+      "kind": "image",
+      "text": ""
+    },
+    {
+      "href": "https://facem.at/ph-ars-4",
+      "kind": "record",
+      "text": "M 202/16"
+    },
+    {
+      "href": "https://facem.at/m-202-17",
+      "kind": "record",
+      "text": "M 202/17"
+    },
+    {
+      "href": "https://facem.at/m-202-18",
+      "kind": "record",
+      "text": "M 202/18"
+    },
+    {
+      "href": "https://facem.at/m-202-19",
+      "kind": "record",
+      "text": "M 202/19"
+    },
+    {
+      "href": "https://facem.at/m-202-20",
+      "kind": "record",
+      "text": "M 202/20"
+    },
+    {
+      "href": "https://facem.at/img/pdf/FACEM-2026_Hasenzagl.pdf",
+      "kind": "pdf",
+      "text": ""
+    },
+    {
+      "href": "http://www.fwf.ac.at/",
+      "kind": "other",
+      "text": ""
+    },
+    {
+      "href": "https://klass-archaeologie.univie.ac.at/forschung/forschungsprojekte/laufend/provenienz-studien-zur-keramik-des-5-2-jhs-v-chr-im-zentralen-mittelmeerraum-facem/",
+      "kind": "other",
+      "text": ""
+    }
+  ],
+  "map_points": [
+    {
+      "label": "Sidi Khalifa / Pheradi Maius",
+      "lat": 36.2497,
+      "long": 10.3983,
+      "n_samples": 5,
+      "role": "discovery"
+    },
+    {
+      "label": "Sidi Khalifa / Pheradi Maius",
+      "lat": 36.2497,
+      "long": 10.3983,
+      "n_samples": 5,
+      "role": "production"
+    }
+  ],
+  "other_samples": [
+    {
+      "href": "https://facem.at/m-202-18",
+      "id": "m-202-18",
+      "label": "M 202/18"
+    },
+    {
+      "href": "https://facem.at/m-202-19",
+      "id": "m-202-19",
+      "label": "M 202/19"
+    },
+    {
+      "href": "https://facem.at/m-202-20",
+      "id": "m-202-20",
+      "label": "M 202/20"
+    }
+  ],
+  "sections": [
+    {
+      "fields": [
+        {
+          "key": "sample no",
+          "value": "M 202/17"
+        },
+        {
+          "key": "fabric type",
+          "value": "PH-ARS-4"
+        },
+        {
+          "key": "supposed site of production",
+          "value": "Sidi Khalifa / Pheradi Maius"
+        },
+        {
+          "key": "sample taken",
+          "value": "by Carina Hasenzagl"
+        }
+      ],
+      "name": "",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
+        {
+          "key": "site of discovery",
+          "value": "Sidi Khalifa / Pheradi Maius"
+        },
+        {
+          "key": "interpretation of context",
+          "value": "production"
+        },
+        {
+          "key": "registration code of context",
+          "value": "surveyed in 1961"
+        },
+        {
+          "key": "registration code of object",
+          "value": "PH-44"
+        }
+      ],
+      "name": "Context Data",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
+        {
+          "key": "ware",
+          "value": "African Red Slip Ware"
+        },
+        {
+          "key": "object form",
+          "value": "Bowl"
+        },
+        {
+          "key": "object type",
+          "value": "Hayes 91, var. Sidi Khalifa ( Hayes 1972 ; Bonifay 2004 )"
+        },
+        {
+          "key": "chronology of object",
+          "value": "Roman-Late Antiquity first half of 6th century CE"
+        },
+        {
+          "key": "fragmentation",
+          "value": "rim"
+        },
+        {
+          "key": "dimensions",
+          "value": "diameter: 31cm (rim)"
+        },
+        {
+          "key": "surface description",
+          "value": "slipped"
+        },
+        {
+          "key": "drawing",
+          "values": []
+        },
+        {
+          "key": "publication",
+          "value": "Hasenzagl 2019 , cat. Ph.135, pl.20"
+        }
+      ],
+      "name": "Object",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
+        {
+          "key": "visual examination of fresh break",
+          "value": "fine-grained sherd with a few light and dark inclusions"
+        },
+        {
+          "key": "colour of fresh break",
+          "value": "2.5YR 5/8"
+        },
+        {
+          "key": "texture of fresh break",
+          "value": "granular"
+        },
+        {
+          "key": "hardness",
+          "value": "hard"
+        }
+      ],
+      "name": "Visual Examination of Fresh Break",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
+        {
+          "key": "porosity",
+          "value": "10%; void form: vughy; void length: 0.025-0.25"
+        },
+        {
+          "key": "inclusions",
+          "value": "30%, length: 0.025-0.5"
+        },
+        {
+          "key": "sorting",
+          "value": "moderately sorted sand"
+        }
+      ],
+      "name": "Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
+        {
+          "key": "black inclusions",
+          "value": "singular, subangular;subrounded, subelongate;subspherical, black, 0.025-0.5"
+        },
+        {
+          "key": "calciumcarbonate",
+          "value": "singular, rounded, spherical, white, 0.025-0.5"
+        },
+        {
+          "key": "carbonate pseudomorphoses",
+          "value": "singular, rounded, spherical, white, 0.025-0.125"
+        },
+        {
+          "key": "mica",
+          "value": "infrequent, subangular, elongate;subspherical, silver, 0.025-0.125"
+        },
+        {
+          "key": "more inclusions",
+          "value": "singular, subangular;subrounded, subelongate;subspherical, clayey, 0.5"
+        },
+        {
+          "key": "quartz",
+          "value": "frequent, subangular;subrounded, subspherical, clear;gray;white, 0.025-0.25"
+        },
+        {
+          "key": "reddish inclusions",
+          "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.5"
+        }
+      ],
+      "name": "Inclusions (all lengths in mm)",
+      "tab": "fabric description",
+      "table": 3
+    }
+  ],
+  "source_url": "https://facem.at/m-202-17",
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "",
+          "",
+          "object data",
+          "",
+          "fabric description",
+          "",
+          "archaeometry",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "sample no",
+          "M 202/17"
+        ],
+        [
+          "fabric type",
+          "PH-ARS-4"
+        ],
+        [
+          "supposed site of production",
+          "Sidi Khalifa / Pheradi Maius"
+        ],
+        [
+          "sample taken",
+          "by Carina Hasenzagl"
+        ],
+        [
+          "",
+          "Context Data"
+        ],
+        [
+          "site of discovery",
+          "Sidi Khalifa / Pheradi Maius"
+        ],
+        [
+          "interpretation of context",
+          "production"
+        ],
+        [
+          "registration code of context",
+          "surveyed in 1961"
+        ],
+        [
+          "registration code of object",
+          "PH-44"
+        ],
+        [
+          "",
+          "Object"
+        ],
+        [
+          "ware",
+          "African Red Slip Ware"
+        ],
+        [
+          "object form",
+          "Bowl"
+        ],
+        [
+          "object type",
+          "Hayes 91, var. Sidi Khalifa ( Hayes 1972 ; Bonifay 2004 )"
+        ],
+        [
+          "chronology of object",
+          "Roman-Late Antiquity first half of 6th century CE"
+        ],
+        [
+          "fragmentation",
+          "rim"
+        ],
+        [
+          "dimensions",
+          "diameter: 31cm (rim)"
+        ],
+        [
+          "surface description",
+          "slipped"
+        ],
+        [
+          "drawing",
+          ""
+        ],
+        [
+          "publication",
+          "Hasenzagl 2019 , cat. Ph.135, pl.20"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "",
+          "",
+          "object data",
+          "",
+          "fabric description",
+          "",
+          "archaeometry",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "",
+          "Visual Examination of Fresh Break"
+        ],
+        [
+          "visual examination of fresh break",
+          "fine-grained sherd with a few light and dark inclusions"
+        ],
+        [
+          "colour of fresh break",
+          "2.5YR 5/8"
+        ],
+        [
+          "texture of fresh break",
+          "granular"
+        ],
+        [
+          "hardness",
+          "hard"
+        ],
+        [
+          "",
+          "Observation Under the Binocular Stereoscope (all lengths in mm)"
+        ],
+        [
+          "porosity",
+          "10%; void form: vughy; void length: 0.025-0.25"
+        ],
+        [
+          "inclusions",
+          "30%, length: 0.025-0.5"
+        ],
+        [
+          "sorting",
+          "moderately sorted sand"
+        ],
+        [
+          "",
+          "Inclusions (all lengths in mm)"
+        ],
+        [
+          "black inclusions",
+          "singular, subangular;subrounded, subelongate;subspherical, black, 0.025-0.5"
+        ],
+        [
+          "calciumcarbonate",
+          "singular, rounded, spherical, white, 0.025-0.5"
+        ],
+        [
+          "carbonate pseudomorphoses",
+          "singular, rounded, spherical, white, 0.025-0.125"
+        ],
+        [
+          "mica",
+          "infrequent, subangular, elongate;subspherical, silver, 0.025-0.125"
+        ],
+        [
+          "more inclusions",
+          "singular, subangular;subrounded, subelongate;subspherical, clayey, 0.5"
+        ],
+        [
+          "quartz",
+          "frequent, subangular;subrounded, subspherical, clear;gray;white, 0.025-0.25"
+        ],
+        [
+          "reddish inclusions",
+          "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.5"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "",
+          "",
+          "object data",
+          "",
+          "fabric description",
+          "",
+          "archaeometry",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "tabs_found": [
+    "object data",
+    "fabric description",
+    "archaeometry"
+  ],
+  "text_lines": [
+    "PH-ARS-4",
+    "FACEM",
+    "Provenance Studies on Ancient Pottery in the Mediterranean",
+    "FACEM",
+    "»",
+    "PH-ARS-4",
+    "project",
+    "search",
+    "maps",
+    "impressum",
+    "PH-ARS-4, M 202/17, 40x",
+    "PH-ARS-4, M 202/17, 25x",
+    "PH-ARS-4, M 202/17, 16x",
+    "PH-ARS-4, M 202/17, 8x",
+    "object data",
+    "fabric description",
+    "archaeometry",
+    "sample no",
+    "M 202/17",
+    "fabric type",
+    "PH-ARS-4",
+    "supposed site of production",
+    "Sidi Khalifa / Pheradi Maius",
+    "sample taken",
+    "by Carina Hasenzagl",
+    "Context Data",
+    "site of discovery",
+    "Sidi Khalifa / Pheradi Maius",
+    "interpretation of context",
+    "production",
+    "registration code of context",
+    "surveyed in 1961",
+    "registration code of object",
+    "PH-44",
+    "Object",
+    "ware",
+    "African Red Slip Ware",
+    "object form",
+    "Bowl",
+    "object type",
+    "Hayes 91, var. Sidi Khalifa (",
+    "Hayes 1972",
+    ";",
+    "Bonifay 2004",
+    ")",
+    "chronology of object",
+    "Roman-Late Antiquity",
+    "first half of 6th century CE",
+    "fragmentation",
+    "rim",
+    "dimensions",
+    "diameter: 31cm (rim)",
+    "surface description",
+    "slipped",
+    "drawing",
+    "publication",
+    "Hasenzagl 2019",
+    ", cat. Ph.135, pl.20",
+    "object data",
+    "fabric description",
+    "archaeometry",
+    "Visual Examination of Fresh Break",
+    "visual examination of fresh break",
+    "fine-grained sherd with a few light and dark inclusions",
+    "colour of fresh break",
+    "2.5YR 5/8",
+    "texture of fresh break",
+    "granular",
+    "hardness",
+    "hard",
+    "Observation Under the Binocular Stereoscope",
+    "(all lengths in mm)",
+    "porosity",
+    "10%; void form: vughy; void length: 0.025-0.25",
+    "inclusions",
+    "30%, length: 0.025-0.5",
+    "sorting",
+    "moderately sorted sand",
+    "Inclusions",
+    "(all lengths in mm)",
+    "black inclusions",
+    "singular, subangular;subrounded, subelongate;subspherical, black, 0.025-0.5",
+    "calciumcarbonate",
+    "singular, rounded, spherical, white, 0.025-0.5",
+    "carbonate pseudomorphoses",
+    "singular, rounded, spherical, white, 0.025-0.125",
+    "mica",
+    "infrequent, subangular, elongate;subspherical, silver, 0.025-0.125",
+    "more inclusions",
+    "singular, subangular;subrounded, subelongate;subspherical, clayey, 0.5",
+    "quartz",
+    "frequent, subangular;subrounded, subspherical, clear;gray;white, 0.025-0.25",
+    "reddish inclusions",
+    "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.5",
+    "object data",
+    "fabric description",
+    "archaeometry",
+    "Cite this page as:",
+    "FACEM - http://facem.at/m-202-17",
+    "Distribution of fabric type",
+    "“PH-ARS-4”",
+    "Sidi Khalifa / Pheradi Maius",
+    "Sidi Khalifa / Pheradi Maius",
+    "Sidi Khalifa / Pheradi Maius",
+    "Sidi Khalifa / Pheradi Maius",
+    "Sidi Khalifa / Pheradi Maius",
+    "Sidi Khalifa / Pheradi Maius",
+    "Sidi Khalifa / Pheradi Maius",
+    "Sidi Khalifa / Pheradi Maius",
+    "Sidi Khalifa / Pheradi Maius",
+    "Sidi Khalifa / Pheradi Maius",
+    "production",
+    "discovery",
+    "Representative sample for",
+    "“PH-ARS-4”",
+    "M 202/16",
+    "There are 4 more samples assigned to fabric type",
+    "“PH-ARS-4”.",
+    "Show All",
+    "Other samples assigned to",
+    "“PH-ARS-4”",
+    "M 202/17",
+    "M 202/18",
+    "M 202/19",
+    "M 202/20",
+    "Fabrics of Late Antique African Red Slip Ware from North Tunisian Production Sites:",
+    "The fabric characterization of African Red Slip Ware (ARS) from the North Tunisian production sites of Bordj el Djerbi (ARS D1), Henchir el Biar (ARS D1), Oudna (ARS D2), and Pheradi Maius (ARS C/D) is based on the survey material of the Dutch archaeologist Jan Willem Salomonson, who prospected ARS potteries in Tunisia in the 1960s and 1970s."
+  ],
+  "title": "PH-ARS-4"
+}

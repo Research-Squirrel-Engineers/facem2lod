@@ -1,0 +1,764 @@
+{
+  "breadcrumb": [
+    "»"
+  ],
+  "definition_lists": [],
+  "headings": [
+    {
+      "level": 3,
+      "text": "Context Data"
+    },
+    {
+      "level": 3,
+      "text": "Object"
+    },
+    {
+      "level": 3,
+      "text": "Visual Examination of Fresh Break"
+    },
+    {
+      "level": 3,
+      "text": "Observation Under the Binocular Stereoscope (all lengths in mm)"
+    },
+    {
+      "level": 3,
+      "text": "Inclusions (all lengths in mm)"
+    }
+  ],
+  "id": "m-199-10",
+  "images": [
+    {
+      "alt": "FACEM - provenience studies on pottery in the central mediterranean",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/title.png"
+    },
+    {
+      "alt": "",
+      "caption": "BD-ARS-2, M 199/10, 40x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M199_10_4.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "BD-ARS-2, M 199/10, 40x",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/frame_c.png"
+    },
+    {
+      "alt": "",
+      "caption": "BD-ARS-2, M 199/10, 25x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M199_10_3.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "BD-ARS-2, M 199/10, 16x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M199_10_2.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "BD-ARS-2, M 199/10, 16x",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/frame_b.png"
+    },
+    {
+      "alt": "",
+      "caption": "BD-ARS-2, M 199/10, 8x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M199_10_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "BD-ARS-2, M 199/10, 8x",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/frame_a.png"
+    },
+    {
+      "alt": "",
+      "caption": "",
+      "role": "drawing",
+      "src": "https://facem.at/img/medium-drawings/M199_10_Z.png"
+    },
+    {
+      "alt": "",
+      "caption": "Distribution of fabric type “BD-ARS-2” Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi production discovery Representative sample for “BD-ARS-2” M 199/6 There are 4 more samples assigned t",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/symbol-red.png"
+    },
+    {
+      "alt": "",
+      "caption": "Distribution of fabric type “BD-ARS-2” Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi production discovery Representative sample for “BD-ARS-2” M 199/6 There are 4 more samples assigned t",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/symbol-blue.png"
+    },
+    {
+      "alt": "",
+      "caption": "Distribution of fabric type “BD-ARS-2” Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi Bordj el Djerbi production discovery Representative sample for “BD-ARS-2” M 199/6 There are 4 more samples assigned t",
+      "role": "thumbnail_sample",
+      "src": "https://facem.at/img/pad/M199_6_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “BD-ARS-2” M 199/7 M 199/8 M 199/9 M 199/10",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M199_7_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “BD-ARS-2” M 199/7 M 199/8 M 199/9 M 199/10",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M199_8_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “BD-ARS-2” M 199/7 M 199/8 M 199/9 M 199/10",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M199_9_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “BD-ARS-2” M 199/7 M 199/8 M 199/9 M 199/10",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M199_10_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/pictures/pdf.png"
+    },
+    {
+      "alt": "FWF",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/fwf.png"
+    },
+    {
+      "alt": "Uni Wien",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/uni-wien.png"
+    }
+  ],
+  "kind": "sample",
+  "links": [
+    {
+      "href": "https://facem.at/",
+      "kind": "other",
+      "text": ""
+    },
+    {
+      "href": "https://facem.at/",
+      "kind": "other",
+      "text": "FACEM"
+    },
+    {
+      "href": "https://facem.at/",
+      "kind": "other",
+      "text": "project"
+    },
+    {
+      "href": "https://facem.at/search/",
+      "kind": "other",
+      "text": "search"
+    },
+    {
+      "href": "https://facem.at/map/",
+      "kind": "site",
+      "text": "maps"
+    },
+    {
+      "href": "https://facem.at/project/impressum.php",
+      "kind": "other",
+      "text": "impressum"
+    },
+    {
+      "href": "https://facem.at/img/medium-drawings/M199_10_Z.png",
+      "kind": "image",
+      "text": ""
+    },
+    {
+      "href": "https://facem.at/bd-ars-2",
+      "kind": "record",
+      "text": "M 199/6"
+    },
+    {
+      "href": "https://facem.at/m-199-7",
+      "kind": "record",
+      "text": "M 199/7"
+    },
+    {
+      "href": "https://facem.at/m-199-8",
+      "kind": "record",
+      "text": "M 199/8"
+    },
+    {
+      "href": "https://facem.at/m-199-9",
+      "kind": "record",
+      "text": "M 199/9"
+    },
+    {
+      "href": "https://facem.at/m-199-10",
+      "kind": "record",
+      "text": "M 199/10"
+    },
+    {
+      "href": "https://facem.at/img/pdf/FACEM-2026_Hasenzagl.pdf",
+      "kind": "pdf",
+      "text": ""
+    },
+    {
+      "href": "http://www.fwf.ac.at/",
+      "kind": "other",
+      "text": ""
+    },
+    {
+      "href": "https://klass-archaeologie.univie.ac.at/forschung/forschungsprojekte/laufend/provenienz-studien-zur-keramik-des-5-2-jhs-v-chr-im-zentralen-mittelmeerraum-facem/",
+      "kind": "other",
+      "text": ""
+    }
+  ],
+  "map_points": [
+    {
+      "label": "Bordj el Djerbi",
+      "lat": 36.7872,
+      "long": 9.85311,
+      "n_samples": 5,
+      "role": "discovery"
+    },
+    {
+      "label": "Bordj el Djerbi",
+      "lat": 36.7872,
+      "long": 9.85311,
+      "n_samples": 5,
+      "role": "production"
+    }
+  ],
+  "other_samples": [
+    {
+      "href": "https://facem.at/m-199-7",
+      "id": "m-199-7",
+      "label": "M 199/7"
+    },
+    {
+      "href": "https://facem.at/m-199-8",
+      "id": "m-199-8",
+      "label": "M 199/8"
+    },
+    {
+      "href": "https://facem.at/m-199-9",
+      "id": "m-199-9",
+      "label": "M 199/9"
+    }
+  ],
+  "sections": [
+    {
+      "fields": [
+        {
+          "key": "sample no",
+          "value": "M 199/10"
+        },
+        {
+          "key": "fabric type",
+          "value": "BD-ARS-2"
+        },
+        {
+          "key": "supposed site of production",
+          "value": "Bordj el Djerbi"
+        },
+        {
+          "key": "sample taken",
+          "value": "by Carina Hasenzagl"
+        }
+      ],
+      "name": "",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
+        {
+          "key": "site of discovery",
+          "value": "Bordj el Djerbi"
+        },
+        {
+          "key": "interpretation of context",
+          "value": "production"
+        },
+        {
+          "key": "registration code of context",
+          "value": "surveyed in 1968"
+        },
+        {
+          "key": "registration code of object",
+          "value": "BD-96"
+        }
+      ],
+      "name": "Context Data",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
+        {
+          "key": "ware",
+          "value": "African Red Slip Ware"
+        },
+        {
+          "key": "object form",
+          "value": "Dish"
+        },
+        {
+          "key": "object type",
+          "value": "Hayes 61A/B4 ( Hayes 1972 ; Bonifay 2004 )"
+        },
+        {
+          "key": "chronology of object",
+          "value": "Roman-Late Antiquity first third 5th century CE"
+        },
+        {
+          "key": "fragmentation",
+          "value": "rim"
+        },
+        {
+          "key": "dimensions",
+          "value": "diameter: 34cm (rim)"
+        },
+        {
+          "key": "surface description",
+          "value": "slipped"
+        },
+        {
+          "key": "drawing",
+          "values": []
+        },
+        {
+          "key": "publication",
+          "value": "Hasenzagl 2019 , cat. Bd.029, pl. 2"
+        }
+      ],
+      "name": "Object",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
+        {
+          "key": "visual examination of fresh break",
+          "value": "granular texture with some medium-sized white and reddish particles"
+        },
+        {
+          "key": "colour of fresh break",
+          "value": "5YR 6/6"
+        },
+        {
+          "key": "texture of fresh break",
+          "value": "granular"
+        },
+        {
+          "key": "hardness",
+          "value": "hard"
+        }
+      ],
+      "name": "Visual Examination of Fresh Break",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
+        {
+          "key": "porosity",
+          "value": "2.5–7.5%; void form: channel;vughy; void length: 0.025-0.25"
+        },
+        {
+          "key": "inclusions",
+          "value": "20–25%, length: 0.025-1"
+        },
+        {
+          "key": "sorting",
+          "value": "moderately sorted sand"
+        }
+      ],
+      "name": "Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
+        {
+          "key": "black inclusions",
+          "value": "singular, subrounded, subspherical, black, 0.025-0.125"
+        },
+        {
+          "key": "calciumcarbonate",
+          "value": "infrequent, rounded, spherical, white;yellowish white, 0.025-1"
+        },
+        {
+          "key": "carbonate pseudomorphoses",
+          "value": "infrequent, rounded, spherical, yellowish white;white, 0.025-0.25"
+        },
+        {
+          "key": "mica",
+          "value": "singular, subangular, elongate;subspherical, silver, 0.025-0.125"
+        },
+        {
+          "key": "more inclusions",
+          "value": "singular, subrounded, elongate;subspherical, beige;clayey, 0.25"
+        },
+        {
+          "key": "quartz",
+          "value": "very frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.5"
+        },
+        {
+          "key": "reddish inclusions",
+          "value": "infrequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.25"
+        }
+      ],
+      "name": "Inclusions (all lengths in mm)",
+      "tab": "fabric description",
+      "table": 3
+    }
+  ],
+  "source_url": "https://facem.at/m-199-10",
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "",
+          "",
+          "object data",
+          "",
+          "fabric description",
+          "",
+          "archaeometry",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "sample no",
+          "M 199/10"
+        ],
+        [
+          "fabric type",
+          "BD-ARS-2"
+        ],
+        [
+          "supposed site of production",
+          "Bordj el Djerbi"
+        ],
+        [
+          "sample taken",
+          "by Carina Hasenzagl"
+        ],
+        [
+          "",
+          "Context Data"
+        ],
+        [
+          "site of discovery",
+          "Bordj el Djerbi"
+        ],
+        [
+          "interpretation of context",
+          "production"
+        ],
+        [
+          "registration code of context",
+          "surveyed in 1968"
+        ],
+        [
+          "registration code of object",
+          "BD-96"
+        ],
+        [
+          "",
+          "Object"
+        ],
+        [
+          "ware",
+          "African Red Slip Ware"
+        ],
+        [
+          "object form",
+          "Dish"
+        ],
+        [
+          "object type",
+          "Hayes 61A/B4 ( Hayes 1972 ; Bonifay 2004 )"
+        ],
+        [
+          "chronology of object",
+          "Roman-Late Antiquity first third 5th century CE"
+        ],
+        [
+          "fragmentation",
+          "rim"
+        ],
+        [
+          "dimensions",
+          "diameter: 34cm (rim)"
+        ],
+        [
+          "surface description",
+          "slipped"
+        ],
+        [
+          "drawing",
+          ""
+        ],
+        [
+          "publication",
+          "Hasenzagl 2019 , cat. Bd.029, pl. 2"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "",
+          "",
+          "object data",
+          "",
+          "fabric description",
+          "",
+          "archaeometry",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "",
+          "Visual Examination of Fresh Break"
+        ],
+        [
+          "visual examination of fresh break",
+          "granular texture with some medium-sized white and reddish particles"
+        ],
+        [
+          "colour of fresh break",
+          "5YR 6/6"
+        ],
+        [
+          "texture of fresh break",
+          "granular"
+        ],
+        [
+          "hardness",
+          "hard"
+        ],
+        [
+          "",
+          "Observation Under the Binocular Stereoscope (all lengths in mm)"
+        ],
+        [
+          "porosity",
+          "2.5–7.5%; void form: channel;vughy; void length: 0.025-0.25"
+        ],
+        [
+          "inclusions",
+          "20–25%, length: 0.025-1"
+        ],
+        [
+          "sorting",
+          "moderately sorted sand"
+        ],
+        [
+          "",
+          "Inclusions (all lengths in mm)"
+        ],
+        [
+          "black inclusions",
+          "singular, subrounded, subspherical, black, 0.025-0.125"
+        ],
+        [
+          "calciumcarbonate",
+          "infrequent, rounded, spherical, white;yellowish white, 0.025-1"
+        ],
+        [
+          "carbonate pseudomorphoses",
+          "infrequent, rounded, spherical, yellowish white;white, 0.025-0.25"
+        ],
+        [
+          "mica",
+          "singular, subangular, elongate;subspherical, silver, 0.025-0.125"
+        ],
+        [
+          "more inclusions",
+          "singular, subrounded, elongate;subspherical, beige;clayey, 0.25"
+        ],
+        [
+          "quartz",
+          "very frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.5"
+        ],
+        [
+          "reddish inclusions",
+          "infrequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.25"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "",
+          "",
+          "object data",
+          "",
+          "fabric description",
+          "",
+          "archaeometry",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "tabs_found": [
+    "object data",
+    "fabric description",
+    "archaeometry"
+  ],
+  "text_lines": [
+    "BD-ARS-2",
+    "FACEM",
+    "Provenance Studies on Ancient Pottery in the Mediterranean",
+    "FACEM",
+    "»",
+    "BD-ARS-2",
+    "project",
+    "search",
+    "maps",
+    "impressum",
+    "BD-ARS-2, M 199/10, 40x",
+    "BD-ARS-2, M 199/10, 25x",
+    "BD-ARS-2, M 199/10, 16x",
+    "BD-ARS-2, M 199/10, 8x",
+    "object data",
+    "fabric description",
+    "archaeometry",
+    "sample no",
+    "M 199/10",
+    "fabric type",
+    "BD-ARS-2",
+    "supposed site of production",
+    "Bordj el Djerbi",
+    "sample taken",
+    "by Carina Hasenzagl",
+    "Context Data",
+    "site of discovery",
+    "Bordj el Djerbi",
+    "interpretation of context",
+    "production",
+    "registration code of context",
+    "surveyed in 1968",
+    "registration code of object",
+    "BD-96",
+    "Object",
+    "ware",
+    "African Red Slip Ware",
+    "object form",
+    "Dish",
+    "object type",
+    "Hayes 61A/B4 (",
+    "Hayes 1972",
+    ";",
+    "Bonifay 2004",
+    ")",
+    "chronology of object",
+    "Roman-Late Antiquity",
+    "first third 5th century CE",
+    "fragmentation",
+    "rim",
+    "dimensions",
+    "diameter: 34cm (rim)",
+    "surface description",
+    "slipped",
+    "drawing",
+    "publication",
+    "Hasenzagl 2019",
+    ", cat. Bd.029, pl. 2",
+    "object data",
+    "fabric description",
+    "archaeometry",
+    "Visual Examination of Fresh Break",
+    "visual examination of fresh break",
+    "granular texture with some medium-sized white and reddish particles",
+    "colour of fresh break",
+    "5YR 6/6",
+    "texture of fresh break",
+    "granular",
+    "hardness",
+    "hard",
+    "Observation Under the Binocular Stereoscope",
+    "(all lengths in mm)",
+    "porosity",
+    "2.5–7.5%; void form: channel;vughy; void length: 0.025-0.25",
+    "inclusions",
+    "20–25%, length: 0.025-1",
+    "sorting",
+    "moderately sorted sand",
+    "Inclusions",
+    "(all lengths in mm)",
+    "black inclusions",
+    "singular, subrounded, subspherical, black, 0.025-0.125",
+    "calciumcarbonate",
+    "infrequent, rounded, spherical, white;yellowish white, 0.025-1",
+    "carbonate pseudomorphoses",
+    "infrequent, rounded, spherical, yellowish white;white, 0.025-0.25",
+    "mica",
+    "singular, subangular, elongate;subspherical, silver, 0.025-0.125",
+    "more inclusions",
+    "singular, subrounded, elongate;subspherical, beige;clayey, 0.25",
+    "quartz",
+    "very frequent, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.5",
+    "reddish inclusions",
+    "infrequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.25",
+    "object data",
+    "fabric description",
+    "archaeometry",
+    "Cite this page as:",
+    "FACEM - http://facem.at/m-199-10",
+    "Distribution of fabric type",
+    "“BD-ARS-2”",
+    "Bordj el Djerbi",
+    "Bordj el Djerbi",
+    "Bordj el Djerbi",
+    "Bordj el Djerbi",
+    "Bordj el Djerbi",
+    "Bordj el Djerbi",
+    "Bordj el Djerbi",
+    "Bordj el Djerbi",
+    "Bordj el Djerbi",
+    "Bordj el Djerbi",
+    "production",
+    "discovery",
+    "Representative sample for",
+    "“BD-ARS-2”",
+    "M 199/6",
+    "There are 4 more samples assigned to fabric type",
+    "“BD-ARS-2”.",
+    "Show All",
+    "Other samples assigned to",
+    "“BD-ARS-2”",
+    "M 199/7",
+    "M 199/8",
+    "M 199/9",
+    "M 199/10",
+    "Fabrics of Late Antique African Red Slip Ware from North Tunisian Production Sites:",
+    "The fabric characterization of African Red Slip Ware (ARS) from the North Tunisian production sites of Bordj el Djerbi (ARS D1), Henchir el Biar (ARS D1), Oudna (ARS D2), and Pheradi Maius (ARS C/D) is based on the survey material of the Dutch archaeologist Jan Willem Salomonson, who prospected ARS potteries in Tunisia in the 1960s and 1970s."
+  ],
+  "title": "BD-ARS-2"
+}

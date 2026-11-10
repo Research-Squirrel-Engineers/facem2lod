@@ -2,14 +2,20 @@
   {
     "id": "bd-ars-1",
     "kind": "fabric",
-    "n_fields": 42,
+    "n_fields": 37,
     "n_images": 22,
     "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -22,14 +28,20 @@
   {
     "id": "bd-ars-2",
     "kind": "fabric",
-    "n_fields": 42,
+    "n_fields": 37,
     "n_images": 22,
     "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -42,14 +54,20 @@
   {
     "id": "bd-ars-3",
     "kind": "fabric",
-    "n_fields": 42,
+    "n_fields": 37,
     "n_images": 22,
     "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -62,14 +80,20 @@
   {
     "id": "hb-ars-1",
     "kind": "fabric",
-    "n_fields": 42,
+    "n_fields": 37,
     "n_images": 22,
     "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -82,14 +106,20 @@
   {
     "id": "hb-ars-2",
     "kind": "fabric",
-    "n_fields": 42,
+    "n_fields": 37,
     "n_images": 22,
     "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -102,14 +132,20 @@
   {
     "id": "hb-ars-3",
     "kind": "fabric",
-    "n_fields": 42,
+    "n_fields": 37,
     "n_images": 22,
     "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -122,14 +158,20 @@
   {
     "id": "ou-ars-1",
     "kind": "fabric",
-    "n_fields": 43,
+    "n_fields": 38,
     "n_images": 23,
     "n_links": 16,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -142,14 +184,20 @@
   {
     "id": "ou-ars-2",
     "kind": "fabric",
-    "n_fields": 43,
+    "n_fields": 38,
     "n_images": 23,
     "n_links": 16,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -162,14 +210,20 @@
   {
     "id": "ph-ars-1",
     "kind": "fabric",
-    "n_fields": 42,
+    "n_fields": 37,
     "n_images": 22,
     "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -182,14 +236,20 @@
   {
     "id": "ph-ars-2",
     "kind": "fabric",
-    "n_fields": 42,
+    "n_fields": 37,
     "n_images": 22,
     "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -202,14 +262,20 @@
   {
     "id": "ph-ars-3",
     "kind": "fabric",
-    "n_fields": 42,
+    "n_fields": 37,
     "n_images": 22,
     "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -222,14 +288,20 @@
   {
     "id": "ph-ars-4",
     "kind": "fabric",
-    "n_fields": 42,
+    "n_fields": 37,
     "n_images": 22,
     "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 4,
     "sections": [
-      "",
-      "",
-      "",
-      ""
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry",
+      "petrography"
     ],
     "tabs_found": [
       "object data",
@@ -238,5 +310,1110 @@
       "petrography"
     ],
     "title": "PH-ARS-4"
+  },
+  {
+    "id": "m-199-10",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-2"
+  },
+  {
+    "id": "m-199-12",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-3"
+  },
+  {
+    "id": "m-199-13",
+    "kind": "sample",
+    "n_fields": 33,
+    "n_images": 20,
+    "n_links": 16,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-3"
+  },
+  {
+    "id": "m-199-14",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-3"
+  },
+  {
+    "id": "m-199-15",
+    "kind": "sample",
+    "n_fields": 30,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-3"
+  },
+  {
+    "id": "m-199-2",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-1"
+  },
+  {
+    "id": "m-199-3",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-1"
+  },
+  {
+    "id": "m-199-4",
+    "kind": "sample",
+    "n_fields": 30,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-1"
+  },
+  {
+    "id": "m-199-5",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-1"
+  },
+  {
+    "id": "m-199-7",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-2"
+  },
+  {
+    "id": "m-199-8",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-2"
+  },
+  {
+    "id": "m-199-9",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "BD-ARS-2"
+  },
+  {
+    "id": "m-200-10",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-2"
+  },
+  {
+    "id": "m-200-12",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-3"
+  },
+  {
+    "id": "m-200-13",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-3"
+  },
+  {
+    "id": "m-200-14",
+    "kind": "sample",
+    "n_fields": 30,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-3"
+  },
+  {
+    "id": "m-200-15",
+    "kind": "sample",
+    "n_fields": 30,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-3"
+  },
+  {
+    "id": "m-200-2",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-1"
+  },
+  {
+    "id": "m-200-3",
+    "kind": "sample",
+    "n_fields": 30,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-1"
+  },
+  {
+    "id": "m-200-4",
+    "kind": "sample",
+    "n_fields": 32,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-1"
+  },
+  {
+    "id": "m-200-5",
+    "kind": "sample",
+    "n_fields": 34,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)",
+      "archaeometry"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-1"
+  },
+  {
+    "id": "m-200-7",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-2"
+  },
+  {
+    "id": "m-200-8",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-2"
+  },
+  {
+    "id": "m-200-9",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "HB-ARS-2"
+  },
+  {
+    "id": "m-201-10",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "OU-ARS-2"
+  },
+  {
+    "id": "m-201-2",
+    "kind": "sample",
+    "n_fields": 30,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "OU-ARS-1"
+  },
+  {
+    "id": "m-201-3",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "OU-ARS-1"
+  },
+  {
+    "id": "m-201-4",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "OU-ARS-1"
+  },
+  {
+    "id": "m-201-5",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "OU-ARS-1"
+  },
+  {
+    "id": "m-201-7",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "OU-ARS-2"
+  },
+  {
+    "id": "m-201-8",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "OU-ARS-2"
+  },
+  {
+    "id": "m-201-9",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "OU-ARS-2"
+  },
+  {
+    "id": "m-202-10",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-2"
+  },
+  {
+    "id": "m-202-12",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-3"
+  },
+  {
+    "id": "m-202-13",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-3"
+  },
+  {
+    "id": "m-202-14",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-3"
+  },
+  {
+    "id": "m-202-15",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-3"
+  },
+  {
+    "id": "m-202-17",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-4"
+  },
+  {
+    "id": "m-202-18",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-4"
+  },
+  {
+    "id": "m-202-19",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-4"
+  },
+  {
+    "id": "m-202-2",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-1"
+  },
+  {
+    "id": "m-202-20",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-4"
+  },
+  {
+    "id": "m-202-3",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-1"
+  },
+  {
+    "id": "m-202-4",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-1"
+  },
+  {
+    "id": "m-202-5",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-1"
+  },
+  {
+    "id": "m-202-7",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-2"
+  },
+  {
+    "id": "m-202-8",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-2"
+  },
+  {
+    "id": "m-202-9",
+    "kind": "sample",
+    "n_fields": 31,
+    "n_images": 19,
+    "n_links": 15,
+    "n_map_points": 2,
+    "n_other_samples": 3,
+    "sections": [
+      "object data",
+      "object data > Context Data",
+      "object data > Object",
+      "fabric description > Visual Examination of Fresh Break",
+      "fabric description > Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "fabric description > Inclusions (all lengths in mm)"
+    ],
+    "tabs_found": [
+      "object data",
+      "fabric description",
+      "archaeometry"
+    ],
+    "title": "PH-ARS-2"
   }
 ]

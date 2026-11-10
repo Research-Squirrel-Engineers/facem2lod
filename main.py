@@ -25,7 +25,7 @@ REPORT = ROOT / "dist" / "pipeline_report.txt"
 
 # name, script, network?, description
 STEPS = [
-    ("harvest", "step_harvest.py", True,  "fetch fabric and map pages into data/raw/html/"),
+    ("harvest", "step_harvest.py", True,  "fetch fabric and sample pages into data/raw/html/"),
     ("parse",   "step_parse.py",   False, "raw HTML -> data/derived/json/ and field catalogue"),
 ]
 NAMES = [s[0] for s in STEPS]

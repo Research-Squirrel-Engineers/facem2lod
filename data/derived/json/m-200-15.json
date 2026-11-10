@@ -1,0 +1,754 @@
+{
+  "breadcrumb": [
+    "»"
+  ],
+  "definition_lists": [],
+  "headings": [
+    {
+      "level": 3,
+      "text": "Context Data"
+    },
+    {
+      "level": 3,
+      "text": "Object"
+    },
+    {
+      "level": 3,
+      "text": "Visual Examination of Fresh Break"
+    },
+    {
+      "level": 3,
+      "text": "Observation Under the Binocular Stereoscope (all lengths in mm)"
+    },
+    {
+      "level": 3,
+      "text": "Inclusions (all lengths in mm)"
+    }
+  ],
+  "id": "m-200-15",
+  "images": [
+    {
+      "alt": "FACEM - provenience studies on pottery in the central mediterranean",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/title.png"
+    },
+    {
+      "alt": "",
+      "caption": "HB-ARS-3, M 200/15, 40x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M200_15_4.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "HB-ARS-3, M 200/15, 40x",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/frame_c.png"
+    },
+    {
+      "alt": "",
+      "caption": "HB-ARS-3, M 200/15, 25x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M200_15_3.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "HB-ARS-3, M 200/15, 16x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M200_15_2.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "HB-ARS-3, M 200/15, 16x",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/frame_b.png"
+    },
+    {
+      "alt": "",
+      "caption": "HB-ARS-3, M 200/15, 8x",
+      "role": "macro",
+      "src": "https://facem.at/img/medium/M200_15_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "HB-ARS-3, M 200/15, 8x",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/frame_a.png"
+    },
+    {
+      "alt": "",
+      "caption": "",
+      "role": "photo",
+      "src": "https://facem.at/img/photos/M200_15_Pn.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Distribution of fabric type “HB-ARS-3” Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar production discovery Representative sample for “HB-ARS-3” M 200/11 There are 4 more samples assigned ",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/symbol-red.png"
+    },
+    {
+      "alt": "",
+      "caption": "Distribution of fabric type “HB-ARS-3” Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar production discovery Representative sample for “HB-ARS-3” M 200/11 There are 4 more samples assigned ",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/symbol-blue.png"
+    },
+    {
+      "alt": "",
+      "caption": "Distribution of fabric type “HB-ARS-3” Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar Henchir el Biar production discovery Representative sample for “HB-ARS-3” M 200/11 There are 4 more samples assigned ",
+      "role": "thumbnail_sample",
+      "src": "https://facem.at/img/pad/M200_11_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “HB-ARS-3” M 200/12 M 200/13 M 200/14 M 200/15",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M200_12_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “HB-ARS-3” M 200/12 M 200/13 M 200/14 M 200/15",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M200_13_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “HB-ARS-3” M 200/12 M 200/13 M 200/14 M 200/15",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M200_14_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "Other samples assigned to “HB-ARS-3” M 200/12 M 200/13 M 200/14 M 200/15",
+      "role": "thumbnail_other_sample",
+      "src": "https://facem.at/img/smallpad/M200_15_1.jpg"
+    },
+    {
+      "alt": "",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/pictures/pdf.png"
+    },
+    {
+      "alt": "FWF",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/fwf.png"
+    },
+    {
+      "alt": "Uni Wien",
+      "caption": "",
+      "role": "interface",
+      "src": "https://facem.at/prototype/images/uni-wien.png"
+    }
+  ],
+  "kind": "sample",
+  "links": [
+    {
+      "href": "https://facem.at/",
+      "kind": "other",
+      "text": ""
+    },
+    {
+      "href": "https://facem.at/",
+      "kind": "other",
+      "text": "FACEM"
+    },
+    {
+      "href": "https://facem.at/",
+      "kind": "other",
+      "text": "project"
+    },
+    {
+      "href": "https://facem.at/search/",
+      "kind": "other",
+      "text": "search"
+    },
+    {
+      "href": "https://facem.at/map/",
+      "kind": "site",
+      "text": "maps"
+    },
+    {
+      "href": "https://facem.at/project/impressum.php",
+      "kind": "other",
+      "text": "impressum"
+    },
+    {
+      "href": "https://facem.at/img/photos/M200_15_Pn.jpg",
+      "kind": "image",
+      "text": ""
+    },
+    {
+      "href": "https://facem.at/hb-ars-3",
+      "kind": "record",
+      "text": "M 200/11"
+    },
+    {
+      "href": "https://facem.at/m-200-12",
+      "kind": "record",
+      "text": "M 200/12"
+    },
+    {
+      "href": "https://facem.at/m-200-13",
+      "kind": "record",
+      "text": "M 200/13"
+    },
+    {
+      "href": "https://facem.at/m-200-14",
+      "kind": "record",
+      "text": "M 200/14"
+    },
+    {
+      "href": "https://facem.at/m-200-15",
+      "kind": "record",
+      "text": "M 200/15"
+    },
+    {
+      "href": "https://facem.at/img/pdf/FACEM-2026_Hasenzagl.pdf",
+      "kind": "pdf",
+      "text": ""
+    },
+    {
+      "href": "http://www.fwf.ac.at/",
+      "kind": "other",
+      "text": ""
+    },
+    {
+      "href": "https://klass-archaeologie.univie.ac.at/forschung/forschungsprojekte/laufend/provenienz-studien-zur-keramik-des-5-2-jhs-v-chr-im-zentralen-mittelmeerraum-facem/",
+      "kind": "other",
+      "text": ""
+    }
+  ],
+  "map_points": [
+    {
+      "label": "Henchir el Biar",
+      "lat": 36.7471,
+      "long": 9.86121,
+      "n_samples": 5,
+      "role": "discovery"
+    },
+    {
+      "label": "Henchir el Biar",
+      "lat": 36.7471,
+      "long": 9.86121,
+      "n_samples": 5,
+      "role": "production"
+    }
+  ],
+  "other_samples": [
+    {
+      "href": "https://facem.at/m-200-12",
+      "id": "m-200-12",
+      "label": "M 200/12"
+    },
+    {
+      "href": "https://facem.at/m-200-13",
+      "id": "m-200-13",
+      "label": "M 200/13"
+    },
+    {
+      "href": "https://facem.at/m-200-14",
+      "id": "m-200-14",
+      "label": "M 200/14"
+    }
+  ],
+  "sections": [
+    {
+      "fields": [
+        {
+          "key": "sample no",
+          "value": "M 200/15"
+        },
+        {
+          "key": "fabric type",
+          "value": "HB-ARS-3"
+        },
+        {
+          "key": "supposed site of production",
+          "value": "Henchir el Biar"
+        },
+        {
+          "key": "sample taken",
+          "value": "by Carina Hasenzagl"
+        }
+      ],
+      "name": "",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
+        {
+          "key": "site of discovery",
+          "value": "Henchir el Biar"
+        },
+        {
+          "key": "interpretation of context",
+          "value": "production"
+        },
+        {
+          "key": "registration code of context",
+          "value": "surveyed in 1968"
+        },
+        {
+          "key": "registration code of object",
+          "value": "HB-64"
+        }
+      ],
+      "name": "Context Data",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
+        {
+          "key": "ware",
+          "value": "African Red Slip Ware"
+        },
+        {
+          "key": "object form",
+          "value": "Lamp"
+        },
+        {
+          "key": "object type",
+          "value": "Atlante VIII A/C ( Atlante I ; Mackensen 1993 )"
+        },
+        {
+          "key": "chronology of object",
+          "value": "Roman-Late Antiquity 4th/5th century CE"
+        },
+        {
+          "key": "fragmentation",
+          "value": "rim"
+        },
+        {
+          "key": "surface description",
+          "value": "slipped"
+        },
+        {
+          "key": "photo",
+          "values": []
+        },
+        {
+          "key": "publication",
+          "value": "Hasenzagl 2019 , cat.Hb.056, pl.9"
+        }
+      ],
+      "name": "Object",
+      "tab": "object data",
+      "table": 1
+    },
+    {
+      "fields": [
+        {
+          "key": "visual examination of fresh break",
+          "value": "granular texture with some small white and reddish particles"
+        },
+        {
+          "key": "colour of fresh break",
+          "value": "5YR 6/8"
+        },
+        {
+          "key": "texture of fresh break",
+          "value": "granular"
+        },
+        {
+          "key": "hardness",
+          "value": "hard"
+        }
+      ],
+      "name": "Visual Examination of Fresh Break",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
+        {
+          "key": "porosity",
+          "value": "10–15%; void form: channel;vughy; void length: 0.025-0.25"
+        },
+        {
+          "key": "inclusions",
+          "value": "30–35%, length: 0.025-0.375"
+        },
+        {
+          "key": "sorting",
+          "value": "moderately sorted sand"
+        }
+      ],
+      "name": "Observation Under the Binocular Stereoscope (all lengths in mm)",
+      "tab": "fabric description",
+      "table": 3
+    },
+    {
+      "fields": [
+        {
+          "key": "black inclusions",
+          "value": "infrequent, subangular;subrounded, subelongate;subspherical, black, 0.025-0.25"
+        },
+        {
+          "key": "calciumcarbonate",
+          "value": "infrequent, rounded, spherical, white;yellowish white, 0.025-0.25"
+        },
+        {
+          "key": "carbonate pseudomorphoses",
+          "value": "infrequent, rounded, spherical, yellowish white;white, 0.025-0.125"
+        },
+        {
+          "key": "mica",
+          "value": "singular, subangular, elongate;subspherical, silver, 0.025-0.125"
+        },
+        {
+          "key": "more inclusions",
+          "value": "singular, subangular;subrounded, elongate;subspherical, beige;clayey, 0.25"
+        },
+        {
+          "key": "quartz",
+          "value": "riddled with, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.375"
+        },
+        {
+          "key": "reddish inclusions",
+          "value": "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.375"
+        }
+      ],
+      "name": "Inclusions (all lengths in mm)",
+      "tab": "fabric description",
+      "table": 3
+    }
+  ],
+  "source_url": "https://facem.at/m-200-15",
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "",
+          "",
+          "object data",
+          "",
+          "fabric description",
+          "",
+          "archaeometry",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "sample no",
+          "M 200/15"
+        ],
+        [
+          "fabric type",
+          "HB-ARS-3"
+        ],
+        [
+          "supposed site of production",
+          "Henchir el Biar"
+        ],
+        [
+          "sample taken",
+          "by Carina Hasenzagl"
+        ],
+        [
+          "",
+          "Context Data"
+        ],
+        [
+          "site of discovery",
+          "Henchir el Biar"
+        ],
+        [
+          "interpretation of context",
+          "production"
+        ],
+        [
+          "registration code of context",
+          "surveyed in 1968"
+        ],
+        [
+          "registration code of object",
+          "HB-64"
+        ],
+        [
+          "",
+          "Object"
+        ],
+        [
+          "ware",
+          "African Red Slip Ware"
+        ],
+        [
+          "object form",
+          "Lamp"
+        ],
+        [
+          "object type",
+          "Atlante VIII A/C ( Atlante I ; Mackensen 1993 )"
+        ],
+        [
+          "chronology of object",
+          "Roman-Late Antiquity 4th/5th century CE"
+        ],
+        [
+          "fragmentation",
+          "rim"
+        ],
+        [
+          "surface description",
+          "slipped"
+        ],
+        [
+          "photo",
+          ""
+        ],
+        [
+          "publication",
+          "Hasenzagl 2019 , cat.Hb.056, pl.9"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "rows": [
+        [
+          "",
+          "",
+          "object data",
+          "",
+          "fabric description",
+          "",
+          "archaeometry",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "rows": [
+        [
+          "",
+          "Visual Examination of Fresh Break"
+        ],
+        [
+          "visual examination of fresh break",
+          "granular texture with some small white and reddish particles"
+        ],
+        [
+          "colour of fresh break",
+          "5YR 6/8"
+        ],
+        [
+          "texture of fresh break",
+          "granular"
+        ],
+        [
+          "hardness",
+          "hard"
+        ],
+        [
+          "",
+          "Observation Under the Binocular Stereoscope (all lengths in mm)"
+        ],
+        [
+          "porosity",
+          "10–15%; void form: channel;vughy; void length: 0.025-0.25"
+        ],
+        [
+          "inclusions",
+          "30–35%, length: 0.025-0.375"
+        ],
+        [
+          "sorting",
+          "moderately sorted sand"
+        ],
+        [
+          "",
+          "Inclusions (all lengths in mm)"
+        ],
+        [
+          "black inclusions",
+          "infrequent, subangular;subrounded, subelongate;subspherical, black, 0.025-0.25"
+        ],
+        [
+          "calciumcarbonate",
+          "infrequent, rounded, spherical, white;yellowish white, 0.025-0.25"
+        ],
+        [
+          "carbonate pseudomorphoses",
+          "infrequent, rounded, spherical, yellowish white;white, 0.025-0.125"
+        ],
+        [
+          "mica",
+          "singular, subangular, elongate;subspherical, silver, 0.025-0.125"
+        ],
+        [
+          "more inclusions",
+          "singular, subangular;subrounded, elongate;subspherical, beige;clayey, 0.25"
+        ],
+        [
+          "quartz",
+          "riddled with, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.375"
+        ],
+        [
+          "reddish inclusions",
+          "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.375"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "rows": [
+        [
+          "",
+          "",
+          "object data",
+          "",
+          "fabric description",
+          "",
+          "archaeometry",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "tabs_found": [
+    "object data",
+    "fabric description",
+    "archaeometry"
+  ],
+  "text_lines": [
+    "HB-ARS-3",
+    "FACEM",
+    "Provenance Studies on Ancient Pottery in the Mediterranean",
+    "FACEM",
+    "»",
+    "HB-ARS-3",
+    "project",
+    "search",
+    "maps",
+    "impressum",
+    "HB-ARS-3, M 200/15, 40x",
+    "HB-ARS-3, M 200/15, 25x",
+    "HB-ARS-3, M 200/15, 16x",
+    "HB-ARS-3, M 200/15, 8x",
+    "object data",
+    "fabric description",
+    "archaeometry",
+    "sample no",
+    "M 200/15",
+    "fabric type",
+    "HB-ARS-3",
+    "supposed site of production",
+    "Henchir el Biar",
+    "sample taken",
+    "by Carina Hasenzagl",
+    "Context Data",
+    "site of discovery",
+    "Henchir el Biar",
+    "interpretation of context",
+    "production",
+    "registration code of context",
+    "surveyed in 1968",
+    "registration code of object",
+    "HB-64",
+    "Object",
+    "ware",
+    "African Red Slip Ware",
+    "object form",
+    "Lamp",
+    "object type",
+    "Atlante VIII A/C (",
+    "Atlante I",
+    ";",
+    "Mackensen 1993",
+    ")",
+    "chronology of object",
+    "Roman-Late Antiquity",
+    "4th/5th century CE",
+    "fragmentation",
+    "rim",
+    "surface description",
+    "slipped",
+    "photo",
+    "publication",
+    "Hasenzagl 2019",
+    ", cat.Hb.056, pl.9",
+    "object data",
+    "fabric description",
+    "archaeometry",
+    "Visual Examination of Fresh Break",
+    "visual examination of fresh break",
+    "granular texture with some small white and reddish particles",
+    "colour of fresh break",
+    "5YR 6/8",
+    "texture of fresh break",
+    "granular",
+    "hardness",
+    "hard",
+    "Observation Under the Binocular Stereoscope",
+    "(all lengths in mm)",
+    "porosity",
+    "10–15%; void form: channel;vughy; void length: 0.025-0.25",
+    "inclusions",
+    "30–35%, length: 0.025-0.375",
+    "sorting",
+    "moderately sorted sand",
+    "Inclusions",
+    "(all lengths in mm)",
+    "black inclusions",
+    "infrequent, subangular;subrounded, subelongate;subspherical, black, 0.025-0.25",
+    "calciumcarbonate",
+    "infrequent, rounded, spherical, white;yellowish white, 0.025-0.25",
+    "carbonate pseudomorphoses",
+    "infrequent, rounded, spherical, yellowish white;white, 0.025-0.125",
+    "mica",
+    "singular, subangular, elongate;subspherical, silver, 0.025-0.125",
+    "more inclusions",
+    "singular, subangular;subrounded, elongate;subspherical, beige;clayey, 0.25",
+    "quartz",
+    "riddled with, subrounded;rounded, subelongate;subspherical;spherical, clear;gray;white, 0.025-0.375",
+    "reddish inclusions",
+    "frequent, subangular;subrounded, subelongate;subspherical, reddish brown;rust coloured, 0.025-0.375",
+    "object data",
+    "fabric description",
+    "archaeometry",
+    "Cite this page as:",
+    "FACEM - http://facem.at/m-200-15",
+    "Distribution of fabric type",
+    "“HB-ARS-3”",
+    "Henchir el Biar",
+    "Henchir el Biar",
+    "Henchir el Biar",
+    "Henchir el Biar",
+    "Henchir el Biar",
+    "Henchir el Biar",
+    "Henchir el Biar",
+    "Henchir el Biar",
+    "Henchir el Biar",
+    "Henchir el Biar",
+    "production",
+    "discovery",
+    "Representative sample for",
+    "“HB-ARS-3”",
+    "M 200/11",
+    "There are 4 more samples assigned to fabric type",
+    "“HB-ARS-3”.",
+    "Show All",
+    "Other samples assigned to",
+    "“HB-ARS-3”",
+    "M 200/12",
+    "M 200/13",
+    "M 200/14",
+    "M 200/15",
+    "Fabrics of Late Antique African Red Slip Ware from North Tunisian Production Sites:",
+    "The fabric characterization of African Red Slip Ware (ARS) from the North Tunisian production sites of Bordj el Djerbi (ARS D1), Henchir el Biar (ARS D1), Oudna (ARS D2), and Pheradi Maius (ARS C/D) is based on the survey material of the Dutch archaeologist Jan Willem Salomonson, who prospected ARS potteries in Tunisia in the 1960s and 1970s."
+  ],
+  "title": "HB-ARS-3"
+}
