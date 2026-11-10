@@ -29,6 +29,7 @@ STEPS = [
     ("parse",   "step_parse.py",   False, "raw HTML -> data/derived/json/ and field catalogue"),
     ("vocab",   "step_vocab.py",   False, "SKOS vocabularies and structured object types -> data/derived/vocab/, dist/facem-vocabularies.ttl"),
     ("rdf",     "step_rdf.py",     False, "ontology, instance graph and DCAT graph -> dist/facem-ontology.ttl, facem.ttl, facem-dcat.ttl; SHACL gate"),
+    ("site",    "step_site.py",    False, "static pages and the search page -> docs/"),
     ("wikidata", "step_wikidata.py", True, "Wikidata candidates for places and periods -> data/curated/wikidata_candidates.csv"),
 ]
 NAMES = [s[0] for s in STEPS]

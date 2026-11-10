@@ -1,7 +1,7 @@
-<svg width="1750" height="1000" viewBox="0 0 1750 1000" xmlns="http://www.w3.org/2000/svg" role="img"><title>facem2lod model draft: classes, anchors and vocabularies</title>
+<svg width="1750" height="1000" viewBox="0 0 1750 1000" xmlns="http://www.w3.org/2000/svg" role="img"><title>facem2lod data model: classes, anchors and vocabularies</title>
 <rect width="1750" height="1000" fill="#ffffff"/>
 <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="#55544f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
-<text x="40" y="40" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="30" font-weight="500" fill="#1f1f1d">facem2lod: model draft</text>
+<text x="40" y="40" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="30" font-weight="500" fill="#1f1f1d">facem2lod: data model</text>
 <rect x="900" y="29" width="22" height="22" rx="3" fill="#9a3412" stroke="#000000" stroke-width="1"/>
 <text x="932" y="40" text-anchor="start" dominant-baseline="central" font-family="Fira Sans" font-size="18" fill="#55544f">class of facem:</text>
 <rect x="1085.0" y="29" width="22" height="22" rx="3" fill="#166534" stroke="#000000" stroke-width="1"/>

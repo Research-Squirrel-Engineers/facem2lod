@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FACEM as Linked Open Data · facem2lod</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<main>
+<nav><div class="grp"><span class="lab">facem2lod</span><span class="lnk"><a class="on" href="index.html">Overview</a><a href="search.html">Search</a><a href="model.html">Data model</a><a href="vocabularies.html">Vocabularies</a><a href="example.html">Example sherd</a><a href="data.html">Downloads</a></span></div></nav>
+<h1>FACEM as Linked Open Data</h1>
+<p class="intro">Fabrics of African Red Slip Ware from facem.at, as CIDOC-CRM, SKOS and DCAT.</p>
+<div class="stat"><div><b>60</b><span>sherds</span></div><div><b>12</b><span>fabrics</span></div><div><b>851</b><span>observations</span></div><div><b>67</b><span>type assignments</span></div><div><b>4</b><span>places</span></div><div><b>13,423</b><span>triples</span></div></div>
+<section class="text"><h2>What this is</h2><p>FACEM (<a href="https://facem.at">facem.at</a>) describes the fabrics of African Red Slip Ware found in Tunisia: for each fabric a representative sample and further samples, each with the sherd it was taken from, its form, type, dating, dimensions and the observations of the fabric under the binocular and in thin section. facem2lod turns the public pages into Linked Open Data: an ontology anchored in CIDOC-CRM, SKOS vocabularies for every controlled value, an instance graph, and a DCAT 3 description of the datasets.</p><h2>Where to start</h2><ul><li><a href="search.html">Search</a> the sherds by fabric, form, type, period and place.</li><li>The <a href="model.html">data model</a>: classes, anchors and properties.</li><li>The <a href="vocabularies.html">vocabularies</a> with their concepts and counts.</li><li>One <a href="example.html">sherd</a> as the triples that describe it.</li><li>The files in <a href="data.html">Downloads</a>, the code on <a href="https://github.com/Research-Squirrel-Engineers/facem2lod">GitHub</a>.</li></ul><blockquote><p>Work in progress. The terms of use of the FACEM data are being clarified with the editors; until then the generated files are published for review, not as a release.</p></blockquote></section>
+</main>
+<script>
+document.querySelectorAll("button[data-c]").forEach(function(b){b.addEventListener("click",function(){
+  var ok=function(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy"},1200)};
+  if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.c).then(ok).catch(function(){})}
+})});
+</script>
+</body></html>

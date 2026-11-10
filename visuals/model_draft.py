@@ -38,8 +38,8 @@ def left(col):
 
 
 def build() -> Fig:
-    f = Fig("s6-model-draft", "facem2lod model draft: classes, anchors and vocabularies")
-    f.text(40, 40, "facem2lod: model draft", 30, True, anchor="start", maxw=420)
+    f = Fig("s6-model-draft", "facem2lod data model: classes, anchors and vocabularies")
+    f.text(40, 40, "facem2lod: data model", 30, True, anchor="start", maxw=420)
     f.legend(40, [(CLS, "class of facem:"), (REAL, "real-world object"), (TERM, "SKOS vocabulary"),
                   (OWL, "other vocabulary")], 900)
 

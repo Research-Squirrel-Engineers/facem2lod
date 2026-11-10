@@ -34,3 +34,4 @@
 [rdf] NOTE obs_m-202-6-observation-under-the-binocular-stereoscope-mica: size range 0.25-0.0125 runs backwards in FACEM, left out
 [rdf] rdf: 13423 triples in facem.ttl, 336 in the ontology, 557 in the DCAT graph; 12 fabrics, 60 sherds, 4 places
 [rdf] rdf: SHACL conforms (instance graph, DCAT graph)
+[site] site: 6 pages, 60 records in the search index, 0 sherds without an image

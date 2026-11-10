@@ -27,6 +27,7 @@ Everything is driven by one command. Offline steps are the default; fetching fro
 | `parse` | turns each page into JSON (tabs and sections, map points, further samples, images) and builds a catalogue of all fields seen | `data/derived/json/`, `data/derived/field_catalogue.json`, `dist/pipeline_report.txt` |
 | `vocab` | builds SKOS vocabularies (typologies, fabrics, periods, descriptors) and splits each object type into structured assignments | `data/derived/vocab/`, `dist/facem-vocabularies.ttl` |
 | `rdf` | builds the ontology, the instance graph and the DCAT graph from the JSON and the vocabularies, then checks them with SHACL (needs `pyshacl`) | `dist/facem-ontology.ttl`, `dist/facem.ttl`, `dist/facem-dcat.ttl` |
+| `site` | builds the static pages in `docs/` (overview, search, data model, vocabularies, one example sherd, downloads) from the generated graphs | `docs/*.html`, `docs/assets/` |
 | `wikidata` | proposes Wikidata items for the places and periods found in the data, with GeoNames and OSM IDs where Wikidata has them; you confirm the rows by hand (network) | `data/curated/wikidata_candidates.csv` |
 
 Raw pages are stored exactly as the server sent them, so the parser can be improved without crawling again.

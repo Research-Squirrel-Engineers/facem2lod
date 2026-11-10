@@ -111,6 +111,7 @@ Eigenschaften, die das Ergebnis haben muss:
 | Zeitspannen | `crm:E52_Time-Span` mit `P82a`/`P82b` als `xsd:gYear`, Regel `facem-chron-1` (Jahrhundert N = (N−1)·100 bis N·100; Hälfte, Drittel, Viertel, `end`/`late`, `beginning`/`early`, `mid`), Originaltext bleibt an der Datierung; ein Fragezeichen oder `(+)` setzt `facem:intervalUncertain` | 2026-11-10 |
 | Rückwärts laufende Bereiche | steht in FACEM der Endwert unter dem Anfangswert (`0.025-0.0125`), wird keine Zahl erfunden: der Bereich bleibt weg, der Wortlaut steht als `rdfs:comment`, der Lauf meldet `NOTE` (D5b) | 2026-11-10 |
 | DCAT geprüft | der DCAT-Graph erfüllt die offiziellen Shapes von DCAT-AP 3.0.1 (einmalig im Sandkasten gegen `SEMICeu/DCAT-AP` geprüft, nicht im Repo, wegen der Lizenz); im Repo steht ein eigenes Profil `shapes/dcat-shapes.ttl` mit den Pflichtfeldern | 2026-11-10 |
+| Bilder | die Bilder von facem.at werden nur verlinkt (`facem:imageUrl`) und auf der Suchseite von dort geladen, nicht kopiert und nicht ins Repo gelegt; solange D1 offen ist, wäre ein Spiegeln der Bilder eine Nutzung ohne geklärte Lizenz | 2026-11-10 |
 | Lizenz der Quelle | ungeklärt, die Seiten nennen keine; vor Veröffentlichung der Daten bei den Herausgebenden nachfragen | offen |
 
 ### A5 Was in welchem Chat hochgeladen wird
@@ -147,7 +148,7 @@ Offen: w3id-Registrierung (Pull Request auf `perma-id/w3id.org`), Content Negoti
 | S5 | SKOS-Vokabulare: Typologien, Perioden, Einschlüsse | facem2lod | S3, S4 | Vokabulare gebaut, externe Links (AAT, Wikidata) offen |
 | S6 | Ontologie und RDF-Builder neu (offline aus JSON), SHACL | facem2lod | S5 | gebaut 2026-11-10, Abnahme offen (D10a, D10d) |
 | S7 | Brücke zu geo-lod: Core-Import, Messmuster, Orte als FeatureCollection | facem2lod, geo-lod | S6 | offen |
-| S8 | Doku- und Figure-Seiten (Skill `figure-pages-site`) | facem2lod | S6 | offen |
+| S8 | Doku- und Figure-Seiten (Skill `figure-pages-site`), Suchseite | facem2lod | S6 | gebaut 2026-11-10, Abnahme offen |
 | S9 | w3id-Registrierung und Redirects | facem2lod | S6 | offen |
 | S10 | Satellit `n4o-rse/facem-static`: FACEM-Daten als statische Wikibase-Seite im `wikibase-static`-Verbund | facem2lod, wikibase-static | S6, S9 | offen |
 
@@ -305,7 +306,9 @@ Lauf lokal: `12 fetched, 0 failed`; `parse`: 12 Fabric-Seiten, 0 ohne Sektionen,
 
 ## S8 – Doku- und Figure-Seiten
 
-**Ziel:** GitHub-Pages-Seite im Stil der anderen visuals-Repos (Skill `figure-pages-site`): Modellübersicht, ein Beispielobjekt, Brücke zu geo-lod.
+**Ziel:** GitHub-Pages-Seite im Stil der anderen visuals-Repos (Skill `figure-pages-site`): Modellübersicht, ein Beispielobjekt, Brücke zu geo-lod, dazu eine Suchseite.
+
+**Gebaut (2026-11-10):** Schritt `site` (`py/step_site.py`, Gestaltung in `py/site_kit.py`) schreibt nach `docs/`: `index.html`, `search.html`, `model.html` (Modellgrafik und Tabellen aus `py/facem_model.py`), `vocabularies.html`, `example.html` (alle Tripel zu `m-200-10`), `data.html`. Statisches HTML ohne Jekyll, Schrift Fira Sans, Seiten lesen `dist/facem.ttl` mit rdflib. Die Suchseite bettet die 60 Datensätze ein (läuft auch aus dem lokalen Ordner): Fabric-Kacheln mit Bild, Filter für Fabric, Form, Typologie, Ort, Jahresbereich, Freitext, nur mit Bild. Die Bilder werden nicht kopiert, sondern von facem.at geladen (A4, „Bilder"). Die Brücke zu geo-lod fehlt noch (S7).
 
 **Abnahme:** Seiten bauen aus `python main.py`; zweimal bauen, byte-identisch.
 
